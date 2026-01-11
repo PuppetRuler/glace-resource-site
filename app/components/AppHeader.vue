@@ -1,7 +1,5 @@
 <template>
-  <UHeader
-    class="dark:border-b-black/20 backdrop-blur-3x"
-  >
+  <UHeader class="dark:border-b-black/20 backdrop-blur-3x">
     <template #left>
       <div class="flex items-center gap-3">
         <UAvatar class="h-10 w-auto" size="3xl" src="/favicon.ico" />
@@ -14,7 +12,7 @@
           @click="toggleSidebar"
         />
         <h1
-          class="text-3xl pl-2 font-bold tracking-wide transition-all duration-300 bg-clip-text text-transparent bg-linear-to-br from-zinc-900 via-zinc-700 to-zinc-400 dark:from-white dark:via-white/80 dark:to-white/20"
+          class="text-[0.5em] sm:text-3xl sm:pl-2 font-bold tracking-wide transition-all duration-300 bg-clip-text text-transparent bg-linear-to-br from-zinc-900 via-zinc-700 to-zinc-400 dark:from-white dark:via-white/80 dark:to-white/20"
         >
           glace的资源站
         </h1>
@@ -44,3 +42,9 @@ const toggleSidebar = () => {
   isSidebarOpen.value = !isSidebarOpen.value;
 };
 </script>
+
+<style lang="scss">
+button[aria-label="Open menu"] {
+  display: none;
+}
+</style>

@@ -2,7 +2,6 @@
   <div></div>
 </template>
 <script lang="ts" setup>
-import { onMounted } from 'vue'
 import * as ThumbHash from '~/assets/js/thumbhash'
 
 interface Props {

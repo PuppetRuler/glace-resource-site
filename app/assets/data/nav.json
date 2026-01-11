@@ -1,158 +1,572 @@
 {
-  "light_novel_acg": {
-    "label": "轻小说与 ACG",
+  "light_novel": {
+    "label": "轻小说",
     "icon": "i-heroicons-book-open",
     "items": [
-      { "name": "カクヨム", "url": "https://kakuyomu.jp/", "description": "日本轻小说创作/阅读", "logo": "i-simple-icons-docsdotrs" },
-      { "name": "轻小说百科", "url": "https://lnovel.org/", "description": "轻小说资源百科", "logo": "i-heroicons-academic-cap" },
-      { "name": "ACG盒子", "url": "https://www.acgbox.link/#term-155", "description": "专注ACG的导航盒子", "logo": "i-heroicons-square-3-stack-3d" },
-      { "name": "量子ACG", "url": "https://lzacg.one/", "description": "ACG资源站", "logo": "i-heroicons-sparkles" },
-      { "name": "GAL图书馆", "url": "https://gallibrary.pw/index.html", "description": "Galgame资源库", "logo": "i-heroicons-library" },
-      { "name": "魔笔小说", "url": "https://mobinovels.com/", "description": "轻小说资源收集", "logo": "i-heroicons-bookmark" },
-      { "name": "哔哩轻小说", "url": "https://w.linovelib.com/", "description": "在线轻小说阅读", "logo": "i-heroicons-book-open" },
-      { "name": "去看吧动漫", "url": "https://www.qkan8.com/", "description": "免费动漫在线看", "logo": "i-heroicons-play" },
-      { "name": "AnimeTrace", "url": "https://ai.animedb.cn/", "description": "以图识番引擎", "logo": "i-heroicons-cpu-chip" },
-      { "name": "在线玩Gal", "url": "https://ipfs.io//ipfs/bafykbzacebduiodym2eruireydhkqlnufs5jyyzt3urmgbsl4zw2rcrcoaycu/", "description": "基于IPFS的在线Gal", "logo": "i-heroicons-play-circle" },
-      { "name": "Kimochi Gaming", "url": "https://kimochi.info/", "description": "Eroge 资源站", "logo": "i-heroicons-heart" },
-      { "name": "Hikarinagi", "url": "https://www.hikarinagi.org/", "description": "ACGN文化社区", "logo": "i-heroicons-user-group" },
-      { "name": "Galgame档案", "url": "https://www.hikarinagi.org/galgame", "description": "Gal记录", "logo": "i-heroicons-archive-box" }
+      {
+        "name": "カクヨム (Kakuyomu)",
+        "url": "https://kakuyomu.jp/",
+        "description": "日本轻小说创作/阅读",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6ElEQVR4AcxSQQqCUBAdaiEEigtbCW3TC7SrO9QBuocncN8ROkDdoXZeQNeCqwRFQXAR9WdoPh9/8M1V4vM5Du8xf3yz9SmpBF4TUc0AwIXpl4sGJHesOWx8WyL0FvTd9JAGgRCcDwEwot3KpKW+NKBKPOJ7DsdLBvEtF5X51gzSRwdJ0UJadpoaj4UTInNTM+DGN7Y/e0Lm/k8GLFL5jwza/knLQ1ZHNL3LI+DW8fchD0W+Y1HAwqUeLmkwFKn1PvQoYNFWD9cog2taUrhwQkSmZGSUQdH0tB8MGKIR++IJ0aDmYgLXbwAAAP//YzmNcAAAAAZJREFUAwDYGmwhwRLoSwAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "轻小说百科",
+        "url": "https://lnovel.org/",
+        "description": "轻小说资源百科",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAClElEQVR4AVRTS2tTQRT+ZpKbm1fTJA1p0tjWarW+cOFGFwoVBBfiQjeuBKVbF4KC4F8QBP0NQhciiHtRV0UoXUjxQYuxrZA0RmvSPLxJ71y/M6la5865c+bcc77znTNztTEmkGHMv9WYgS72vbLX+kfXSinQCUoNVnBQBR2s3TcGOxRZaeAMrCj6SZyWF/X/jO2+DyKDkAhpjTAlpPVfUDpzBuALGrsj4N5QL2938XB5DSuNNlp9g2flKh68K+PO2094XfkBLUD0g9Ck7AKQFgI6b+Lx+3W8qm5hsd60PkNOGAdTMVydzOPIcAKd/g6EnWQX9lrAJLvUlHHDOJVLIec6GE9GEeJHgR5xI2gycJ5sGlxpZnzABAqaC3PDUntJipI5F41gofYT95dWLZPFegPLWy1sszfFmAufGRUUICVIo8AhdFzWp2mXE9hoechEHIToVPf6MEzT9X08X69Zm889abAcECIgAmfSCcEhiDiutbuYO1zCbCGD84UsSsx8ZWLU6pLM1k5wlsBoBSil6JyFwzVMuTE9hnQkjJVmB/Ofq3j6pQaP92GY/WEEFB/LABxCs8Xm1L0eIiGNzW4fS9+b+NrxcP1QCXMzJVwYy2K2mIXHMswAAVIFLxIROGvdHiqdHuIEmEnHcfv4JOq/enjEO/FktYIXG994Fz7i1sIHvOExM8T2RZMtkQJMDcVwkzWfyadR5CmMUNJsYiHu4tJ4DndP7MfliTzunZzC2dG0jdEsQwuSiHTeJ7c8A08TRBp1LJPEtQMFG3hxX86WMJ1KIEqWkMwKPAWrKHs0oh7NJHCOnZcGCaj8SCICLnuRQBwBYiheJF4KcAQURSEJ8G8Gv0L20mArWkEpJRktfaXk+AP8BgAA//+1coGdAAAABklEQVQDAMo1csgFhBOBAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "魔笔小说",
+        "url": "https://mobinovels.com/",
+        "description": "轻小说资源收集",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACq0lEQVR4AVxTSyi1URRd+/MoZEgZKAMDZUCRx0AiA5RMJCSiRCZSMmOgKCMmBjL1SMRAMvDIQJnIREruo/voPrv3Tu677j3+b+2//x84db6zz/n22Wvttfexfn4NY8yvk79bY8yPMUY3xpj/tgV72Kf4N+0tcrkcgsEg7u7usLu7i+fnZ4gICoUCjDFq049TA9AQEf3JQKFQCDMzM/B6vRgcHMTh4SGurq5QVlYGy7IUTER0ZQoakRdLSkrUoaKiAkNDQ7i8vMTW1hYaGhrw/f2N4+NjxGIx4imYiMASEd3AHh6PB3t7ezg7O0NjYyPW19exvLyM0dFRVFVVqf329qaATIWgyoCGfR/5fB5OpxM1NTX4/PzEw8MD3G43VldX8fX1ha6uLvj9fqVOf05LP3ZeXLPZLGpra7G4uIhUKoXq6mo8Pj5ie3tb0cvLy+FwOJQB/QmsDLiJRqOq+OnpKcbHxzE/P4/S0lKcn5/j5uYGU1NTeHp6UvRisQjqJSKwmAvsQZHoQISLiwvN+/r6GnNzcxqko6MDY2NjmgKrJCIaTFMQEby8vIAs6uvr0drainA4jEQiATo3NTWpPkSurKzUipA+p11WS6vAy1SbpSL9vr4+pNNp+Hw+FTIej4Ozra0N/f39ekdEWHZLu44CMveenh4EAgG4XC7Mzs4ik8kgmUzi/f1dO/Hg4AAfHx+qgTLgh7lHIhHc3t6CyJubm9qFFIrKsydYEbIUERwdHWkwEZuBiICjubkZExMT6O7uxsrKCpaWlvD6+oqBgQF0dnaivb0dLS0tWFtb0ya7v78nfaiI7Hu27MjICHZ2drC/v6/ryckJent79V2wKycnJ/U98KExRbLXAGrYzUSV+eK4srx1dXXaE0RnZYaHhzE9PY2NjQ0sLCxoQ/0BAAD//1QvqxsAAAAGSURBVAMAVNWtkwvgBBoAAAAASUVORK5CYII="
+      },
+      {
+        "name": "哔哩轻小说",
+        "url": "https://w.linovelib.com/novel/2848/catalog",
+        "description": "在线轻小说阅读",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADz0lEQVR4AUySD0zUZRjHn+e9+90dcHRAgBDmOGhqrEUpKZAooNVNhADjApINjUk1aGUbVrbGGDMz1LVFU8Zg0AxkIWgBgsghyuXgJiRwAh7/BOE45IpT4Lyfv3v6na3p9333bs/e5/k8z7PnYfBUSAAIoo4Z6lRvXfg5CU4cTIPvstPkZQVJkBaiEr/+v0/8XMazAMLNIA0/V/J5lWlSP/S3pbFo+966qtS8upKopMbqolr9tRnTF3TmsgtEQP8lcwGe0L7qqvO79sd4i5+3z8nFRythAjnhOU5Oag8vesN3LWxftz5sW1BoyY+R8vMvVRz1E8NJrACZ64VgUPBSt9roAPVOs9XKW5ZtgpMIigxtkNBcDm9eKIUxq0UwLEzzxbevx0sUWFs5oVOAKCamp7lb/3z62abYeCDiT0UnSi5qDki2rgkGOZMAIsLxqESICgiWHP6zSYIrq/w88fFlNwc+EuOJBVcWerVMD+cGyZVwcXKQGe7fQwcJJEeG5tWH+F5oOB56NQYz289S9oYIHEwvYLH+auf0A2uuTqyCTS4v7bDYV9RLDjt929vGhqxmPNBxDlvu3oaYwFAoi9XCsT4dXJo0YumgHg2Wadawax879Fps6L6ujtfZ2yFhXO4rUdA6M0IB7iqqinufgjxU4CZTQHmcFuru9ME3N5rAV+EOpqV50rZVU9aVGtDPT8HiAxvHqmLTQSnlQLN2Pfy6MwN4cT4te3Igcd1GKOxthYrhHtig8gcFJweFVAFuUhnUiNArd0fAT+kN7BNdLb+toRR3t1TiyVtd6OB5PNF/FXT3TKDi5NCgyYbuvfnQnZoP+pQ8vJGaj00JH9IaN0/wlcl4Fv58kM68YhvpnjVRz9yk8zE46beJAVri7dA5Owaa38tA21oNglMg4+IclQ50Ozvmx4kYjr0bGNjHCiN3236KSakwZn3NftmV4fSUKUifnIfZL0fSzPISjdoWqEuEP3TYsdcyRadutgunR3uZD8edKYzbb2fiLHHPiK38L/N0R73ZxK3yDqHYcFlonjICMgZORLFvDjykcsFNIhO8ff1laolSdzBi02kAQBcAUBNtzTiqTW8e7e94LJNxjTPDEqXYf2fSx9CdnAfXU/LhBU8vSc7mHVz51uSrH4RszNyvjrODKBfAtc1Ilab7zdItSeMLs18GKJRGh1OA8+MDWD8xhJdm7kCNqd9Iq48Op3bOphZsSTCLwxKXGMgFEDlALgvfCV+O8H/x+6zQ8GiVVJpc3FWvPdJ+Vnukpyk584ecaB935XHM0ViBAMVDrsB/AQAA//8uHGz/AAAABklEQVQDAHGjpaZSGgHfAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "ePub 繁简转换",
+        "url": "https://v.magiconch.com/epub-transform",
+        "description": "电子书繁简在线转换",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhUlEQVR4AayP0QmAMAxEg7u4iIM7iA6jvI+DXNRaqcKjMck967RFHCNMMfj8L5jXiBb1wnYDgnWhvtcdE+TlfYnI5FmuTdATyGFqE9CocGVQn4+o5nwUEAKWRA3TvwgIAUNBEPSeTxN8CUpiAjV1IrxDc86mgIU3TMB/9pClJsiD3npYcAIAAP//CkGHEAAAAAZJREFUAwA8+0uxGuWlkgAAAABJRU5ErkJggg=="
+      }
     ]
   },
-  "proxy_services": {
-    "label": "网络加速与代理",
-    "icon": "i-heroicons-shield-check",
-    "items": [
-      { "name": "极速云", "url": "https://xn--9kqu12djx2a.net/", "description": "网络加速面板", "logo": "i-heroicons-cloud" },
-      { "name": "甜奶网络", "url": "https://1milk.top/", "description": "真专线加速", "logo": "i-heroicons-bolt" },
-      { "name": "老马识途WXF", "url": "https://freenode.top/", "description": "科学上网分享", "logo": "i-heroicons-share" },
-      { "name": "FastFly", "url": "https://fastestcloud.xyz/", "description": "加速仪表盘", "logo": "i-heroicons-paper-airplane" },
-      { "name": "FASTLINK", "url": "https://flaff20230823.fastlink-aff02.com/", "description": "FASTLINK首页", "logo": "i-heroicons-link" },
-      { "name": "Flyint飞数", "url": "https://www.feishu111.com/", "description": "飞数加速服务", "logo": "i-heroicons-rocket-launch" },
-      { "name": "廉价机场", "url": "https://lianjiasub.work/", "description": "廉价加速服务", "logo": "i-heroicons-currency-dollar" },
-      { "name": "万达云", "url": "https://app.iocone.com/", "description": "全球加密隧道", "logo": "i-heroicons-globe-alt" },
-      { "name": "维云云", "url": "https://vyy.idsduf.com/", "description": "维云云仪表盘", "logo": "i-heroicons-server-stack" },
-      { "name": "BridgeDB", "url": "https://bridges.torproject.org/", "description": "Tor桥接获取", "logo": "i-simple-icons-torproject" },
-      { "name": "订阅中心", "url": "https://cf.puppetblog.top/...", "description": "订阅地址管理", "logo": "i-heroicons-rss" }
-    ]
-  },
-  "frontend_and_frameworks": {
-    "label": "前端开发与 UI",
-    "icon": "i-heroicons-code-bracket",
-    "items": [
-      { "name": "Vue.js", "url": "https://cn.vuejs.org/", "description": "渐进式 JS 框架", "logo": "i-logos-vue" },
-      { "name": "Awesome Vue", "url": "https://awesomejs.dev/for/vue/", "description": "Vue 资源库", "logo": "i-logos-vue" },
-      { "name": "Element Plus", "url": "https://element-plus.org/", "description": "Vue3 UI 框架", "logo": "i-logos-element" },
-      { "name": "Element UI", "url": "https://element.eleme.cn/", "description": "Vue2 UI 框架", "logo": "i-logos-element" },
-      { "name": "Ant Design", "url": "https://ant-design.antgroup.com/", "description": "React 组件库", "logo": "i-logos-ant-design" },
-      { "name": "Naive UI", "url": "https://www.naiveui.com/", "description": "Vue3 组件库", "logo": "i-logos-naiveui" },
-      { "name": "Vuetify", "url": "https://vuetifyjs.com/", "description": "Material UI 框架", "logo": "i-logos-vuetifyjs" },
-      { "name": "Vant 4", "url": "https://vant-ui.github.io/vant/", "description": "移动端 UI 库", "logo": "i-logos-vue" },
-      { "name": "Varlet", "url": "https://varlet.gitee.io/varlet-ui/", "description": "Material 移动端库", "logo": "i-heroicons-device-phone-mobile" },
-      { "name": "Quasar", "url": "https://quasar.dev/", "description": "全平台 Vue 框架", "logo": "i-simple-icons-quasar" },
-      { "name": "Vuestic UI", "url": "https://ui.vuestic.dev/", "description": "Vue3 UI 框架", "logo": "i-heroicons-cube" },
-      { "name": "OpenTiny", "url": "https://opentiny.design/", "description": "华为企业级 UI", "logo": "i-heroicons-briefcase" },
-      { "name": "Apache ECharts", "url": "https://echarts.apache.org/", "description": "可视化图表库", "logo": "i-simple-icons-apacheecharts" },
-      { "name": "Animate.css", "url": "https://animate.style/", "description": "CSS 动画库", "logo": "i-heroicons-sparkles" },
-      { "name": "BootCDN", "url": "https://www.bootcdn.cn/", "description": "开源 CDN 加速", "logo": "i-heroicons-bolt-slash" },
-      { "name": "iconfont", "url": "https://www.iconfont.cn/", "description": "阿里图标库", "logo": "i-simple-icons-antdesign" }
-    ]
-  },
-  "dev_tools_docs": {
-    "label": "开发工具与文档",
-    "icon": "i-heroicons-command-line",
-    "items": [
-      { "name": "MDN Web Docs", "url": "https://developer.mozilla.org/zh-CN/", "description": "Web 技术文档", "logo": "i-logos-mdn" },
-      { "name": "npm", "url": "https://www.npmjs.com/", "description": "包管理器", "logo": "i-logos-npm-icon" },
-      { "name": "ESLint", "url": "https://eslint.org/", "description": "代码检测", "logo": "i-logos-eslint" },
-      { "name": "jQuery API", "url": "https://api.jquery.com/", "description": "jQuery 文档", "logo": "i-simple-icons-jquery" },
-      { "name": "Java 8 API", "url": "https://www.matools.com/api/java8", "description": "Java 中文 API", "logo": "i-logos-java" },
-      { "name": "Carbon", "url": "https://carbon.now.sh/", "description": "代码转图片", "logo": "i-heroicons-camera" },
-      { "name": "Chocolatey", "url": "https://community.chocolatey.org/", "description": "Windows 包管理", "logo": "i-simple-icons-chocolatey" },
-      { "name": "Sysinternals", "url": "https://learn.microsoft.com/zh-cn/sysinternals/", "description": "微软实用工具", "logo": "i-logos-microsoft" },
-      { "name": "PlantUML", "url": "https://www.plantuml.com/", "description": "UML 在线绘图", "logo": "i-heroicons-pencil-square" },
-      { "name": "Data Structure Visualization", "url": "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html", "description": "算法可视化", "logo": "i-heroicons-eye" },
-      { "name": "LINUX DO", "url": "https://linux.do/", "description": "理想型社区", "logo": "i-heroicons-chat-bubble-left-right" },
-      { "name": "JetBrains 激活", "url": "https://jetbrains.asiones.com/", "description": "IDE 授权服务器", "logo": "i-simple-icons-jetbrains" },
-      { "name": "Github Trends", "url": "https://refft.com/trending-2025-10-07-daily.html", "description": "GitHub 趋势", "logo": "i-simple-icons-github" },
-      { "name": "Colab", "url": "https://colab.research.google.com/", "description": "Google 代码实验室", "logo": "i-logos-google-colab" },
-      { "name": "daily.dev", "url": "https://app.daily.dev/", "description": "开发者头条", "logo": "i-heroicons-newspaper" }
-    ]
-  },
-  "ai_tools": {
-    "label": "AI 助手与接口",
+  "anime": {
+    "label": "动漫资源",
     "icon": "i-heroicons-sparkles",
     "items": [
-      { "name": "Google Gemini", "url": "https://gemini.google.com/", "description": "Google AI 助手", "logo": "i-logos-google-gemini" },
-      { "name": "Perplexity AI", "url": "https://www.perplexity.ai/", "description": "AI 搜索引擎", "logo": "i-simple-icons-perplexity" },
-      { "name": "Dify", "url": "https://cloud.dify.ai/", "description": "AI 应用开发平台", "logo": "i-heroicons-cpu-chip" },
-      { "name": "Coze GPT-4", "url": "https://www.coze.com/space/7358413674744807431/bot/7358414508676792327", "description": "字节 AI 机器人", "logo": "i-heroicons-bolt" },
-      { "name": "GPT_API_free", "url": "https://github.com/chatanywhere/GPT_API_free", "description": "免费 ChatGPT API", "logo": "i-logos-openai" },
-      { "name": "ChatPDF", "url": "https://askdocs.azurewebsites.net/", "description": "PDF 文档对话", "logo": "i-heroicons-document-magnifying-glass" },
-      { "name": "秘塔写作猫", "url": "https://xiezuocat.com/", "description": "AI 辅助写作", "logo": "i-heroicons-pencil" },
-      { "name": "Gen-2 AI视频", "url": "https://app.runwayml.com/", "description": "Runway 视频生成", "logo": "i-heroicons-video-camera" },
-      { "name": "AI 语音", "url": "https://www.kamiya.dev/", "description": "AI 语音转换", "logo": "i-heroicons-microphone" },
-      { "name": "ChatGPT Prompts", "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh", "description": "调教指南", "logo": "i-heroicons-book-open" }
+      {
+        "name": "免費動漫网",
+        "url": "https://www.qkan8.com/",
+        "description": "在线高清动漫",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACzUlEQVR4ATRTzSuscRQ+5zfvazBRRAoxQqH8AeqWouwkLK0smLGYS3b3L5CFBZcaFtdCShbYqavo2lxRsrCwm7FAs50P8/F+HM95x7zN6f3NOed5zjnP+b2Gqg9XX0Q9PT0/otHon76+vhSs8m0p9Wmslod3gKkRSGdnZ2N/f/9OXV3dtWVZi0iIwqxvixpjFuG/BuEOfI0wgZESqEXq6+vPPc9L5HK5UKFQcBH0mZmYGUfyRcT1fT8EogRIzjs6OiIIGAX7cGwAPBUOh8ujo6M0MDAQqlQq7LouqTGeEB4ACCRlkEyh4Ab++2ZoaGgMyXHM597d3dlXV1fm9vaW9/b2CInc2trK2WyW0BnZts3w2SBx8Y739vaOGcdxYqhut7S0kAJjsZjc39/LzMwMj4yMyPLyspydnfHw8DBlMhkqFosMLXQ0G43FDNjG0Y48Pz+beDxOBwcH9PT0FAyOBN7d3eV0Oi2np6d8dHRE2IYSKU4QH1cNunDAOMQgk/X1dUJVOjk5ocfHR4KgtLq6ypOTk5JKpeji4kK2t7eDAhC2Swm0HSqXywH71tYWX15eSiKRIHRGGFG1oEgkQgAE1tDQEPi0qhK86QFBbYlvbm4kmUyqWAJtSLdyfHwc6IC7QnNzc6w6oVst/GYA/IcRGFvy8/k8vby8UHd3t2ClDMFkfn5esAGenp6WpaUl0jHa29t9bIEVqwT7IHBKpRINDg7KysoKLyws6EjS3NzMm5ubDKB8fHwQLg+h/aAzgB3Yvnl9ff2POZNItiCag0r+2toaoQNCgiZLW1ubAlUPQesOqlt4JxWrGhhU/wXHX+w3/PDwQKjm4ax4nZOghQI91QrgsOYqBv+rVxkXpIAtzCLwu6mpyUN1/YiUHDnBz2BMC2BPc6DDrGIQ8WtJ/P7+/onAT1zrCVQ8RDAN049KLQ3gIb6LCc2B/xMW3IUvAAAA//8MnAmIAAAABklEQVQDAMZykJg9pPfmAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "VCB-Studio",
+        "url": "https://vcb-s.com/archives/7228",
+        "description": "高画质压制资源",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADh0lEQVR4ASRT7WtbZRT/nefJTZrcJE2aNMnW9TWr7bRdt2l9WV1XbbtNnEEURmEi+lmloCiI4CdF/OCHwb76zX9AHb6gOC1Fh6wUS8dk3UJfbLemSZrcNrnpvTfP8Rl74HAOPIffOb/zO0fMf33l6rUvPuYvL+Xc2ckJ9eGFKZ6deoE/emma3z83yR+cn+RPLl7gdyee588vvc4/f/Ypv/PiBF+ZyfG12bdY2OuruaplodpwBTMDisGqCdKhDvDQPM9DJhZFcbeMSDCIdHsS2xULMe1FbafQqQoFOI4j9CPp8yEaNtFwHPikgNKAQkr0H+1HwO+HAHC8/yjqnkK1VIKoaXSvqbN04Uqtzi2RMJgEfKSLg/DwKxQKoaFTfC1BlPdryCTi8BkB1Gq2BgzH/rZsh4QQHAmH0JtqR4duLRaLo+l6sA8a6Dl8CG3BAJ7oPoK4GYIkwab2DddjEe3quWE3ldJcyRcM8e9lG39t78LW80ilU+jUlmxLYO5BBXOWh5trm2BW9MzY0zBT7STinR0qbJqiXN6Fle6mPdfB3NI/eGz0WZzUXI9ls2jv6cWvi4vYKhVR7OjHnzcXONRoIJhMsBh7LXc1nE6vD2S7kRs9roZGTvFgXy8GUgkkW6PoyqQgtSojQ0MgDf5k92EOG4KrtT3e2ioUBFFr3qvt388eG6AhU+K5aIDee+Ui/HsVsOGD0Kpgr4qZk8N488xpnAh5lNSdLdy6S6XtUlXc+vabbLO+P/zLj7/x4soKdfuZM9SEAkBEWgUFT48ooRwMJyO4s77K33/3E1nWnvIIEVFqcJYM/x+Dw4MkO3uUawaZm56WkqBcDxLiUaxBEAuj0ZrkTFcn2Vqe1lT6X2Ek0snTly+L3NtvMJlx2jz0OEFvndS8oReIBUFqwGAyhrW2PhjJI3h55lWVyfa2+NszP4hwgL8qF4rn56/PYyd/Rzpmgh4MnsG224RrVdCs17Ar/djoG0U9lMbW7WVaXljiU+Njov/s9DmxsZJP315aViQlyabDTnmbW6JxHIycxaYysCZNWMPjMGJpOKX74LpFRsiU6/l7fGA706K4U1RGwE8kJEtWsAubRCAcyADsp6bQPDEOGQgCmlLtv7vwseJAwM+G9NG9/LoS+w1H2I0DUkoRSYPcnQ3kb1wH71cQb40gHGyBtZFHeXMVXnEDMAxivaWuvo2S7dL/AAAA//9Y2lSPAAAABklEQVQDACTyqvdYQ8dlAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "AnimeTrace",
+        "url": "https://ai.animedb.cn/",
+        "description": "以图识番引擎",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADVElEQVR4ARySSWxbRRjHf55nx9t7XrM4sRslcRYSOwm1E0fEDVWBqpSCKIFAWuDQquKCEEgcuPSKkJC4c+XEiQMHKqqKKsdIUFqqkCBaisTSpnWcOk0cx2+bzsuMRt9oNPPNfxOX3jwuzy8U5fLxonx7oSDPnZiSH79VlRdOV+T7pyry3MmyPH9qVl54rSo/UHcvLr4gv7q8JL/+4j352YfLUjS36kgfBPwahh7EG9lMklBQAylpty1CHRrdqSi24xIK+vjrXoPba1u09lsInxDsmybDI4OcfLFKX6aTobFRspk0bXUeiUY4Nl9iZGQAx3FUQxvTsnFcF9d1EN4mEdOZmTtKLJ1kKN/H+OQU6d4cjUaDqekilWqV7MAwmpCHKLxG3mOvCtO0yA/l0JNdfPP9n3z3w+9EYglyR7Lo4QDHnp8nHInhDQ9V0ggh8OHYLq6ipHpCpjdDz9gc6//UKZ14lSPPlClOFVl653V0RSGVilMuT1OuVJieLiDVdF3JIQJVKE4W6Fadx8/O4huIYj6ukcrkeOnMWQbzeVZ/WeeTT7/EQ+s1TsWj6rGlNHYRejRMQo8Q2n/E58tn+Oh0FRwTpS4doTBRQ+fbK7e5cUdjuymUDqjzCJZl4dhKxEx3nJgRxlaQetu7pF37UH27ta+YKhv3moicQeXdeYozz7FV36FWqyOEhqVcEfHRGXbcCAEBlhbA7QioH5RQKhfSs6p9wOVLS1xcfJl8xqD2sMaWyo4mfEjPxid6Hw1T4gv48SvBbl29zp2fVjhoNg/DZTs2meY2c/4Whs9kY30DfMoF5YCt8iBsf5AHjV00VV2h0dOZxNjf4/7Va2ysrCD8AdouuJrg/3//U5sWoVBQBcnGUrRFSBlZnJjgidVSP3aQLoyj9+fo7O3BSCTwYi78QoknWFu/RUBxtZV4roq5K4KIQn+GsZEpRWOPncYm4XSG4MQk4VKJrFpCBJQmBvXWQ9rRIH9vmljmAUKLkOgcQCyUnlVwXGVXlrVfr7PXqBHSDSKJ1GHS9nZ3ePD4LnZE52jlFQaH82zXtykoR95YWkR0pdKYSmkj3qfsTLJx8xr3/viZu+ur/Lb6IzdvXMEfT9DVU6Z/cJTS7CyO5qdra5OhWIinAAAA///XxJn6AAAABklEQVQDAHdWXt8a7x7WAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "trace.moe",
+        "url": "https://trace.moe/",
+        "description": "动画场景搜索",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADVElEQVR4ARySSWxbRRjHf55nx9t7XrM4sRslcRYSOwm1E0fEDVWBqpSCKIFAWuDQquKCEEgcuPSKkJC4c+XEiQMHKqqKKsdIUFqqkCBaisTSpnWcOk0cx2+bzsuMRt9oNPPNfxOX3jwuzy8U5fLxonx7oSDPnZiSH79VlRdOV+T7pyry3MmyPH9qVl54rSo/UHcvLr4gv7q8JL/+4j352YfLUjS36kgfBPwahh7EG9lMklBQAylpty1CHRrdqSi24xIK+vjrXoPba1u09lsInxDsmybDI4OcfLFKX6aTobFRspk0bXUeiUY4Nl9iZGQAx3FUQxvTsnFcF9d1EN4mEdOZmTtKLJ1kKN/H+OQU6d4cjUaDqekilWqV7MAwmpCHKLxG3mOvCtO0yA/l0JNdfPP9n3z3w+9EYglyR7Lo4QDHnp8nHInhDQ9V0ggh8OHYLq6ipHpCpjdDz9gc6//UKZ14lSPPlClOFVl653V0RSGVilMuT1OuVJieLiDVdF3JIQJVKE4W6Fadx8/O4huIYj6ukcrkeOnMWQbzeVZ/WeeTT7/EQ+s1TsWj6rGlNHYRejRMQo8Q2n/E58tn+Oh0FRwTpS4doTBRQ+fbK7e5cUdjuymUDqjzCJZl4dhKxEx3nJgRxlaQetu7pF37UH27ta+YKhv3moicQeXdeYozz7FV36FWqyOEhqVcEfHRGXbcCAEBlhbA7QioH5RQKhfSs6p9wOVLS1xcfJl8xqD2sMaWyo4mfEjPxid6Hw1T4gv48SvBbl29zp2fVjhoNg/DZTs2meY2c/4Whs9kY30DfMoF5YCt8iBsf5AHjV00VV2h0dOZxNjf4/7Va2ysrCD8AdouuJrg/3//U5sWoVBQBcnGUrRFSBlZnJjgidVSP3aQLoyj9+fo7O3BSCTwYi78QoknWFu/RUBxtZV4roq5K4KIQn+GsZEpRWOPncYm4XSG4MQk4VKJrFpCBJQmBvXWQ9rRIH9vmljmAUKLkOgcQCyUnlVwXGVXlrVfr7PXqBHSDSKJ1GHS9nZ3ePD4LnZE52jlFQaH82zXtykoR95YWkR0pdKYSmkj3qfsTLJx8xr3/viZu+ur/Lb6IzdvXMEfT9DVU6Z/cJTS7CyO5qdra5OhWIinAAAA///XxJn6AAAABklEQVQDAHdWXt8a7x7WAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "SauceNAO",
+        "url": "https://saucenao.com/",
+        "description": "二次元图片反查",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArklEQVR4AaSSQRLDIAwD2f7/z5Q1QzCBQ9LORBMsyRsO+ZRS6j8SUGqtP6l9uATAA1DgudxRF8Bh3MTzSac8AMDSt7gYbbh70HcC0PJ4oJsOeSGfYXbsLQANmAUXlb6CmTmrDaAJexF2z+4RYPBUR0C+9gCdPLMNkItA/BsWVc6c1QLIBcA8BPOcO4YBuJswFywpWL2xEwALCliurJcFe34BJL7RAAcAOhnevYV8AQAA//+MQTWFAAAABklEQVQDAN+NlBFeJSWeAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "搜图Bot酱",
+        "url": "https://soutubot.moe/",
+        "description": "聚合搜图工具",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADrUlEQVR4ARSSW2wUZRTHzzkzO7deZrdud4uwZQl0KRWqTyYkKCUhtlxiNGqilaaR0JASiA8+aKxEUkKqIfGhL8aIicaqYFLliRdUlNpKjFERSTXQGGlt99Kd2dvszO5cjtPz8p3k+/++75z/OXRJ3rJj4aE93/6R3Ps9hGEWzIHi0urc8r28+2+u5mVXDe/B3zk390/uplkoDIQSuN2192bIfPOBnNpOHzdWigv1Qt2Kat1Xjg5POjNfX4t1de4Lmk0KjBI1jTKB61JHovMJ+5Or164cffm8HVVT87V8/YvGcpEOTp/zZzMPpy/42W1dTx88Gz30pFozK56kqdgiyqC166BEJHRM04sd3q8mjxx464KXS3/Vuzk9MD0dUIriIwEHj5Q0yXv82IuunO4OIgIKHa0RjEYlaJcIomGOgS8ome28b3TYNdSIx8C70ySO0PETY2f29PfD7l29qChKpGFZKMbaAFViirUg6QpSh8ZaVwwKhgFZZPHRvj7cYEbHTpym7Hpx59z8HDzz/AsEVpNdOwDrt1/BzRWQmz5zEB6VKvorq7BcruCHs7M88NQg/bgwj9nCei8hB/fGXhr96cDQILAAAZRLALYFgqaBbzvoV2rI9SZ4hTVOrhuQqTi8/8gQnBx55VbI3qd4NLb42qkzpqRpWK1Y4MsEen8fgu9DRARwigYETRuUx/qoI5ng54aPQSKZwFdPjpfjevQvciyrYEe8OBODoopYdqqwZBjcsKpsLOfBYR+oVeKlB/9x1iqH7zoY7gLb5Mecej1PQd3JibKcxNBWSZKICGFm5jKYXgM1XeG2uM55o4ifffo5iAKCpmkEzCDKkURg2zlqmKV1UYxEzbUcLt65y2CWefzQIKQ2b2K1U0dV17A7zMcPDwGHd4t/3mVzLY+CKMZcs1YkqUXNs6K0qqrCJaMcFixQYls3cvhL45fb7P5+h4EIOrduQR9FKocaTZWZZaWVFLlAcjzWTgKJjYrl79qZwbZ4yqo3uSLo7aikUyht6kIKDeZIa03vTNX7Mhl0Qq0QhpqIthEg7gjbB1LbmFBAr25ZtbJnT0xMwtVbPwf319Z46vUJeGPyHb9SKnvIIaK0MoemhXb1kCDLPcgIFM5M1nUQFVUUPFs1Vlfg4tS78OzxMf7yuxtw/YfrUjPwSdGjCEi4wWBE6iEg6vFd5qDhYFA1fV0Xok3Ja3nv3Fn/xqX34fL5t+HN06f8jy5ORXq2xhW3WvTBa8IGw6K4438AAAD//w0szHkAAAAGSURBVAMAp1rJ/kfIUqgAAAAASUVORK5CYII="
+      },
+      {
+        "name": "量子ACG",
+        "url": "https://lzacg.one/",
+        "description": "ACG资源导航",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADdElEQVR4ARyS7U9bZRjGf+c5bU+7Fuh7oSBv64DABqsDNxgSJY7ExH1a5j648BeYuH1Q/wFN1LmYGBfwLepHE7MYvxhjcJkyFpkytmVhZkI2svHWQkvb057Tc9rj4z49yZM713Xdv/sSFy595rx16Ypz8fLnzoUPZ52L7884H8x87/zy+z3n1vJj59rCivPz9XvOJ1//6Lzz0ZfO2x9/5bz53qfynXXevTzriIpexNB1KsUSwYCf/r4eTr96ivZkAo8LNLcgmYgxPnackXSaVFcHtmlQ2t+jVMgh7KqFZVaINDUw+eI4r0yMkoyFCPo1WqJBWmNhAlKkqzXByeFBXh4bZeToEUrFPJVyEeHYNRyrRvrwANHGAHWjgqUXpEOGmrGPUi2h2GWEZeB2bFx1i9GRYzTKtKacFUbZpMEXoLc7hSrFvAqU9jLUzSJuYaNiSoMSej4jBeoUcrsEDviJRmIUilLYMGyisTgNfj+OXUep2exltgk2BGTEfZyaTr1aJJ/ZlHFrlAs65ZJOItGKZQuZzHLQPD4Mo4ouYapCcGf5NjMzV3CrClWzwHfffMHft25CrY6qqGxuZAiFmikUTESlWkXTDpDdyckPnd3dPENH05w9e4ZwPEJSwpuefoP0sWE2NrdREKzcf4jmOUAkEke4PAKXR+Xx+hMMS2X5wRNyZYX+kXHc1HF73BwaHmM7Z/PX3UdoWpD93T2yT9cZHR6Sa5kWVsViK1PEcPxkDY0bd9dZWl6jUgug2AH+WfyX+fn7lA0Phq2iSvebfy4QjgQQillj6+kOwiOhORp63UfedPPbjTvPRB4urTE/tyjXqyO0MOubBbyBJlAE2f/BdrQ/x9b2Nj297VSqZRlZ0BwPyjI1kQj5qeh5/H4vqd6DaH4fjzY2aOvoJB6XEPMlRE3U0XyQSrUQ8FVpSwjOn5lg8oUeUp1SKBWnL93NufNThKIuaWCRbIlxZOAwVlmmWl1bZerUOG1xLy+dOEhLSMGtGDQnw1g1C188zOCJNLZqk8muMjkxSHtLgKGBfjo7uxAnjw/Ljj+PWSgS8bsJN/rJ6aaEqfLD3G2+vXqNPVNhJ5vjUFcrfV1RNGngElVeOz2FmD73Ol5VFraUR+AQCocoWQpX55b46Y8Vfl1Y4friA3mBOn093bioyda6ZMH2aWzy8h8AAAD//4aMVcQAAAAGSURBVAMA3Z6MxJ7uTj4AAAAASUVORK5CYII="
+      },
+      {
+        "name": "ACG盒子",
+        "url": "https://www.acgbox.link/",
+        "description": "ACG导航站",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADcklEQVR4ARyTS2xUVRjHf/fcefbOo9MKmL4LTaURbFVSiBri2o0LE2NYGDduJSaa6MJEjRsTYyobUg1oNCaGRJAQakHjA7BS+wDaQm06zEyHTjtl2pk7ndede2fu8cji5Cy+nO/8/7/v/4mSWZRrc3dk5p/bcn3mjkzEU3L61qL88/qUvPrLr3Jy8oq8dOmynPp7Ws4tLMrx9z+Ul8fPytTistwtmFLkkmskJq6RXPiXu/EU2UIRXBfbdtCEjs/vxzCCbOcekkok0XWBL7dL5vQ5dh5kEMLnofmYn1qrH9PwcfHn39gxSzTQEB4futeHPxCkNRohqJqFRw5h2IKopqMLgfDqXgJOg6LlMpPOcbtoMXb2HE2nScAwQOhITcNpuujqxu/D9gjcZhOJKlO1sLdtrCOj9D5xkP6+QWiLYtUt6nUHWzVqqsflisVutYZQ1la7ouzGDDyqiVBK8douhc1tukN+pFYnFopQbzTYLeTVManWbErlKrVcjoA/iKNUxcM+hKsU6LoHc6ibxnqa4Z59HO9oZ7RzL5GWAE2rRkTa1KoVnHqdnoiPUnKFwo5JqlZFU3CFGzYI9PcSdJt8NvYVW5k1nj48QHlrk2Bxg76Yn7ZGgT69xCcXrlAxInREgjys1JleWkZoUuLYDYKGn5Au8aoxNRpNzI00b/0wwaqC+9zos4wcPcYH753k+EAntYaLVwEMK5XCVWAsBXJfRwf93V3o2Txly2F49Bjff/wOz+/vwWu0EorGHtnTzQKegMGbb7zGgaEhxI7yV8lssfUgi4i0kshuMHH+Ah+NnSK2niISDmLbNprboIZgvgw9XZ08eXiQlmAAsScUJpBY4ctTn/LtmXEmbt7g+s2/mJ9f4eTX57mb3ET+/4llc2NuhdVMnoH+LlyVVuUCYaikZbQKqxvrFEwTr+alPRLmlZcPEk/f54tvfmTq2gzxtTyOpwVdaMRiUYQQlFQ2hKY77JRL9IXb6FWFE68O0vPMXkZef5uu3iMs3ZslNPQU4Y5u9rZHVdB60D0eXAV6Np5G1HWNZL7KiZcO8MKLe1gJtrNREHz37mmyiWXyZhVRzIEac9gIsb+/m5DRwuzSKmnNRQTbHufo8CHO/H6Pn/64z9XPJ8nOLZNen8GsFpC6D9uxyG4pC4qDX+3OlKpfvLVA05X8BwAA//+2wjv/AAAABklEQVQDAPYiop/SJ+AlAAAAAElFTkSuQmCC"
+      }
     ]
   },
-  "resources_and_search": {
-    "label": "资源导航与搜索",
-    "icon": "i-heroicons-magnifying-glass",
+  "galgame": {
+    "label": "Galgame",
+    "icon": "i-heroicons-heart",
     "items": [
-      { "name": "小纸条资源", "url": "https://ali.gitcafe.ink/", "description": "开放资源网站", "logo": "i-heroicons-paper-clip" },
-      { "name": "RuTracker", "url": "https://rutracker.org/", "description": "俄国顶级资源网", "logo": "i-heroicons-globe-europe-africa" },
-      { "name": "Pirate Bay", "url": "https://thepiratebay.org/", "description": "海盗湾种子", "logo": "i-heroicons-flag" },
-      { "name": "奈斯搜索", "url": "https://www.niceso.fun/", "description": "阿里网盘搜索", "logo": "i-heroicons-magnifying-glass" },
-      { "name": "我的小站", "url": "https://pan666.cn/", "description": "云盘资源共享", "logo": "i-heroicons-folder" },
-      { "name": "云盘资源网", "url": "https://www.yunpanziyuan.com/", "description": "百度网盘分享", "logo": "i-heroicons-circle-stack" },
-      { "name": "flysheep避难所", "url": "http://sj.ysepan.com/flysheep#/", "description": "资源避难所", "logo": "i-heroicons-lifebuoy" },
-      { "name": "量子ACG", "url": "https://lzacg.one/", "description": "ACG资源搜索", "logo": "i-heroicons-magnifying-glass-circle" },
-      { "name": "以图搜番 Yandex", "url": "https://yandex.com/images/search", "description": "Yandex搜番", "logo": "i-simple-icons-yandex" },
-      { "name": "以图搜番 SauceNAO", "url": "https://saucenao.com/", "description": "SauceNAO搜索", "logo": "i-heroicons-photo" },
-      { "name": "以图搜番 Trace", "url": "https://trace.moe/", "description": "Trace.moe 搜番", "logo": "i-heroicons-film" },
-      { "name": "搜图Bot酱", "url": "https://soutubot.moe/", "description": "综合搜索机器人", "logo": "i-heroicons-beaker" }
+      {
+        "name": "Kimochi Gaming",
+        "url": "https://kimochi.info/",
+        "description": "Eroge 资源站",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACMklEQVR4AXySsWsTYRjGv7trGmprRU0oQpeC0M2lg2AXt5bQWu0SulQH6+Aq+Ac4F5xCQEwcRLF1CCiEQOhgBoODmBRCBnGQQEFiUwwxwaRfzt9zNIVTNLy/77n3ve993u8u55q/fw4l4aGKayyXQaG69JQ/Dc5yxz/Bopcg7zjOE3QM/mtwkQ2f4BVo4gKagnO+719HF2EIoaFKRq4xbs4xLYl+RN+jt2AwMzODmIcsZ8CHUY+RgQrUzCHLIdN09Gk0Qm43NzfHSqWSTafTCc/zXlBT86gnMKAWxI/x8fGj7e1tL5t9ZmdnZ/1oNOqiZn193VtaWjpeXl6+yc5kLBbTu5nmOjBwmKaTLKyurs6BXywWnUQiYXgM0+v1TKvVMp1Ox6dRp1s0ExM6hQgM1CyzeWttZHJyyu7u7gTNkUjEFAoFk0ql/Fqt5uVyOf21le+NxgQNHQgMhkzyXNe9kM/nzf5+1ZbLZQ7lm263a+r1ukkmk8ONjQ233W6/pOkpqFl/a2CgFzI1HA73+v1+Y2VlJXpva8vLZDKutRZvxw4GA23eo/EuKL6x/ILAQHrE8gUeYPSmUq0e0PyVvMdR9IjHXF+BG6DQo0hPDZSo+JqLtXg8Po/eBjXrhHphcfI1UOiDkoYM2lS00W02m3rGA3KdSsY/ud6BDChkKg0ZqKAbctfkzxTuQwU0+S36AUKhjaHCSSITTX5H/hyy8AjOQyj+ZaBN+mh0/zHJHbgKDQjFbwAAAP//7czpSgAAAAZJREFUAwBKSbd2L2KJDgAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Hikarinagi 社区",
+        "url": "https://www.hikarinagi.org/",
+        "description": "ACGN 文化交流",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADRklEQVR4ARySO2wcVRSGv7kzs54d74NNZCdxnI3tBCeAlAgKBBFIUNAEJNIADTUUqUARVRpEExqQIB0yggohUiChECgoQEkokBVZKHiFnMRerx+76/Xuzu7O7DxvjiPNKeaee8/5z38+9fv6A+0Hmf7l75qubTR1pz/Stc193ez6ujuInkSrF+h629NrWx19f72tL321on+4u6k//OaeVqN6RpKOqbg2qcpxc6VDdxiQZimaDAwtAVGU0B+FTE4oZtyMpT+32d8foa7f2efLW+t88Vudj398yPe3m+y2+8RxgiEl4jjGD0KSJKU/8Ol6Pi/PF4jDkM/ffw61196TRw3urPVJxylllXDYsQgGY7mUEI4ijDhFaY1OM3Y6A144VeH543kwQX33wTkuHIl4cXGOsm3x+kKeasUl9sf40s1IEixRMgGkQ1/OAywj4/LFU6xvbKKqx6d450KV+oMaz1gNXq2aZJmBHsdYpkEss2ciH1Fg9HpM2+B5Q9YfbsiIBqrV8ZguT3L10iKXX5vD8kYgHQ++JIxxC474qBkHCScmbRaKjujOPYnF0wuoVOYi05w/cxL8IVmnQbC7hZW36bY9tOTCKMVrtjk2VSCXs2AUoCybZruLmqoUiMYhjfs1bt74ia1ff6Z19Qpuq46TjWltNhm2O5RiD7+5hVucYDbp4dcbWLkcKmeZHD12mH//ui1GPs2CznB0wuRwnzOLM5wsm5w+UUaLsm+/vs6NpSXu/nGL6accSo4tHjS2OTpd4pU33+DI2WepXvmEs59+Run8ObQYV6wUydsms5L76No13n73PV66+Baz1RlKQQ+l3AKtrT3mF6vE7iTaNCnNzWMpk8TzyASogy245SKOncO1bVwZWSUhHJ5ClSWhnTydYcxIzMo5EweeHiwBs1CACQdDiqZCNJKLkpj/BoodVZRzSzwQeZWSi5136NtlvFhjFfKofJ5UIEqCQFiIsCoVfOFhtRUyyBVIBPFI/lWWIZUUpmUw0AYruxGPtvuEUYRdnMR089iHDtFbW2P1/x16uRKJGD0QRlJZsSCeEQvrXdntQB4FymStn/FPrcXmyirReExneZnh8j0e7Q4JpWMg5npCapZpHgMAAP//oRk3xwAAAAZJREFUAwCHXMGiSXMW8wAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "GAL图书馆",
+        "url": "https://gallibrary.pw/index.html",
+        "description": "Galgame 存档与资料",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADBklEQVR4AWySb2hVdRjHP8+55153crvpnXdtpCKu2pxruesyXfmibAmChBREQwgjsxfNms5AgqDoD2liGBHRXgS96UXvehNYQlDJqGytxTbW0mTd3bG5uXudu957zu/4e85FUfDhPIff7/k93+/z1wnvIMaYyGqMCX3fD4MgCFWMMaExRo831eEWsVZURQTriZ5jsRiO42CMiTxF7FsYRm9qcPSnjqoigohgIyIWpMCRwT+YzU1HJCISEYlU/BTjWCrliIAaRcEatZDPc/LoW5w6fJR3X36db778inK5HBGpj4JFBCe0P5FKVI2o4L9+HeT4gf1MfP8dtTbHR5Jz/Nj/GSd7+5jJTqE+SqDqiK1HGdVYWMhzuv9zzn7Ux+K/E+zJ3MPezQkbNcBzPcYGfuGT3kNcGBmxNgfN3rkB/vv3Qd5+8QBfnPiUa/klnt1ah0uJC9OLVLsuD6QMzXXVZIdHONZzkPzCAlGfYvbx7Jkf+Lj3CLMT/7BhdZL7Gu5iamaJUQtOeQkmL80T+EXKhQJhzTKS6RSlYhEV58+BAU71vUk8LFK/wqNp1TLG/r/CaK7AfGGJK0HAvXd7nD43y38ll8d2PkGm81GW19TYCkKc2emcvVThS4Kp+av8NJ7n3MWrePE4WxtrmZxZ5Nvfsqxrb6JzVxe53GU6nnwKz/OikTqZbZ20bHmYNWvX4KZWkM2XcRNxhmwW/Wcm+frnLDSsY6cFZ6fn2LG3m/Ubmitg3ZWV6TS7X9hHSWK0b2xjfXMjc0XDkh+nHIvTsq2Dx7t2MDR+kd37X2LL9u3Y9Y4aKCJEU7i/tYVnel6x0S+zemWKTOYhgqoEjZkHabPn0fPn6erupnVTu22mj45cRCo90IuOcpMto/fD9yklk1S5wp6nd9my1jI8PsHzPT20dWzGL/s4sVi0tbpEIjYDPegGKkm6oZ5XP3iHsK6eoeEx4qtqOXLiGE2tG9F3N+7eBsaKIyKR8QZJdfVy3jj+Hs8dPsi+Q6+RrksT+H6UtgZTFRELrXzXAQAA//8Dyw3GAAAABklEQVQDANgsiSMs8xfsAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "在线玩Gal",
+        "url": "https://ipfs.io//ipfs/bafykbzacebduiodym2eruireydhkqlnufs5jyyzt3urmgbsl4zw2rcrcoaycu/",
+        "description": "Web端Gal在线试玩",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABtUlEQVR4AXySSy8DURiG30NJXCIuJVUV6lq3+AVWkpLY8BNYkIgFC/9CIjYSiWiiGztiwYaVCBvqTutS2riFiiai7cw043wnmaNl2kneOd/53vd7cnJmcpDlcS8t61yXWSIwBdAQl17f2gYuF9Vuz/KsGSgN4PZ4BynsdHW4mjq7YcnLF6La2doxSV6fx9ufCpIAMksrrKsUzrVYUjOiph55JWXlm5QVTf4SgJ7ZeZ3XsNrstGRVpd0h/N6FJTEjANSxVtXgbG8PL6F72pqKPL/vAHXNbdKXAMYYaptagCQDhTRVga7rQmoigcCxD4VFJWho75LDVEgAbUgFxcWwOeoROPTh9vxE6CFwBX6xIA9/nn8Aw7c7GxGLfiGpaqhr+T2y4RtrRgBjDBW2alTVOIys6ZoRYJo2aUqAEo+b2OatROxbGgKwMzXO6BNFnp+kkal4DYfwGLzF9tgIo4wAUEEQ//5Rd4jfeFJTqZUmTVVxd3GKsxXvpDFMAQmgTXBx5oRA4cD1RoiDNEWBwv8BGgzf+Ndo8G59bY6yhtIARnN3emKAQNGPCD7f38Rxt0aHhww/df0BAAD//1agGwoAAAAGSURBVAMA5s6l+ydYrfgAAAAASUVORK5CYII="
+      },
+      {
+        "name": "游戏下载",
+        "url": "https://kims3.xyz/",
+        "description": "Galgame/单机下载",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADfUlEQVR4AWRSXWgcVRQ+986dSTZxtyEkEokPojHgljTZnd20SRq6NptttUUE/ypqC9WHWsSHoPjQamsMahF/IQgigm0RwT8QE9tk04aUSJLNzm5gu5uQFCtCmlRWQ5LJzu893lmDCA7znXPvud/55sw9h8L/n3Is1H7gaDjSe6FN7Tmmdj78cnNzR+M2lWz7siuTxeq/QR6KxB8jiC3Glv0iq/f31B3r+thfX/u04HkvekagnFs2YoOqGqtT1e67gsFYAwfepaVGXs3nxzedov7B2vDcJ9aWng2FuutbW/c3BoNBReRwAaAi4Y5we+IUgnyaQ8XzFT7lfQmkneH2nsP37eq80zVsw1havckk+U0iyScpoycqqu/+SFUPPFgWUHzSUeT8lpYe7cukkwMO8nHbsT9FoIdrKv3DrFI+D9XKTUA+VtLtzwTndVO3+jnhTzU1dddT5FDpWvaiUOMCIEk0yGTlCSAkmZ6+HHVReo4BNFNKu5GROo8jfm0FETcUxZCoRMjPTGZHvINQJHGcUbpbVH02Mz3ybVtt5CFz9lcrPTN6DgmZrPZVvtvUtDvQEorFCXAjn0+tUE1LFpDAVTWaGAFExeHOZCE7sRjac/B0zblDQzUv7Ll2L8AOC9wp7uJEoHbHWUVWnrUM+UPxUUI9Y95eL4jeGGINBISct/gXCIKE0vYeOcrIuavLJvdCVH308Zf8Hfd/Kdr2CGGwKRG2NxyOP5CZujSw9srQofXPU11LAOsM6V7CaNwq0TPccS7UMOmkEEDKixvLfL3klQPa9OhFDu4ESPStcDTxTLZv9lJVR2NAjfa+gYR0Oo792vXrl//MZsfHAVDZJdpMuW7WWb//5U2iqBTAsXHBtq2LQn2fOpzIcIect9CZc133qrlp6q0N0Z3BaKyBIPFbluNSQ7e/oj7lHjXS+144Ej8lMbJfltkJcN0f14qbvRzxuARSm0RpwheoOhg4Es0pTOkTAt/Mz88U6cLC5EYmNTKgU/52Cc0v7NJGn8t5TtPGfrpx45fbc7PJjMtxyXX5oFPiXxuLq2dMwxnUtOSUqLLcBeGBzM+MFQvpa7dyuelVQJgMqfF3vDFvCfV0iFnZ98fK2ve53Nhqaui7/kLmym8iiQqgZ4QXKZ79B3ROu/IDEJL3VSmDFYw9yW2nf3k5vSWOCcRiYjDBu7NyG/8GAAD//2wceXUAAAAGSURBVAMAbtiRBIE28JQAAAAASUVORK5CYII="
+      }
     ]
   },
-  "utility_tools": {
-    "label": "常用实用工具",
+  "streaming_media": {
+    "label": "流媒体",
+    "icon": "i-heroicons-film",
+    "items": [
+      {
+        "name": "Bilibili",
+        "url": "https://www.bilibili.com/",
+        "description": "哔哩哔哩弹幕网",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACWklEQVR4AXxSPWtTURh+zrn3Nh9tjDWCFiN0cKjW1UFxMULFH2DWgh27CRa63bFZHMTFIdV2knRScBGjm5OooEkFQShZmorFNL35uh/H9zk1oIO93CfnzfNxz8s5r8b4efzew2ZzGdUPVy11p+bYlT/jmho99JIXaPhG4Gu46UtITz5COvcC1U/XsVWOMX5Yk6NGD72+ZCQrYZXA9xPocAe94Bnc1Gl46edYb5RQ/ZqzYE2OGj30+pLxVaLx4F1GWq/AyXyGUrcxDADHPQXPrcOJdy1sLRw1eujdbFaY1SjkK8gVVqTbIkziITFdhKMOkvhAuKOXteVEg3GFLNpMYboih6iWEBwMECcLiJ2ziPU5BKaISBeRxRkL1uSoRXrGeplR5q6GdrKy4xCz7bdYmutaLM8f2rUsK0F+zLGmNxwNoZxJ6QAGWil8n8mgJle3sV3H0+Zr8KqMUSBYP2nUQY0eepkB5AppABQCZ4TgigfXLQluwh2koZSxmM6k4HnkS9ZDLzMA2IEs0sXJnoud2RGi0RtEUR2tsE/Bork3sBw1euiV3alpu4Otsg58mYlMYwEvv9yCfyMCoAAB66xw1OjR4sXRo2VRcnUGExdkAORfWSZwSyClvOYPAPKEEJj4GMjZUFNa7rsHbyKFYLuEWmMKD7+dsNPH+m9wKqmRCy6X4ErGJIdavrSOqXwarvMKPbSRD3fhJm301d4/IEeNHnqZScyGxn5nBZ0fa3KMLSgdSofHgx6DFjo/17D/677GvWt9LM6vot+dQ6TO2wnk5P0X4qF38eIqs78BAAD//7mEaAEAAAAGSURBVAMATGRFInAQFbMAAAAASUVORK5CYII="
+      },
+      {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/",
+        "description": "全球视频平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACGklEQVR4AZyTP2gUURDGf/N2VxMQEWJpMFoHNHc2Ihb22ogWNlaKYBMLEQWDikIELUwjiFY2FpJKewsRG+9Om7SnwTKCiCTq/hm/2YtIDiuX/XZmvvlmeG/nvYQeBxMyId+KbuEEGOMJraEnqcDkuVAL1Vb0SiPAGE9oPWqTCuTMTjudk87Bc0533pm7Klx3OjdGmJMfXORCE9rZ6ajVCjonYKIPaRnyx5A9gGIR23Zb9uYmwl8c5UIT2omBmh9P2sZlsN3QlOA11JVQ4huKy5IUfC2/hXKhCc6mgCtq4PtV0Kg4ExQjW+fs25tTFAXNt4KUcjDBlXNpwtaqsRkFSZ1MNv4lkMJ+N+bPGK8eweFD0Hw1+CkkQRpCEzU+pUImghpBCb2tX2k3Rw7A66fw/CHM7BGtnZhtNlEIk9Gg9f73Ew1+/C3WRPW2ca7tvvkAR8/C6Yvw8bPoAvyPQCFsqEHzRWwj6FyIbEKww1l65hy7AG/fQdql3HahEaRRF+lVw5oa2BCysNq0BSmbVQw/VZQxxp0lTRPjE0y50ISNGh+qkHvqtgZJ6zOtO8shK7DJAmKMSVZxcEQuNMG5Vm73NZf+C1jv6iycUqPzspegvIb/WoBSJ7HFAsFRK1eFRtr1jtF/qaMcQ11ZNQbLRu+JsCT/rnDH6N8aYSB/IK6n3HtpQruyqh9iWkH7R0xBXNGxaxtXOfDv62zgvwEAAP//ssvFIgAAAAZJREFUAwCi3ferzqgRmQAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Hyperbeam",
+        "url": "https://hyperbeam.com/",
+        "description": "在线异地同步看片",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4AUxSS0gVURj+/jNz544PiCgMjWpRmUQI0SpxKyZi9EDRVFCSFlG0irymMmDmtVpEFIGmlD2UK7RpFdQ2ESkCKwpa1LKW5n15Z+bvO+aiYf45Z/7X93/fOQZ8gj71g0Bdbv97VezP9JDuytzSvvm0tgbQzfxMoN69y5q08U1HXR3u1vpYtA7Fv0JANDOhJ3buwLII7kcRCgGg4BMlMVdVgxluYeYCrVJFh5/AqRfjWi8sJFrD4m1NR8Bs0sO+MMSXnuvyFow9HtP9xqADwJn5G7rHJFw007GNa2wcdGfa1RFguDyJa0TeuZZF5Do4PD+p5wPSJFB7MgFxXPjioM3AQaPvQfIF2AE742NYYUHLnxw4AKwuJlZUeA4eHUriPUlcKpYQJxymKxqtBrVRDMQxYgj2OgZHwwiRCAz/wUdIUUshIsdBPX27mau2hrGDhuNWs0AUMD515TTgBI5NIpowiQuUjZ0yxq2xuVBUEUG1RSkjAtjdkMazbAEpNvzuJWDoj61xfMOCn9k8UrkiZqiZpWV7Vxp+8+U+wJEyXSnp7RyUNBs1UflfbCpEtvR+k0KzjXUNygCbPbU1rF03nG+daCoxvtIBXpLK/kB+kMJLz4XwdEwY43XviHyzMZujMVZJ027zhtzzRAQlG5gb1yMdgazbCMWq5EoGhADsHjb25KbWksKFjZB+wZoR4CObcEGNZ/BuIa2zCxP6gI7TxQ3IRgnUCq30TS9M6nTSYMk4OMAJ7el8NmEJU0wssCuPGxXk1l9RjotiUMnGfDeRvIoyDPByDXCq7aIIqVHoKB6anlFZZcoVcjK8YSaXR0i1C+QZMjnespCnU6CVEi7E8+CWIqQ6hmTJBFDTmZKpfA5NJLzMScD77/s+XN4JZ8vs3ncNjzbGh2wWJ7uH5I5ChQ2oPzfdI/Lm7FU0ELmlUMQobYb23Fq+iFnaGGK0fVrB8XPD8gqsEYj+BQAA///5z8UnAAAABklEQVQDAOk8R4v1NvpCAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "SoundCloud",
+        "url": "https://soundcloud.com/",
+        "description": "在线音频分享平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVR4AYyTO0tDQRSEP1btRNBCOytR0CIhpY1iY2EQWy2FIAhCBDGljVYp7G1FWwV/g79B0EK0EiysfJvEM2d3Q4rroxhm7pw5+76h06DTxW7SYkG1zNIFCHSgC5OuxUVQVr44IdA25ye0Uk1cBOsLfFmoqCgv18RCr5d0HODDBimCmuSLhU/LZU468GamQsJ70uLSKl6rX8LBA1Sb0BqInrKC9QYPvVqjYAbltRiqnYK8iVkYGoPFHVjaj96L5QXLB57TR8VmlLl5AmKzuywtzNdgoQ59I/jglgse0iDbNqMZyrknkb+lhcFhWD+ExgU+sfXFAXLQDOW8KJF96V6Mz8QV2BaDL8X2wtlR3Pv9TeS768i3V/bQ7NW07dJbdndPj9DcwlfpA6TTZG8DdPrVycjLU/gBr0xDKUC5Dyr9MDcK58eQ+gLpPv1BydQ9i4WsxULOigXzgjeacLYVdrlX53oBh1//Bdv2X/Xgf5+d0b9YN6GsWOjANwAAAP///0QCWgAAAAZJREFUAwBqZPQk4fTfnQAAAABJRU5ErkJggg=="
+      }
+    ]
+  },
+  "frontend_dev": {
+    "label": "前端开发",
+    "icon": "i-heroicons-code-bracket",
+    "items": [
+      {
+        "name": "Vue.js",
+        "url": "https://cn.vuejs.org/",
+        "description": "渐进式 JS 框架",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACWElEQVR4AWxSy0tUURj/vnPuY2qsFHEWQm1qYyBhUtGDoKJgzDatIkiEwH3UJqrxCBW1K6M/oEXgriBwVdBDjAr/goTcuMqgzJy5955H329mxEedub853/09Ps7jKto4jFH7g0kGw1i8kUYNDhqJB+9rUKemJybPvL43ffrN3VdH/c/Z8sWFz/EIzw2MXr1E7TE4Mno5vsJz0OCBFxlkVWCeVWlSFQyX+juPkKUDYanoj5bd414zth3g3/QoLOX90ODRaTIs/moz+7ZamypW6lNsg+eeOE8OdTqbZbl2caV33t8CIh/32DzLk8OdDh4SLzLINs/Aa665rGhwHqLkYBerShrblXqg5eImC1CrSilOBroYHniRwQ4VGVLvz935ar2dVKVE8Xbt02PdFORHuecgIKlLwkGDB15kkEUDLzr/ieoP7GpjQXmtkr5dPtrbQWRDCAK9r4Ni4aDBAy8y0sA3t0AThufOPvzlXahRxIqYKD0hq9DEHDGnx7uJhIMGD7zIkAwlIDLGC9S7L+G5W81mlI50tKfs4r6dIerbEaLdZQcOGjzwCjyyrQaoyBBJoyLwjeCcpYJ428lKAOT6GBw0eAheao31Boaaq5g5X/vkCvtMp7HmsvY4ONTgoJExrXNr5Wm9AQhjgkycWT3uGvkPZqUA1OCgSQN4pGw9mxvgvgzxxwu3F53z9znRCkANjkQjeORv7dnagMjIVgLxYvj+1Dbyb7aeL6BeuzbaMv5tAINc2fzQk0w+gesu+GuoSThIW/H/Bu1lzlTHX3wYMi/bodCeN01/AQAA//9Zv7WVAAAABklEQVQDAORURzAdK9IDAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Element Plus",
+        "url": "https://element-plus.org/zh-CN/",
+        "description": "Vue 3 UI 组件库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC8UlEQVR4AWyTW2hUVxSGv3VmMknaMSE2tlJarC001ra2VIpgTWYqKoivmgeVxPGKIiKCiChyAt7wRVRUvCUaL2B8UlQQwUxijOIFRfBC8ElUUPGWSSY4M+cs1zkz6ouLs9lrnb33Wv/6978dvmSqgqvFtcAPRmnfWFdjDQfULYUUN32MgnmWRhBRXPH/3KM1oR/G6kw4oN/VjqLVKWNFolU306GRzwksILBT4v27W39MHNK22mG8tvnkxJ36C674BZ8MHjfweeEV6GUW/ucEjeL95GpF8rCuj1fRJw5TtYCLMLG8hoeJw9qS70e6F8oO7z1NPYvlLIasmMCq17fq3NE/80girFOPTZkcv6ZT0vLmFWN8ny2Ow9rhI7ndcEjnXF4q1ylxFCaoz7CsooqjvsfF/lfUpefJxltLJDt+n5bdXS2DXc2yYWCAMQY/XjmCYw0HdQ3WEsZXmEBgVO4dd7tSkrq1Uh4HC6BiSfKYTdqvU+JxTqjyda6fIaN+tP2GDopXZQseSp4QlgqnjCZE/9ul3//frscra7io8JVfoD6f5aYo5WGCRiRE4IjREXiu+NjBZCcRzKKVLHdizM4PkEo3yTiNMjwW529LNmjL2C0YmNDDAISfBGG6K0AABeF89hk/ZN5yIdGm52LldFrJOGJsBBttBHVtAvXJYtXD/kMkcGWB9MS+YXb1CJ45Ecbb9U0zNNeshWEEdp9PHEikjD/G7dVvMSHhGljjI2C7oppt1vumziYZ6We4E4nxm50VGzAWA2SeKey4RHlaW8W9RLsuwhWTkPEhPMi+5K90Ly3JNt0areaF6eSd53CEwBpLCHoXy52+m0ww5e21nvYk2/V+/UGd0b1AzhjBdclJPHeirPFg69Bz/ulJSTo4D1KSsqo82S5Dnc2yYbCf3y3RbTt42qo+iVTSYZRdMp3UdTfL2qur5LW1aHUIreiYpsPIlHV9ufR1zZc5qky2V3c1l2N6OiUze+x/SDBqT138cD/wAQAA//9vLk4TAAAABklEQVQDAKHMPqfSd1ccAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Ant Design",
+        "url": "https://ant-design.antgroup.com/",
+        "description": "React 企业级 UI 库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADF0lEQVR4AVySTWwTVxDH/7P+lnGayrSqFPXUtIf2UjWVWtGkNKrSj5vTKFGl9MChot+kQKmUHNoNiPANloADFwQ3lEDCBSEgEgmGKID5FIgLBxSEAk5sb7y2k7V33zBvEwRitG/f7M78f2/evGfgdTPZ/9c0zskPsjz9/k11Y9VTfttPW4n5/srLT17xAWaCSapplJPREE4J6rNolT5pnq6PNR+139IxvGYvAVpMxFocjPJpWoW1Th47G+8tbX0zGFqTjAfHWo6UVoueZCUZ4smzDHghPs5J8ngMMWp1ZpCe6aD+zK+x/6uOuyP8bvQLoyl2QsQiI2bAhxjQ+5KVE4c46THGEKG22hOVnumkTd3dwwEdv9oVGnBsNViLByf4q/Z4dn1LSNQ+RACkEkOyZ8JpjqCt9hQHZn8KbNQJIyM9HqQnELv2bcC83U5D/F7z9Mf06Tnu7W3QOUZiL68ORTCKGFq9ZyqdW0+bJB927y8fqp9/P6v+6Buv/bahBVLpoGkaru1OBNxwu8vRk8V16xqNUA1nKYgv3YLaPf93YKMuW+8vZpX3U8H5jvLVr8mqHuH7PWSaphsePvanO2vtDjroiBfcM4ZSgKrLmo4hFQEjH3XzIKRBhUIEuXngWR7ILYQn5ub8OLSV7SrsCnixFjc8F99zBZcoji2N2zgNk5QpzLJV3sy2NeXZpaxbsv5qn7iodHX1lo6hIGDWy6WpcMX6xrBNmveW8IMq4DIi6GsYFAiAxgeZm8adybbR7PjnsesXJgFSwyM9MJYWU3WreMPJzaZo6nxO7gEb9g7KW3WklMUZCgvkP06zKGAyesBK+2+Y3va4yabx+FFr4W5xbeLhrTn9XwCkACYIpMTUqYrIIIC+RD/72xEONwzwHooaA6E61lDpcfEd3K2wBKQpctuhjeR7GSK96VQLuCyVbEhs4V3xf3hI/M3ePK4slPAjS39FQVosM6QCPemxAjlM+bKDlEAm5ar9K5n9ykLGZqRwkPRRMAA9ZMKrAP3tQwwIpFJHFy/iKleRLXvowj6SM31Rsc5dHs8BAAD//1LTYe8AAAAGSURBVAMAFex9rUOrPekAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Naive UI",
+        "url": "https://www.naiveui.com/zh-CN/dark",
+        "description": "Vue 3 风格组件库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVR4AVxTTUhVURD+5px737sq/uT/qgfualvQwhYGtjBcGf0QJkEL6WcTROUikhYltAssaBeGO9tkgijlImiTRIv2/YGFyOMh+X7uO2f6zlVLG86cOXdmvm/m3LnX4J8IFIJJ7PXhf7m0XJi+/K5v/cLiwSMhtpssfAhwxSQ8QCLsExlaQH5sqfAEkblqE+m01pwNGbsEembpQOvYm8Lc6FLhJgNKDWu7K0A784X+uMle8anW1KtCfSiUtSsXF3u6G6RlPmmORuLYPBqZ7b0V0FQdWIGlhashcVXvwlkgFEg4hw7U2IZrjR3R8WrJVdVjU1OZODXdOXN4ErmVE6gzUVScZ1uGSGF9os1fAjiPVrbmIGpVqaLFfHM02tfbNTc4hVYSqKXQZksIVXjuyK5Ap7rArsqGRMK9o9qmq0eJHc63d78+NokWm/ObQmF1pgJehThsExhjWJxR0Ku8hIianIlqW76Sy5v+9s6uhUrJHyI4Db0HpAFP2CGgzRYTQJo4aTQPXdV/yjWZJJDEeemvFf1dlk3ZnoRkYdFgTdhUQ+VwEr4H5Fp64o8u/T3kKvohTkziUmVl1cDOjQci4AMAGQGr0g/GeRPOuFp2rYs3ttbKxV+D9ap7xfnHCtShYCUPtuAVko03IwCFtNy3l1efjW75Dkprsn6aL3QOig4inap4ExurQAmUjMDzoxLSsjFW4E1hA7sOvEW0Oo504fr6OZPHUxOhOWmzua2NdN6Xi4+JF8MNYQrsToVi82JhtRL8KwNwtKSGe3n+521f0/vVknv2ue3ryOxwqchYGDxnCg9jRWA0rpXd1A/7/T2CCJQmKA3wfPDLPer46lGkmYOboaKu6Yu06jdcXR/MnPw2sfP5htB+Db960D3ePwAAAP//a5usSwAAAAZJREFUAwAKoiWABmhRwwAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Vuetify",
+        "url": "https://vuetifyjs.com/zh-Hans/",
+        "description": "Material 风格 Vue 框架",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+0lEQVR4AaRSPW8TQRB9s7kL8YfSRFRUFqKggNYVRYCKKqKnSBVBARaFMTiFK05AWogIEaYJCIT4AxQB5ILGaUCyhAQSBBE5DhgZccHhboeZdc6Y2Kk473vz9s3seG9vDf7zMU/fcf7Zew72YvEtB5XXHMy/5NxUoX704GIY7MXU3TBv0oSGbGJWUFIwo/ThO0qfOyhFFqe8VXz0wx+3KYpKBAxilruphjlzhDpMKMtiN1rbQLsLsAxB4c7GqxkQpvF7x+UTYkvlbxep487gTQ5VSdQFaP9Sdni0svRizTAvuJlszUUhBq+1WhO6Bq5BhciKXxBwNxYm/IwMrmyP02UQcuIAxpWqZNGXUHFreg0gz9nDVAPjsUjIn924v/TcEuGqzh183wVm+6Q1l6q5iVC/rWiYFIoHPDTkGBY8fzwQLysAPA8YE4DCaGes6LxdMrvRhZlDtM4xTjx8sHpcdnPOmUI8kRbWYW+1C6lPqhL800DNa3n6SmTmQfJTQ5HJ6GuteyZ9U6eDGGqgSba8ojEBZybBhOKXOQoTL4kjGzTvTeth9g6KpCSbrW2dT6mXrOtHyfb1oGCKrX5Wy9lJa8mIJrlXgyU9bXphmDeWT9blwlTh+9WtCxl3yYar8PcejEpyHJeZbHlULvH23YEWbC6fbm5eP9ZUvR/+AAAA//84eC0hAAAABklEQVQDAC0ywiF2cIjhAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Vant",
+        "url": "https://vant-ui.github.io/vant/",
+        "description": "移动端 Vue 组件库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADC0lEQVR4AUyTTWwVVRTH/+fe+ajtTHnwXl+nbdIiLvxYGDXGuBE1liYSVhJeTNyoaFyZaDQYY6LFjUF3Rt1gCiFseHxsSPmmBAIhQGHDihVfhdLyEsr7oH0zc+/hzPTRcJLzZt655/+7/zl3RuH5qFb1s79DZ3a9EU39f7Bn8t+oUyNUWefZKWSXZQAzgUGoVAyO/N0bnd/zK7vqLAFjrYV6G+Oc9TEqZPJE1i8phGwBIMrkPHBh9+bBQuGidtR2pKaXLDdQ7COMk4VE/4n0q/Jx/gzI+iUB5IDVp3a+Hp2bOKygDlCcvmbrrTZbmzIhwOKM7Zvk9dEZO0Wu3qkd7I1O2oOlKX5Z9MuAkeGRP4JSaZNpPIltnKSkta97AwfKTvcHP//grMFZYvqQW5zwIscqoE808M8KoMvzqC9cla4pFaFdV8PRc/bJ0k+zty5uNHXvP9PCb2y4RooccUW2xQYWufv8x8oQrbFOGIa6HEVLyvfH7q///E98sXuptplm50fpd/G1EYQ2MZSAlAjtigMgmzLDGKs0KCn0lOdQ3aLBIoHsyazai83b4iJmIK9bEa0AhEgkvYRsvIxFaxhbqtKL5ajsp6YfKNmbiaWcJ+QGECfSw7JLdgFbUsoLX6BBkBxd9nZkzP0V82Jtvqyt8Y1SnCllRzHRAUhFQDIYKAOQ73nOkXduTm17ZeZQce34za63Ju5uK5n4ePnBjB806nK8ZE0O7wDIEXdBtzybjDNNU6XUgFsIdoSN8Mdiv5p0/e4dNo4jJ26b4sN7PFCPVXcsCHQAaTP5Lq03J3XY4zmrQlcsno/rC6OzRwf/kpm+bZqPUrZpG67vULja82pzx0p3Zn4RPcQ6cPXVDdcvrxvdZJJkaxon314a/uC9KyNjp5EHtUDacXoKPrR7w1j76eWvhz+++s3aa5DIAWAmucf0Sxsmptd9lL9hUlMOxVZWQnK8hk3T7bXH8+9e+3JoX9Yr67lmGUAkrqWcfc5ZAgSSU0iSLgAn2OL96a1D47e+f3MB2SctRVnPNU8BAAD//zcsOu0AAAAGSURBVAMAiw1YUnPlLoMAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Varlet",
+        "url": "https://varlet.gitee.io/varlet-ui/",
+        "description": "Material UI Vue 3",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACYElEQVR4AaRSTWsTURR97yWdmUyaSluxTUEENy66rhsX+isCiRJL04gtGo0RbQtt1UJLxTQaMRXTaISSxiwEd67EbnWt4MKFqIkRk1LSfMxkMs93BhISdecwh3fvueeed7kzjPzn85fBQizmXovG38Y3U9XHT7dNADE41P68r8dgZW0jPKYOfhkePnxakmVFb2jFer3+TXE4HOBQg6bbpGOAwuiYO2qz21mlsr801C9JodmAu3+g3y8aqACRZKkPGmiRA5YBRhscGrprGIapadp45PLMisfjaSXT2Xvc5BkI2+CcU6FdRw84y8Bl2naEu71WO7h9dTbwCYVn29kJTswI4cSNvBtC24cecJaB6nCeNMVzdGR4FSTATaaK8yMg5m+Is+d1qs4JEJaBrFgL+4mxQQJTfs/uhUnfOEAofQWuDXGXLsmyA7llgEBRHaNP0hkOJJ/vGMl05rM4l3O5nI308SuM0nVKaIox5hFfp4wewDLQGlrPiGJRNk7IcXHe2q+ZZ4M+X3H6vHcuOOmdHlDYS0mRj+iaVu8Y1OrVd0j+DX6qm/9aLC2IKVi1Vn0P3pqgwlpeXdMNEG1QSrYoo5cI4y/a3P1E6oSqupaFtoke8JbBajhc2CuXb1BKxeSgCWHM9jro9z4K+n1vsIfow81FWZY/2O02JrQ30QOlZYBgcf5arFDIX4c7cvFDZR8ktr7HE6lC+UDXXa5Dd1qGYf7IFyLQQgN0DJAszUU28rW9Y6XSr12j2dRlRXGLhY2IhTXAodbdjJ4eAxAYbT4SOhOaCTgvTp1jAGJwqEHTjd8AAAD//6B4xYcAAAAGSURBVAMAXWsWMPHGHasAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Quasar",
+        "url": "https://quasar.dev/",
+        "description": "跨平台 Vue 框架",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADjElEQVR4AUSSfUzVVRjHv885vxtwuXBBrRBNUkvStGyFbM0ceOe8XWK6iNhkROGmUcHs4kZAI9BAIKKpA82BN9eLvLhhhCAGjFprjJLhH70IUREpNUxiaVe5v995Opecnp0/nvOc7/ez59nzCNw+TPPhyelYdHIeuvk0OsxBdASG0MUd+u1F+8z98xrc0urH/wAOJoi16EU4ovrpQv8hcaRgm6zKTJSVOxJkfX4qDfW8CxnepzWvAFp7CyJQxgKkE11cgakJn9ifHm+UuAI0Nmwp9wuK0/KUdeWSZXvLHTBKt63A5Hi9rujQPER7NYAUznAWLv9SLIu2WrZve0yGtKnHkiWneoQKi6AQtuQcQm3myDnLVrTFxMTFPA15DWWkBFo5hgJz5ajbzU3lXlTVHjBMdx7L7FKm2go8evxV+rXtIPtOHOePWtuEr6aEbHU7FfmvF2vISmGLRAYP9ix3L5FW9u5dcsnCKEZUDBl9zcQfvwkzEMAR3ye0+J6FlPlsKmXm7JTPrYtVPNC+2CBkCV3vZgz3cGRICP66OgOEOoCWSszV5yM27iFMz8xiX1kx3GnZWL3Rw11ne7EoOoqCHgvYJNi0Yox/r6K181PxXkMjJyRuoPBIO+52OtF5uhVfDZzFg8vjIeJW48cdNZRSfowbmhpJ+GeJr80uFeDgDBQFl2Cwvxfqph8JG56AxQoRkQ44wu2g0DCosWHIyAWQjyRj3iSCDujYkH9ajmiFxDQeSNpDyS95+eKFEVyZ+hnuLR4kuVIwOj4BpwjAGv6C1fZ0Uk+mM4dFMOzOy0HYl7zeJQRbbG1+Gr95W2gq5yCMjEKMsxOj359HWVkJamsqgb+nCTGLwMJgXp9MAL4WMNDMiZ7f8c+MoOZGS0yMsNSLZaYXMRxO5O7KRWFBHvtv+HWz2nvqM0tc+ol40/PTuv0PBbbSJELsFdaeY0K2VLOx16W4OovW1mVQd9Xr3PB+AxqONlH+G/vorpPliupfZtPbJGGPqMMz9IPeRL3KKXQU9606bFZ2G1i7USp1PbAm2qbiVyzDd+e/4aG+cwrwBzjuYWlWfm5g5TofUugdMJMGkP4E4KF8LH0gf27/mUkqabe13bhXrMoqosdzK+jUtQWCCpttgereP7BsTbHW5miHFZyf0MGd66HDkHDxU9tLuaCx39x7YvRmwQdjlrdpgJMy3kao3YVUOnDHAPwHAAD//zeCbNoAAAAGSURBVAMAjvOQEReXzQcAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Vuestic UI",
+        "url": "https://ui.vuestic.dev/",
+        "description": "Vue 3 管理界面框架",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACF0lEQVR4AXRRPWhUQRD+Zs0LVwQ7sVI4BAUVBY2NoCKilYgaSBATREkTC1EJHohtEhIIpAhCDtTAIYJJoXYnFpdooQkBNaKHispZaKFF9PID4b3Jt/v23l3gZZndnflm5puZXbPz3NTU7rZp3df+Sg9ceB0d6px5ig1W241ysaP3a3Qx9y26dPu7XrlTKRqj6IvjxV0iOH24a3avMxqOs9c+HQTkpKK+hLmm/OTYc0Kz3LGoGhjkYqPhFMkplPzKSnbj5b2+7dPGhYjrwpOTV6TjaNebrPPxONNT3qWq55kJBf3cEVwOazHg4+SRZxCZp0ohu2qAoKmXhpPQhLcA3aTOoqY6V+jPFq0Zd0BGEemnyxYhLoyVyye657eeujqzje5OAsStcBCofzfEHVj4XfhzUiCfre53RhFeF83cVJXAYmIPlQ+PBnckP+U7oGeiPVTRAWpeOIqgRyHdAupsA25HAxxX4VedgIC0BA85yg+qFDfGZqi2xNGkB75o5e1jOhNZRzCXb11l2lDihU0l4ioLP0IHJ9hp3Y/6G9TATNPiAwh++QeVGk6aypalaqFm1+51HViwNH58heAwXFUkK1IzlGeHCeAVxnqt4foXBmPM/5tAit//q833E7tBSSV4X9i/CDEjIIsdhS8xXBrPriBlmRTMQc0mHKWyIJA/y8AY9VTZkOBFvnWB1UdDYKR0d081NRvAGgAAAP//ckxJXAAAAAZJREFUAwBYw74VPKkD5wAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "OpenTiny",
+        "url": "https://opentiny.design/",
+        "description": "华为企业级 UI",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACj0lEQVR4AaRTS2hTURA9c99LjW1a28RNBcVWkCpCV9aiCHUr7myhCm4raJuAktRUwVArTfqjiqLGleiiGBfVhQjuRPCzUUFQFypUdCP5WDXN5+WNc2/SiOCuQyYz79wz582de5/CGu2vQIwVBtiCjpDcxJq6yWtYnVNdqwkwIUYuUlQxEZLrZ9TM5DWszmHSqyKgE+LWU9zdFuaEP8op8buBGC+2jfIg+tiWeN0/xveMn+FLwtsHEANMIiDFYQ5ZPrxWHkQE7gWjBy66RfpDaw8OWs04Lr3tlx52EyEo3KdtET6rRVRzmA/ZTZhHCQ8chc70R2zNxCWOozMXp1cWIcS/sZTOoiMdR0e+iC1uAQtWEyY2nOZ+5bEw6RbxKZ1B/48J+mzmAHIB4nUjvA0eHHBd3EGS8hBbmaMvmUkc5SLeWTYuKLKxy3VwXwhl9LEtHJjTkKTRiwEQyHFwWx6rP8MhdktYlC13KTAg+/JAW5/+Y0JKJjDEjcpGlB28/DlL72GOUjrbDtIscZulVgnhhRAPY4RbECMHIIHFPVjPLual/SFoi0mxjkkq4wT7yINBLuONKjmIQKHd78Pjlgj3Qt5sxMpYziTofC6BtzjGTaseiPIefwseqQZsZgdj6tcsPSkXcIQs7Gjw4pm/FbmAD1+9XrTLeQ8FzqEcaMf3jZuQlpihBjwX7t5KAcPZOXoo94BpeYYWVnLoqhQxzISkyxgvXKYlyYuSX5Ot3KzA4DekcLRUwM5sgq4CXL1IkAHlr9A3DYoPZ+M0rbebm6Jb2Yt0MjNDIcGD2WkKSpwyQ4V8GzIv6UCoMT0gJnN8+mPRLjDkDf9gGteucegaoCpgyMRIyYVd9f9h9TXhmnXgDwAAAP//TRbH+AAAAAZJREFUAwAOeTswF/aQFgAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Carbon",
+        "url": "https://carbon.now.sh/",
+        "description": "代码精美截图",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACNElEQVR4AaSSy2sTURSHv0wmkzYzbV20xVJ3YtGFUqnFRiwu3LgRF5K6SCu2vihoceX/oYgYilXrs1AUREEXFakKQYsFu5BaQfG5aOMDJ5Nkksx476ROMqQ7L3Nn7px7zsfvPBTA/Z8tASK+/olGQ7S1KrS3KTQ2hOodVi11gKgWYt/eBsZOGAwN6AwmdE6L88H9jTQZ9aAAQFUhmYjRsT7MtTsWV29nmbiZZXwySygUYiRpEGsMQgKAeG8UTSi4NW3R36dx8ojB6LDBzh6N6fsWy5ky/fHoqvjKxweEw7CjW+PRTJ4tXSobOlXOp/5w6YpJj7Dv7ouyvOKwfZsm1FSC5dsHrGtRkCl8/lqis0NlcalI1nL5+dthZjZP99YImzaqvHtfXBtg6Ar5gku5jOdQdvBX+pXNhXGTi5dN7j7I4dTc+Qq80siJ8MOCB1FDFOHt+dVcCVPlz7QcZO+lk+u6qKImlRuI92qcHWvmzGgTxw7rRCJVjA/4JXIVcSL/MJ++lNncFRF9V2hpVtizq4Gnz/PMvijQ3hoWKVSl+oBSCebf2N4QLS6V+PCxxKnjoo0jBgtvi7x8bXtFnF+wvTr9U+cDpOFZ2kaqSA7ESM/ZpEQLZRvTcwUSB2JitMNCSYHaFQAUiy7Xpyy+fS8zdCjGcFIX06dzdFBH3k3cMLFyVfkSFABIQ8F2efwkz7mU6Y3y5FRWDJTJvYc5zGwwWPrXAaRRbluAMj8cVjKONx/Sttb+CwAA//9xkHhUAAAABklEQVQDAGcA0BH7G0E5AAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "PlantUML",
+        "url": "https://www.plantuml.com/plantuml",
+        "description": "在线 UML 绘图",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnElEQVR4AZySbUhTURjHn927e5fvznIt3c2woaO4zTCvTdJMLHtTECmUsMTAIimiFykhTMG+VDQSDb8EQlBhRfZCDZpxF6GbZUxk9iYatGzaUrm+bde72z03HOq3eeDPef7Pec7vHM55MFjBsNvth2w2W4UoinjIgIHBnymv3388LZ27zuVymUIGYNLoi0gb84xzpAS5HTJA2gTKsAieStnkoyhqy4oACLKgJQD0KAsLi2OUW+5RDikIsLc+ONGWc6SLGxmJF8XRyL+2sx2/7OZGVORwfMrYnlrSj2bkF0sGWBub63przC2rZoWMl+W11h+Pz7+J8zkOaFWjtY72K/cP552zDn39bSjbc9HSZe9jlgCenmm48+36vauqqHAsqSALUvbn0mzdl8wJcicodEWwjV5TWr6Xi6qsLoFEnVbdUH2r2e8eRj8gc7CmUbyAV0CAn5oFN/sBhl+wMOfG4Vl1J0w420Hh7oCGKgIo3ALG9FSY8nKRPY3m3a4eJ40I2KCBgd6y0m4E8fZ/h7HeAZQHIUwL4z4CQJiVfUYOA6y1W47DSaVST2n3IYNhIgg+U96Q9+TRhzyIAkqGMQau+FVrQL2RgUBAhM+qY5PpxfWQoFsLWmr11KNOM5+dm6lGtdi1AqoWA0HUFBay4Rcqb0YfNP0pedJERsdpsDlMw48kXB5Lza6KUSgUkJ2/dfL5uxbYTBui0GYkrDTL0F5Bx96VXgEyj5e17bpRM0GQpIplWdAkm4hEuije6XSCx+OBS/WnYtYn6SItFgsIgnxZkL8xP23D2x0Jyi5hnscRlSAIMBqNILU9sqDX60GtVgc9wzCA43LpfwCqopOpvlhR8M7MzIgcxwkSREAzktSFgt/vD3qSJOV4enp6/h8AAAD//2hyNMcAAAAGSURBVAMAG7gQTiGRap4AAAAASUVORK5CYII="
+      },
+      {
+        "name": "ProcessOn",
+        "url": "https://www.processon.com/",
+        "description": "在线流程图绘制",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC7klEQVR4AUxTTYtcRRQ959br1z093T0EJZBIjBhEA4MGYcZFBF1oXAQiuBBRFF3oxogb42LU+AccREzcuFACZhf8YIREBMFRzCZ+IBMVFEzIB4RkJunpz9dddXJfN4G8V6eqXnHvuffcW8/wzqWd4b3uqWzpeqosbcR8aSNlDt/797oqSyVuP9uIpW043D9Z+lpA81NmtX2EEgAagUDfACA5BQACEwjyUyWG/KnS10zxCQzaMRgZkzgYCMMhkNzQ4OZyQKU/BDiJ+5fL4EYsfQ2QzGCDXuJshdp7b8DDd5FyhsFQmJiDcrsJiU8lG/2Z+pJg0U94cSHj34daWHlllqsHWzrzRpMLdwcUTuJp0h8ZxVhSQROpAGjFIPHJBzIee66Bb9cKzi9vau9HbVYzYOXlBra3iJGTxJg47EEZE5NnNxwmlllNZL79+Iz+X4947URPFzuJv58f44XjHWxtGp6ez/HYrgxfv9TAu/uqPPvWnE6/3uDCzkzjArKZOvnQNuMv5yIQwXrVkM0a/rqa0PaC7tkWsKUK7N+dY9ElHf6mx3u2GD4+UCM9GyMEn3yWZ4QpfLk1vAkYRcA7hPdP9vHFDwMc+7XA7q0BMzXCeq7r7BXpkR0uOkC9ImHcTbj/DkOrZjh9YYQRMAmSV4jQDEoey0+8Gyavgfjhjz3uujPDJ8/UuX3W9OCOgOPPN3C5HXHiTOFEnLaTVFnMzNsRPH04LK8Hffln1MGvOnh2T661Q03+/OacOoWw//MONruY3MxhhFL0oDT1R2J3VKqmzDUqrxJHV0e674M2DnzW1aNH2lw80tFvFyIyb+PKP1Hzyze4dlWylmH5p6EWj3YwjE4AT85JUq1uut4XV/+L+OOyVMnAak6Ub88j/nsNKiIQgrjRh86t+20AaYnhe9VawausimureWXz3GlB5yW8Vy6ByiuYFFKiXyao0pgLpa9FbL6q8eA7gSa4Tp+SwwckTQHg1hkB/01oaVycKn1vAgAA//9SwM9RAAAABklEQVQDAKK9hpuWgqKiAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "GitMind",
+        "url": "https://gitmind.cn/app/template",
+        "description": "思维导图工具",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADkUlEQVR4AVRTa2xURRQ+M3fu3e12u20harQ/TGkIQQy0RY2JwRRKtxiijZpua6NICVQSUguJiSmBZDXEB1p8EJtSf9RAu9su6Q+1EFtNKCZgSOhLCypaohG23YbSdre79zF3Zjw3ISSczNw795zv+86ZOXMp3DMFQADN6qtZy2Ph4yJe+6fdGxZ2b40UsfAM+j6zT29fj5AHxn0BZCs+sKNdZ/QaIt5RCpJCyU4h4SSK/0EIaWF+9hsfqD2K8fuDqihQBUCc/toeFjI+QGJfzrbWsabhrYE3fmoN7PqxjTWN7DR5phSk6mD5xvtOLBxPRjcHFPIoiYK0ercf1gt9u/mi9TZrHG4ubP75LxQiKgGaStRrCoEFuy7Pa43D72aTmde1jKwrMnybCICiVv+2Mt1gUX7X7DGaRk46sdqDTjy8hxBQEAFJImeFBwQ0hdUGW0b7rLHFsuv/2FfRBRQ424+lKSeXblenNhcCqI9AwpGrLaB7xGvRJwzeVX3ROrFlP4ki8hTo+d1js091j3EFQCilUKeEvBLcdyVlBYrrdEPzSQWPb9hS/SyglQZWv8hMeF7Ous34CeQt4N7bmwSzUSnVGiHVdc/BKG1xHDFNHblIlsUrno8u8APO3yuWStrPWI2V42ZjxSWcl53XKi9mG8q/8tqIZRAzG695jDHtOTfLj8BtcwjmnZ13dpc/ze64W7Nz1iGNiy81qtJAiI2ZV7iS6/Cg91JGyU3KSAlbcPeKWWvl3MiFIXcu94Ob5GsME3qcjHujeHCq25+YatNjE1V58fFt/v6JMAhyiRCYoW7GHRQpvoPddQ/y21YschaE/I9fUEt8vsBgGziILswoVRUwBXhn6kG7VV2ymmnwAm79Wwq3lr+WSRuclBPKJdNfeKDgd9MpTSO/2Fw4WdM+450FjIKEKqAEExSteugoboWJrNNF/cfGZkTSPObPSI1ZpJIAAgEfLn8PpHr50e9vLHiinp+Mgpt+deOb+QG9zRaivfj87/9615gGT0987NiiJxTMO2M1VHyaeqn0keDg9K/+xOR5AqBwyrlw2cO5SPmJgqDvG9vhnaHEVIcnTL0gLohvYHyP5fDDGiWtobyim2ZDxbnl+k0dS/Ubj2cj5UNFq0Izukb3mRY/5I9PHsAiweN6bfQW2BEgefHJD3MZ80muVCeKrtUobdWp1qYRKME/85P0krs+MDD5OcaQ60kA/A8AAP//+TbE6gAAAAZJREFUAwATar3JAl13CAAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "WRITE-BUG",
+        "url": "https://www.writebug.com/",
+        "description": "代码学习/协作",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADMElEQVR4AVxTzWsbVxCfmbcrS7K1trEMCSGHEnIs/Q9yLjH0ELAhPRkKTZ0PN0WIQg5mIeSWQwO9mxTcmnwcWkQJcU2gFLtgSEAubcFK7JA2imwsaVdaab/em866+YD84Me8N+/3m5ndfUvwBq5L4PK7/Zv8+5FFk2lf598ZXNeAiwaA0ZVCs3dYZdEVQ7YGiQCAgKJxRQv/423Xiz97l7/8JawAILtS6O4c6iy6YsjWR0apfqp1WPngxb+XIYMUfT0BI5FSwHr205Xnk1dq3sxCrX3j4np/+bPf/OW5zf0bn2w3Zz6s1yfZpLMIopVJQSATyEjS9duPx25prVvl6fI2W1jLj5aukbLnUWgVS9c0W7XJ0vHtQmJaz04euwXiyaY6mmB+eXei8mNwn5hmdBqf0Emsw34vDvv9JPJ6SXjoxXEv0drXJ3KRNXO6sX9/4snuBAho3t3NH0/GVwpp4Rx0hgaCNKVEyifGNglbaQRWOiSbA4XpoUnjZmJg6Jwb9cZWYHk3T6fsUsUZFM7qFwdJaViwR8OiRX1EDhjMAMAEBKaHoD2F0HMs7Dp2+qefQMc5O60mK5Rv8wVsBaboWQo70VXw00t2TxnyicEHYB+BPcXs5Yzp6kvJvr7KBwWln8WGm9YFynV0OddOeaQDpvBXss57sGZ1QZMYwUdmHxg8Am4rTTuwNqjTOr6yDTSlQVOVKd9TG05/TFntBCyLHo3G8QZ2tI2+IdVXhH2b2AMyHbDTyN4oovVI7yNQp6igPbJB3A0X2B8+doYlqxQ65bGoVFZDQgwx4AhfQQgtHlKAA4U0LJTVIC/MWdzlx3E7XqAv1k7udJ+/PGOi9HwU9KraD5aKbX17/B+95TxNnxb2dINe4lZyyLdTP10yPVPlEM6bHTzj1/I78iCM1fpHwec/ja9+dW/65tffT113tjqLuZZZhACqsa+qSTt35eD3weKT7+zrf6+qm3v3cLVVx0BeMZL8HQyCO7OsMrrAtNg47S/9emz7mwdTmz88cDYfPhz5o9GYyr4JgeiOKB6Q63J0E0Ewdxd1Rheyqy0JYJQOcs4ZZZ3l5Ex0kDHbAsB/AAAA//+sgfRCAAAABklEQVQDACL3xDJrkypEAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/zh-CN/",
+        "description": "Web 开发权威文档",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpUlEQVR4AVxSTU9TURA9c2/7Sj+gJFYJhI+wlaILSSAk2ggBGlwY8QeoC6NRGjcmLExITEjcEiX8BuIOSKQ1JnxZEFNTcV3qD0DaIO1r2j7ec+59tlFuMn13zsycnpk74nKky4lc6nQufhuYwpUpX5m6K2vcBfgQERzHAZH7lVLC4/E0fU5h38XU/d9coRxljQBAOD39jePjX6hUKiAi2LaNQqGIk5MT1Go1jTVqBBGhcYgI5+d1zMzcxdzcSwxGo5pEqXn46AESiefo6+tFtVplEi0eWoEiICIO1HClowMLC68xm3iGiclxlMpFRKMDmJ9/hSdPH+Pa9UGYZgVSkm7bpWEGIQTK5RLGxm4jlztCKvkR0iM5AkzfiWMvvY9M5hsXSv536GIiQpMAfGwe5NTUBPb3v2jpQkhGCbFYDFvbW7pYkCpxwCPnGFwCItLD6ersxNDQDWwkkwgE/aiYJnq6+9Hf34dU6hOCwQBsx+ZC0ir44hIILd/E6OiIJspkMggFQzg7KyEen8RRLo98PoeWFj9s21F1TVN6mI0V1KuYno7j4OArLKsKj9cDISXGx8ewubnNPVuQQnAuy2cO7laTCPVbr9fRHm7H8MgwNj5sKAhm2URvTzcGoleRTKa40MvEllbAHYPfQOcJKSVKpTJuxW4iEolgdzfNAS8U6cz9eyjyAh0e/oDP8MPv98PwGn9JmIJl6D3wstxioYDE7Au9ca2tbVhZeY+ld8u8E2+YzOL+fVhaWkY2+x2BQIAXzgYRQdi8poo5mz3E6uo6DMOAz2dgZ+czFhffIp3e08VqG9fW1pE/+qn9/1ZZOYo1HA7zsNSEwE8W1C2FQkEXA9DWFoavxad9ImIE7jMSuf0oNUSkpSlSy2oMzcVUXOFEbj4R4Q8AAAD//8r/13sAAAAGSURBVAMAa/Q9ShRpIFAAAAAASUVORK5CYII="
+      },
+      {
+        "name": "npm",
+        "url": "https://www.npmjs.com/",
+        "description": "JS 包管理器",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABl0lEQVR4AYxSS05CQRCsfg9WxoUaj8AVvIN8Eo7ABTgOa8Id+AS4ARwBXRgWJmIwhBASgTdWNTzkF4W8/kxX1dDTM9EQCAOa4jCOw1VGfqqJwJ/RAm2z2eAaE1caSuAbJMyyj4+4LxRw9/zsdp/PY2+7mjBxxJWGMm4QRdDi5ukJuWYTuXZ7a60WcqmlNUVyxJUG1EYwg3GrkCQIIcBjmnNNyL9TjtagNsIByZkHLlku8Vat4qVSwWe9Tr7LfhnUegeqmJkTzBgJmBnCaoWPWg3vjQZmvd4RLg0LnIFnJ45iVcwMmYcHZOIY8e0tm9X8ibBO71/k/i/Hq+XdApyLmZ0x/9/gTHJc2A/Rb4BnvxQlOa2rxjNxBhfacnDnzpveAQrUegcajfFRmBk8cmhmzLNZBMYjnGtxVNt2wOFoEIvBAKNiEaN8fmvMX8tlJPM5Mvy3WbeLUamEEZ/7YjiENBqsR7nVZIIpn+5XpwOZ5/0+wnrt5O/xGNNmE1M+Z3Gl4b6OQe0YVzFbPzIdi3XH2XqKiasaIfwAAAD//8hNdTIAAAAGSURBVAMA+C/66IYjN4YAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Iconfont",
+        "url": "https://www.iconfont.cn/",
+        "description": "阿里巴巴图标库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADfElEQVR4AWySf0zUZRzHP5/n+71fHAd4u7Mr+wEng2J1c7q0JUQ/BhnVFcUFSaHNvLZrdYo2WVNHuVIXKQINoYYSNYTLPzwRAiJpuSQVxeH0D2Wigj8mpx6n3N33x/P4fHHOOX32vPc8n+/3/X7t+UXg4Q3Blmkxrfqq3fjFiu3cInAh1wP9YQDtGzMVZG+Kf1nmkT8t+sxUuHg1TzLweDQQn97rmvleBaAZaGK+u0T5yO2jTzpAdWWCWpS3wTLn1RchEFC5+b7M3QLB69UBY9SYnJmmFLz8k5y3kIIkqaAoqvR+vk5+O/sXG4CFe9i0FwCBNw2gTRg0NsqAqGP+4h0xb7EVVJVyM+EAAga9Gv988TM3ff6t3HPHC8B4HjQAS/UsdSStKF9nq/j6L9Fuy8ULY5T/0bYDQPggy0QcG6fEYV9mWrtud4p/5Uqn15s8DTC87kkftZoPTPmXfyv5K3ISM95S7btOoTA4DCDqEUSC+uB+tHZNYELuEorla94Lf1y05Wwk1mEtLU0izufS1zeUfjj7iUBXDAbPqWZIEx6xe3DGnhEEJjE4fYbZDyhsZuoHmKg8irT3iPLSwPH4j58syaYmy3JSMG/uC+84n6K0ZoveuHU1mfq3leGYwOyhdAahS6i7EEJ72IXxMxMQ624A48ZVAvy6U/C99oqaMeuxdHIxdG0yYYaVZWRlsVBfN5h7N2OaeR9G46f58o0AyUmgsCHI0u8B2L0JIkOD4Jo/n0X4uYRuTCok8Hd/e9/IqNATDOKO5mbY39zOqktc7PrcmwApM0Ge/Tig6wrs8hWy4M5WbA8EWE1tra6uswtHho4FiXL0YM3S6trWis5ukrkwR/3v+g0oPDiA4WI3A8rfTUoyG3bnM/feTryakMhsrjm0rLEJvmn7wwf/9PUSGB2NhZu2l23u2De8YOS4WJIgKUPv5jBIsSBQykCWAJyzoOeN59mbQljKHT4ktvT0tUDbb/VQWUkIv0tNiuPWrWX68asR4dmndWBOQhCIAjqRTgtRRZsDRWeqwXh2/MS8UKQc+AvhAKaFqVZcbvv9sLGqKU+/tvqo+Gc/kImwiDFZwKgkkPNXRDHQoejXVHXj+ppFg/17J3iGadIAfAQNgpMnB/6PbvxugbGq2WOorNtm+L7hZ8OGeq66HwzbWvKn6msXRaNj4zyAXBoAbgMAAP//uwk+OwAAAAZJREFUAwAu+23xVff4MgAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "ECharts",
+        "url": "https://echarts.apache.org/zh/index.html",
+        "description": "可视化图表库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADS0lEQVR4ATRSW2gcZRT+zvlndnazyZoYSmItKKRoH0xcUAxeaCRiwJCYiHfRPnhrvCCIqH1QGx8KlVpFU7FGBbFeiMRIzEOMKdQiCtqa9kGDxGKLJA2atknTbHZn5p//eCahB86FM+f7zuUfxrrQugNGWrrbh4vdX3xd7J4burYr+arYZTWeHSl2Hxhp7m67WKd+DXORQD7b3FoYLd45yIYmfM97UIzZyJ4hMsyOcLm6h8mjydFiz749DS15JRBVsFpKwdU1DWMZ4z0RMahUWrHls+dc5ewSwsVlJIlzIZwNnTOBZ55puuyKbz5t6Mj3A8wESFV1w5tZ4229kMRhdL5EdVuaTPHFx+mGXc9j8wNdMBlDSTk0bBjn4zCs8vzb842Z3UrgeKi5cysIj15w1sYrq/6Wx+6mjqEBXPP0I3TVQz3UuusFuu3AW8hvakBSrhCx8ZdtZNVvH27pbNWVTZ9Sm2ilhMabi3TdjqeIPQ9JFMMlibjYik6UEgE6rg68Zg3BB/GTTIw2C5cW8pW9HVCRxMbEmfQ7Exkm55xsuL6FLm2+GrZcAXSXWHNEdCtboDFxDsb3KKi7BKmwMQIRbaYuTYgQiBDU1iCphMIM0tnIitvIaRUxQUdF5cxiWq5YBa9FpDhVRYhNlE2Q21APG8YgZiEiYQOe1xDQrrOTP6YwEiekgUCtJA5aiH8mDtPSzCnc8t5OMtlAEEbw2cyxTvCDAShTk3dzh37BybGDYnwP4hwpWKC7OptADyuseRdFuGnvDhfkcmRje4iT2O4XiIWKl83KkVffxl9ffivaVdI/UY9J6rGp/UY03XcHDvftlFOjB8kUqqLymYVBvv+P8Z/E4YOC0pOhGEJy5LV3MHHvszi+90P585Nhmdr9vozf1Ydjb3yUEsdL3/1sooXFd7fN/3qU+wFema+8vJrEkwWTCYQZfqHGnps+Ib/v+xxHXx/A9OCQLJ+ctZlCNWqDXBAH/li2gldSbErgtv37fWnhv9O9lSQZyBDZAPCDqhxn62spW19HVfV1XJ3L+xlBFDq75/jUzD2dJ8ZDJXCMdaHtp39b7T02+pwI2vV9P2Ynf+vTVfSQZU5kxrlkvzjX1jM1+lI/piOFkSr+BwAA//9npt/pAAAABklEQVQDAGVYiM5Xs+6jAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "JetBrains 激活",
+        "url": "https://jetbrains.asiones.com/",
+        "description": "IDE 激活服务",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACvUlEQVR4AWxSW0iUQRT+Zn7T1coLgVqaeCmDbiCKgqDIVmhWD93ARCpIJehGvUgPkfSSUZD0kKb2ECGU9GBBYSWiEl0wE0koJc0oL7vkqqG77u2fzpl/BYNgzpwz3/m+w5w5I+11PYW7bvRe232zp9xe112lnK+z1FRHgznZMWxOdXhDNsyYmniRxRzmssZe11MoIdRTBXXFNNG6d7N5TwWD/Qo4DYFMAOEhy2RMSdnPHOayhrVUQEwSSa9t8UFBARu5/y4R4lhJISYlFNJWr1Ko2OFHyaYgfv4YxdBgn0VYsc/PufDuTSeKM/yayxrWyoKU4MP2siWczApoekN9Le7evgrXjFOfl7e21kY8aLqFgY9vNZc1rJW1RT5TrLi0x+OGSU16l5aWtdp73Iv/eNawVtLj2HUmtB07cRb7D1ZgfVJKCLHcgUPHUWjfh+y8QgugXSnYJflU6gX4tgB8+YPc3CJdwPQF8LnmEd4fvQNX3xjSMragvOIMbKM+4Lt1G5pUKhcAPs1CPJ+EeDUNdDmoJuD6MApn5xAWx5wYv9+tMbychuh0QDybAIbmNcZTGIfDow96c1i9r8lMRFh0pIbictK1x7SV0weLNy7pMbqwM5a+jETA74U7nFohhi0hBvntF5HXdh5plUWEAO7IRQR8XsAmge0x1AG6JAyjCclRSlWlwzi3FbP9X/Hr0mPMtQ8gMD4DY8GrY8ZmB4c1R53KABJsisbVJEX8ngEhRAvCqGqEgcTLpTA9fvxu7MZEzRNtHDPGOdgMIEyAJtAikkoHpL6bf+0F8r1kMGKjkFxfhnWVBYjMStHGMWOcYw5ZrwxGswa6gNiY7xGB6BKq2kxJJSPCEHckB0nXD2vjmDHO0W2bmcsaOlsFOGDA2FBSLUwzmz5mI2EjZDR0+OifjDAmDCNbJBZXM5dyev0FAAD//+VG/S8AAAAGSURBVAMAOXosUUd6Ow8AAAAASUVORK5CYII="
+      },
+      {
+        "name": "OpenAI API",
+        "url": "https://platform.openai.com/docs/api-reference",
+        "description": "API 文档",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACAUlEQVR4AWyTSUhWURiGj0WDgTRAi6AgiigiCoIG2lSbojkiqk1lBaEL0YW4cMCFs7gQQXBAcKEgqKgogi504QAOCxHRhaAuFFwIioiKOD3Pj79ulPvc9zvn3v8953z39UQ4+os5KK+h9bAIqzAML+DYK2pwkqd7cB564CJ8ArUT7YUOaID/cHhp4Mo7zJyFCpiGtzAE8fANuqEJNP+L9oOLxWjgyr+YmIUfkA23YRCSIQ1egzuoQp/CKciBPQ1eUlRDAYzBMnyGCbgPc1AHI9AF1+E9fIA4DVyxhEEZ6HwaXYMpKIJxaIMbMA8aZaLbEKuBD1oZ2EgkrHOzTkBH4SN8hX8HPEc9xgV0TYMtCrdlI2OpNdxE86ARPHsLmgS1EAdPYBKKNXAyg4Fb/47+hkTQBIlcZ7hXQg00g1c+t3gNPP9VBgZmA9WgHP0C78Dtu4C7m2HsOx7RZm9ocIlJB4ZFXEVcqZ1nD8HP5xHNSjQ3b5gf18COn2OQC57N3ZgJm3ePuXS4A76jiU12lzY1XQPz7sp+a39oaFz1Jz+6CdE82NArjO9CKpjSIQ2oQ0oIwe4PoH/ARGpaSF0Kj8GIZ6F+8geosY5EmToscXP7Gph9k/iMOTPvJzSR7vARc8Z7F7WRkShTBxuzQmHubc4ral++jBrvPvQW+E+2gLpz+xH2AQAA//+/OXcsAAAABklEQVQDAOG+c9J7rgfkAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Live2D Widget",
+        "url": "https://github.com/stevenjoezhang/live2d-widget",
+        "description": "网页看板娘插件",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVR4AWSSPUiVURiAz3e9/VgRQdDQ5lKJQzRZULQ4NLRFS0OD0RBFUIODswiiTv6h6OAkOii4uIii4qCgOAk6+AcK4ib+e72fz3P8rghezvO9/+e895w3F/ilaZog4kJ/B32wBkdwDOq9yOqYdOMTN0iShFh6h08rsQmohQq4D/dA/QdykpwmiHXYIacBJg3j+A8WIeKyM4kGn3KogyFqPDCX4/Qijib4DOPwDabgEDZhA9RnkMbGkF+gwVo7eIvxCy5gFecAsgZewiuohBdQk8VW0M39Qxdv/C8/cdyFMijgVF6QvA0nGTvEzrNYAd2cB8haN/iAksIxdFDg7t7q9X+nMOpZrJO8A7DmvRs8xzBhD7kOgcQimKCpnd6wt3DaESJUuIHFJj/EU146Df3WymK+0mOC1pW5gTeNHZ7yqU6uZiKfJeMKQR3yxnB46c+QHrrpBj4PdvCpnLZKEgtggv7SX/CCq3C0gcsOpt2gG0ujD7kAy5w2Aq/R40Kvgn6MOfBZnZ0z9B4HaRGlC/5CI7TAI9iH0jpB+Q7ek6+VR2+nyyUHyS7+4XD6BpHzUE8wvgi6a5vPLrgc51GUerq6GmWST3F8glkYgnmCT5Cl5aB5cQ6Rc/DVGih6erxlDKfONj9S1Qy2jYjLA/Q5zr/JPeMA7y1cAgAA//9ruAYMAAAABklEQVQDAO6a4qoqDbvbAAAAAElFTkSuQmCC"
+      }
+    ]
+  },
+  "community": {
+    "label": "社区与博文",
+    "icon": "i-heroicons-users",
+    "items": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "description": "代码托管与社交平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVR4AWSSPUiVURiAz3e9/VgRQdDQ5lKJQzRZULQ4NLRFS0OD0RBFUIODswiiTv6h6OAkOii4uIii4qCgOAk6+AcK4ib+e72fz3P8rghezvO9/+e895w3F/ilaZog4kJ/B32wBkdwDOq9yOqYdOMTN0iShFh6h08rsQmohQq4D/dA/QdykpwmiHXYIacBJg3j+A8WIeKyM4kGn3KogyFqPDCX4/Qijib4DOPwDabgEDZhA9RnkMbGkF+gwVo7eIvxCy5gFecAsgZewiuohBdQk8VW0M39Qxdv/C8/cdyFMijgVF6QvA0nGTvEzrNYAd2cB8haN/iAksIxdFDg7t7q9X+nMOpZrJO8A7DmvRs8xzBhD7kOgcQimKCpnd6wt3DaESJUuIHFJj/EU146Df3WymK+0mOC1pW5gTeNHZ7yqU6uZiKfJeMKQR3yxnB46c+QHrrpBj4PdvCpnLZKEgtggv7SX/CCq3C0gcsOpt2gG0ujD7kAy5w2Aq/R40Kvgn6MOfBZnZ0z9B4HaRGlC/5CI7TAI9iH0jpB+Q7ek6+VR2+nyyUHyS7+4XD6BpHzUE8wvgi6a5vPLrgc51GUerq6GmWST3F8glkYgnmCT5Cl5aB5cQ6Rc/DVGih6erxlDKfONj9S1Qy2jYjLA/Q5zr/JPeMA7y1cAgAA//9ruAYMAAAABklEQVQDAO6a4qoqDbvbAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "GitHub Trends",
+        "url": "https://refft.com/trending-2025-10-07-daily.html",
+        "description": "每日热门项目",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADnElEQVR4AUySa2xURRTHz5l779590m5hW5XGKtEGaEugKMiWFIukRBBqaaQlvjDYpBgFtQZjiCkmwgclWhPbCKIQSgq0sD7okjQqXaVuNBVXSbsk8pA0m7R2pe26j7uPe+c4d/kAJzOZ82HOb/7/f4bBnUKzrRijosovgo2L9x77pKL9s7NVb33ue7Sjv+uJI+GWzd9QiXlH7PxdccLdAFp09nJt8uB7/TPHOs/MnDuxa3qgZ8utgeONk99++cr4qYO9k4OHvmo6PrVBDJLYeYgJyDeLDg+1xI9+6ksF/GszN8Koz0a5kdYMI53kuViUx6+HYCLQu+rmua7TW7sjbQIgIIQmgJaev1YT//pkl3YpOJfIyAE3AAwdmSwzJivIdB0lg4DznD4Z8juvB4582Hwq+SQAEjM9x3y9HZkroSK0WHRKxmXX8lp0VXmBchnEXBbZIytAWlmLLJmWQJL1qdELzpvDve/UD1IxU0avPJYN/7mGcmmOqQSzr67H+W98QLJ4GRkCAoh3JHS8+zpJTeuRp9JSTovTdHh4Ff8nspqlRy/VGYmYBTJpUGvq0LOrgyY+2oP/hX4E2eYQVggspTYh/wbeu2UHuavWgJHRKD07Jc9c+7WWSZr2AOSyIg2JEBlZNUKZI5DMABIpsDavB6VtEyh/xMAdKUACg4iQRMCU02KljAFKjAgkxxzI/BKA6OEDUNn6MZSUrQT5aS9YWzcCG4lCsaMG/j75PkRD34FkdYicdeBCF1PthRFJSCWuozLHjbHff6Cr3e1gaV4H9t3PQOqQDzI95yFyYj/8OzJIkr0AuZ5FVK3AVWWcFS5YOmz1lJqiRF7Cr7MQp8IBmh4PQubo95DuG4LE1RDM/nYhP0zcEMsA5p5nKAurAkxyPXSxqHzFiOIoEMbFB+BEppJMX5C0Hj+AzQpoUQlVIdsc1nXOrA5mLV/yk76sOsgGm3CizPvs/uLKx5PCmEyGrnPigqIAqRYRmOgNDkQGcK7rpBuydfGyW46Gln1jFTjNAAD7/rL7H1z78p57qjcmUFEVkTDybAa4niNzRpzA0xoySVVsy71RV9OLOy8/teAiAKAJINiH/Ezb/d1lG15tua/uuSFXebWmuD0oqQ7GbA4mFc5DtXxJwrlu80BB65uN4Ze8/XC7yATcbgHQt93jd9a3bnt4Z+fW+dvaD3gadvTN3bT9tOf53R0lb3c26K/tfWGsYeHPACACh3z9DwAA//9roriiAAAABklEQVQDAA4RuD/RI9yXAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "LINUX DO",
+        "url": "https://linux.do/",
+        "description": "极客技术社区",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADZUlEQVR4ASyRz08bRxTH35uZnbXBpNAfQvRQqQGiFPUQek4VRUI9tGqrtAIT1UZqQxwVYpPe4BK7IPUQDmmQgonJxbmkqmiSPyAqLcolUi3SJFRNHdQEwg8L29jGLcY7Oy+zVnb3s+/NvO/3jWaGgXmICE1ofCb/eDnz4Nrly1f+ScQnXQ8vz2SWr5naJw2R+Zm84Wk0QESqUOWN1ezq1Vh07PZX4VBkamqqe3p6Gi9NX8LJye+7w6FwJBa7cCu7unrV03oe0wdYIpFgVaL2lT/+/uns2eGR6/PXRalUUq2trbrj7Q7o6OiAtrbXdblSUfPz8yIyPDzy2GipSu2el8V7ejCztHTx3Ndn+n79bfFA+iSWy2Wey+Vwc3MTt7e3MJfbxt3dIvf5fLi4uHhw7pszfb9nli7G43Fg0N//4cbGRuRYb6+KRqPy9OlBGBoKocGLFA6HaGgoDEPhEAaD/RAdi8leo93a3IqAghOsWCyGBwcHRfpGms/MzGAymcTZ2VkwNPJXY0zOJWFubg5nfryC6XSaB4MDolQphZgQ4ni1WqVioeih8/kCFAz5fB48dnZ2IF/Igxc9zIK6UCjQ3t4eMYHHmUvQpbSLzGLIBENpCeKWAMtDWCYauEFIkJZNnAsUgiNpMvAuphgDlyvQrAbAHNCvXtfckYtkRgAugqkjECIYF6CZ1cCByA/MAvepTX4SThNxVxJpNBoEE43LdAECItOOzCJUR6/skE0kBCmr9pRJx77XbK7OZ2ttm20024oO2Q4dsuoQkB770CI9DihgatLnoM9f1QGfRkvpe6ypxZcqv7ij9h+dB/3wAjh/TkD94QQ6KxOkHo+TWvmO3L/GqL4SQ/VoDKzlGOgHI1B7vqBeaxYphhLv24KnAk5eONmbdfvFTZDrN0ispYGvpVE8+xn5s1/Afr5Acu0W1P9dqDepXSGknULZdJ8RJdi6/4tx6vz2bsvRE7bL/iMhwZWWQNunQdoIkvtRcKkJHGo+fNLWh0fvrvuD456XISb00bdw7/aTz09B52hSdYZVre09UeHN8L9qolo9QPsYALftfa7eCSl49/zsnSdfnvI8npc1zpkIB05iFd/8dIQfm/yI9UylVHc0u981QAdHguQciWV1TyLl/+CHPmz/bNTTkvF43pcAAAD//4zs7mUAAAAGSURBVAMAMeHLMrYMETgAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Notion",
+        "url": "https://www.notion.so/",
+        "description": "笔记与协作社区",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADcklEQVR4ARSTS0ycVRTHf997Ht/AzAdDpzA8WkIfYuMzNdFofcbERlPjwoWJXWrSGONC47oLgwkmxqYb3RkxdCPEElubIrUVaGyrNAU6TKHADMNrBphhZjrDPL7rdfHPvefk5tzz/5//Ud/quyxOfTMqTvWPiZNfXxXvf3tNfHj+hnjzqyvixNnL4okvh0THZ4PiJXl/r/8Pcfr8dfHBd2Oi55MBoZzsE6qhafhMjbBtolMntZNnp1BGVwSGKjjUEuJ4Z5je/X46mk1aAgo9YS9Pd7fhtHehjk8v8HcsSSyVwTQMmv0WAY+KYaocaPLT5eg80+6jO2zJ2KKr2UckaHJsv4+DAQvVY5nk92rEN7IsZApMJ7eYiG8QW8tiWy5tjsm+gCk71HH8lswZBOQZlYV7PVlUwzQJ2LK9cJDa3h4LyTTJzV2yuRI/TSxzbmyR32e3uLX8iOR2BUdSDXoMIqFG3n37BOqG5Ly5nWe7WCVbcfF5NGzbgysLd0WaWc+WufDnQ36YTPLL3R3mUmVwwW+q+HUF1VetYaGQXs+Qnl8AGaNq1FyV3UqNI1GH48eiHI40YHs15reKLEqUq67USkd91Vvguco6xfgUpdi/FKfGKSzOUy3vkSv+jxpPtdqceb6Vj1+I8PqhBo5GAlILHeouans1x9nODPvyabAD6KaBspMhH4+zfm+a0nISkXuEt16iydgjHLTp8EAlvcHI0EXU1USaz68VqPgbMBSXuqZzwCzxrJmjp8lDKpNl9Gac4soaicQuC1tVHlZM+s8NML24hjpVNYmhSQ/oWKqKLrFaN0i4PsquhdPgJ+r4GJjI8PPoHN//+BufftHHxb+mGLl+B/WwWqXD0misK7Toctamjl8zUIRLWfqj1WPzUW+IF0Mmq9Nz3Px1iNjtf5APqOby0kjSvi2S3xuOweNeiyP+AC+3BjndGeTMwQbeCSs8mM3SUhG8cvQxnGgnih1C8QRQvD7UBxo82SgIWXUK0sqvdTcS9npZNR3WFR1N7kQg5KfseAm32eimgqhXEPlNkJ+rqcYOho0oA0WdJc1kcldjyYWZUpU5fEh9mfF4mfU53POGcEUNCtv4HQuzKYJqBkNsyFymWie1dJ9Lk6NcunGF++PD3Bkd5NbECBeGB7l6e5KZRIL8Sgzyi5TWlqit3OU/AAAA///mRtZqAAAABklEQVQDACi4bsqYZi6QAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Greasy Fork",
+        "url": "https://greasyfork.org/zh-CN/scripts",
+        "description": "用户脚本分享",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB6UlEQVR4AYRSPWsiURQ9RlcEFbWwUVHDyLZZsLBQUNL5F+zcxrWPWPkHJI3VbmXsLP0HKW0sdK00Thy/Or8RRRLB3PviTCSZJMM979575tzDe493gY+fRNRfQpfwdALXzPE/ot7ivUE5FovJFovlD0l+En6cwDVzMvVlghaagcFgaBGbns/n6PV6MJlM1OpGmljWUgJUg/LxeLySZRn9fh+JRAKKonxlckXTYidsIMXj8XQgEEA0GkWn08FkMhEmbPbNTqQLcrppt9toNBowGo2IRCLodrsYDAaoVCoYDocwm80k040bNrheLpeQJAmtVktsOxwOi8FCoQCPx4NaraY7TeQ1G1xSgc1mI0yazSay2Sy8Xi/TAtPpVGSd5ZINNJ5NQqEQcrkc6FI1PplMwmazaf15wQbKOcEmfr8f9Xod1WoVi8UCbrcb4/EYLpfrXMq1wgb3XJ1jvV6DHhRSqZQ41m63g8PhEPfidDpBb0aV37PBrdrp5dVqhWAwiP1+L44xGo1gtVpV6S0bPFJ3R/g0+HXysbbbLex2OzKZDGt55pENuPlNy3+CbvCFzmYz+Hw+5PN5lEol1vKM9pR58Bct7EpJP/huisXi3eFwYK0QqTsQDS3sGqL8j/BAeD6Ba+b4H2uIfo0XAAAA//8MSEk+AAAABklEQVQDAC3SpTsITFxbAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Sleazy Fork",
+        "url": "https://sleazyfork.org/zh-CN",
+        "description": "成人向脚本库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB6UlEQVR4AYRSPWsiURQ9RlcEFbWwUVHDyLZZsLBQUNL5F+zcxrWPWPkHJI3VbmXsLP0HKW0sdK00Thy/Or8RRRLB3PviTCSZJMM979575tzDe493gY+fRNRfQpfwdALXzPE/ot7ivUE5FovJFovlD0l+En6cwDVzMvVlghaagcFgaBGbns/n6PV6MJlM1OpGmljWUgJUg/LxeLySZRn9fh+JRAKKonxlckXTYidsIMXj8XQgEEA0GkWn08FkMhEmbPbNTqQLcrppt9toNBowGo2IRCLodrsYDAaoVCoYDocwm80k040bNrheLpeQJAmtVktsOxwOi8FCoQCPx4NaraY7TeQ1G1xSgc1mI0yazSay2Sy8Xi/TAtPpVGSd5ZINNJ5NQqEQcrkc6FI1PplMwmazaf15wQbKOcEmfr8f9Xod1WoVi8UCbrcb4/EYLpfrXMq1wgb3XJ1jvV6DHhRSqZQ41m63g8PhEPfidDpBb0aV37PBrdrp5dVqhWAwiP1+L44xGo1gtVpV6S0bPFJ3R/g0+HXysbbbLex2OzKZDGt55pENuPlNy3+CbvCFzmYz+Hw+5PN5lEol1vKM9pR58Bct7EpJP/huisXi3eFwYK0QqTsQDS3sGqL8j/BAeD6Ba+b4H2uIfo0XAAAA//8MSEk+AAAABklEQVQDAC3SpTsITFxbAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "無名小栈",
+        "url": "https://blog.imsyy.top/",
+        "description": "iMSYY 的博客",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADYUlEQVR4AUxTXUwTWRQ+Z4aWocsD2yEUVLokxsUNL/uy2QSRYPZhdwNb3ey6slIlWqLRxAdN+yIvEEEFwUQfDEZaGitgxEQND1oS/198MEpijZqoFUWEBmhLB9uZ3un13AaJk5zMvXO+853vfPeOBCsP5xxXlkDrQopaimbO2P/0rqMo+ia/il0lQEROACTggVgsdic8MTERCoVGLw4Pj9wKh8Ozs7N3KXeIQlrBEhxglYAS3zPGxsbHx895vb7a3p7e7/yBIQgMBaG395TN6/P9ev36jbMGM64RtjRfDYASbURXi67r/sFB/z9d3cfZQjxuqqrKHQ4HL6dQVTuPxxPmyZ6e7IXzg65MJhOkOoUCvsrxkOK//YFAtry8XCITZDGPJJFARJDlAlAKC2W73S4LzM1b4UYA2Ic0tlBgm56e9lwZG8sV2WxSWVkZbnX9xQsKZKROSEBc/ryMiqLw7dv/xfr6zVIodDE3NTXlIQXF1AJ+jkQiNdHoOyxSFElLpXDDjxvwyOHD4Kz6AXLE0FBfD21tHhRyyWBpZmYGn0UiGyn1iyBwzs3FisgDkGWZL8bjvLv7ODx5FoFdVNja0ADO9ethdHQU/IEhPj8/z02Wg9hczEIElYKA3pyO24RsNgtibmuBBS6NjMDVS8Pw6P49ODcwAG/fRqG4uDifZyYjm4Q2AEHwQVVVQ5YQDMNAIsEc52BTFHj16RNMvnkDFjLRarXm86SUvEOwqyqjztOC4Gl1dfXLSqeTa5qWIwJuGDqFAZIsgYXUEDGk02kucpq2nFuzdi3fWP3TawB4LBHd53XrKgLNzTukOJ2/ABlGFjN6hmcMg6cpdF0XxUIdX1hcMJt3/CdVVTkDVLskjhEnJxMXNtfV3d6/f5+VHDaXUkumoRvAmAkmY0I6pLSUKXKePXutv23Z8iAajQ7QMaJQALW1lelEIuF2t7Tc6e46ZqmoWCOnkkl8P78A7xcXYSmRQEeZQ+7s7LC0tu5+mNK0nTU1NRqNkDdRXDqkD7Pt7e2NTU1NvtP9fc+7OjvYQe8RPOj14rGODtbf3/eiqbHx6OXLZ/4kzz6K7jQCFyYKItpzDAaDmZKSkj66gZtcLtfvu9xuj7tlZ9u2bVv/SCaTm0pLS0/4fH3LBKba/N8LXwAAAP//RHLmvQAAAAZJREFUAwD5+N2hY5w4BwAAAABJRU5ErkJggg=="
+      }
+    ]
+  },
+  "ai_labs": {
+    "label": "AI工具",
+    "icon": "i-heroicons-cpu-chip",
+    "items": [
+      {
+        "name": "Perplexity AI",
+        "url": "https://www.perplexity.ai/",
+        "description": "AI 搜索引擎",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACWUlEQVR4AZSTz0uacRzH31MDE4J1siAiQl34D9hZDYXFulRsMWvRZY1O1WnBYlSMDiMnO2StDVTCXaONDu0iePZiTmmHKYKCBw9Cw/nj2ef9odw5eF6P78/38/68n+f7lccE4ExoCcY94cwZA4IyaBFgs9kwMDBAqYyMjIBoITf26BHJizNBBvSxIhMTj3Bw8B5Op4Mlpqb8CguHw6E9eljf0seAWw1YLH0YHx/HxsY6Jic9MJtNghkejwebm+vao6c3IMIk6GUymWQL/chkMohGjzA3N4tgMCgEMD8/q2vs2Wz9oFeH5KYBFosFW1uvsbr6Em63G6HQc9jtdgQCAYWaa+zRQy9nZB4aYDabMTo6ikjkI5aWlnF4eIRyuYxsNourqyxqtRpOTr5gcfGFeujlTC+AotX6i0qlAsPoSkgI19e/EI8nEIslkMv9xNraK/2H6KGXM0TfgKLbNTA0ZMf29ht5ak6e+BnNZlM5Pv6EdDqN/f13GBsbQ7fb5YjSC7BarZiefiyLD5BMfpVfYHDwoTCo+vQ0iWq1Cr/fB6u1X9d404B2u41UKoXh4WF0Oh3ZhoGZmSdYWHgmPFVtGIb26KGXM70ADsVicTm8qLxeBysry/D5vDg//y58U801vno0GpVziWtYL4CC0OD1euFyueQs3qJY/C0UVTudLgnyyQP+758zugUKcnPzR04+jp2dPdTrddkKFOrd3T3pJUAPvXcwgF+V1oVCAeFwBI1GQ+vLyx8gLLgWDn9APp9neUeLARdStQXwYAg1KZVKINSEPUItcObiHwAAAP//t/WD0wAAAAZJREFUAwDcTwl+x1lAwAAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Google Gemini",
+        "url": "https://gemini.google.com/app",
+        "description": "Google 聊天 AI",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVR4AXyQy0sbURTGz713ZszDpFFjo0bBqgGVUm21RHcRWihCN0XTXRelRNqFoF21Fgy0Igixi9KC/gVicFmktKA77UOhNrYF7SZRU5XExsS8JjenM2MWPoKHOTNnvnu+H5ePwgWVcDptal+wAkUBCMc6NepGqLn0mQqYBWDq92wXBShLiN21ehRK7kVLa/pC/UN6N2Be0c895wDYASIBwLi55QmYKu17l9vti/buxwAEPZ4pEc7UKQB6QSArIEfuurq4tXJ0o6yRr19y8N8VnaP3x2M3p6cHZJcXhZMMDaAaVZF4IRd75OyC+nJ/0N5g+m5rgzVTE2xKVeYDZpxzvsp2LXpJTt2FAkgDqEbsBynpaxrONtFPwYay2q819fxHeQPblGwsnCc8jqyOC+LHG+N8SDFLUADRxHuoSn8om8g8qA5AI/pCDmpYrTbygMXC/hhMGGESJpGxNEfOEYxEopPXdRBoH+MTV8fQRgkzEF5CLGmrJEavGGG3SoQtSx62DSmICUeQZTIgAa0IKhMqI4JICbXkZSDUeCcZNrqinn1ra3NUMjxFiy6pq0gzqt/jKO0TEOKEMplTRphiT2AmPxzfgebV58Tz00v+ahngLDCHYz5zrWV5Egi5VW462qqp2Gc6wzZnuj3ODDITRDnEObm9OsJeb74hGehHptwFNABxA1d/FhZcQm/r/DLLZPtM+n+HJeYtyJWGAQ3hOBUifWsvyDIU0gc/0TwaQDWr3dOzmPNMdYgP2+Y+h1OJl9wcZSnTLjsU1keXBqu/wNQ3EQrpQ6FOAVRtemBFSQ1IoC7zNngU347hRvCXdecdqAEOdMrqzsk+B9AO3UCX6vypUE6eORQjM9A7mAE3KbpbVAT/cSZRkH0HJOvToAVNm0+8/gMAAP//8C7EZwAAAAZJREFUAwDDSgiJ8yqTHAAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Dify",
+        "url": "https://cloud.dify.ai/",
+        "description": "AI 应用开发平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACo0lEQVR4AXSSu28TQRDGv9m9h32OgRAECQqdC0AgOgokCgr+B+ioUlDT0FFS0SGUgpaCIk0aqAKKKBApkCCRkBKiFESQOJZj5577GOaOYBASp/t2T7f7/XZmZxSah2lhcTd5tMi/tCxzo91kYXEtbLb8Z2gA95/ud8IyWh+6wXZKw23TH31V4/FWqzyxeWnu4qdnr7Ol5yv5veU1Tv7lNID6p3XctpY7Mifec8IeCZgTInWOCLc0qSfjslpZel9dq/f/1h+AYVSWIYBGznOzhwjQWnGggVBTT4f08tU695pFGZQI2IeYPZnKU1XLeJJoiIWhCAhlCAPiKFQcaZoJ2D1mZlkBVA0QP2qjMR5l6akQGYmGBRAEiuOIuB0rbkVAHBKHId1c/VJdrb0NoP6oSkZeOMoLS3nuKE2tMtZTLKZOW3Gn1UB8LLAoIEri6EbtmwAKMWeN0eHw0NDeQakOR5ZmpwN3pku+2wK3Q0asGZFiaPLzE8D+HlAD8szSeGTUYFCqnZ1Mf/zQD6/MKzszRT6JwK0QLKdzGBDrAJLg8R3UpEJCzzJHR2NLw2GlDr7naniQq1NtcDcGdyT0tuQfa0Yo0sC32tekYIoBFYVDISnkmVGphH6UGnJS2kBOiqQX5QJZioD6dKmEi7RanQDQB5oSFk5AHkVpyRSepKGg5AgxcFDPEoEUBdIT73qz2JgAxA8jVZBSSjkdWSmncyyNCBAARXJpmlgLRJqpL6k8JJKf9ZpI3j6kZJA+qBsI1rCc7mUHixkggty6CNiKA7pz9iRt4vgRpiyMptlZVzjLqbc+807kOQUjFfcPRfRWazzIunT7dJc+H3ubqQFsvLmcmrbtuZY6T91wLrat2a4ez7Zinpfcr7djujsV04sLRHnj+mv4CQAA//9p7UEyAAAABklEQVQDAPk3b2DD/9dmAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Coze",
+        "url": "https://www.coze.com/",
+        "description": "字节跳动 AI Bot 平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC/UlEQVR4ASxSW2tUVxT+vn3OGSfJZGbi1F6S9iHQt/at/QetSGsuGicWCz6U0tLSCz6U9q21JdCA2AcJQamo4IsoqCiKICh4AVF88PILFJxEUXImM45nZvZefmdws9e+rW99a+1vb7e1/uKP2fl0bWpuxU/vWPGaTRZm6g2bnV+xbbKZ+srgbGquYW8wfmZ+LZ2ae/G7Y+j+7UNWgZoZSMCchs4rQ5p6rKUBL18GOUwIWo4RBCF0y0DvHwezArXNvYrT1tBqe344GWPH9mHsrA/j448SdDqBPpiIFG4kFWMWCs4UNWDVYGLp9gK//3bUDuyv4ecfKvjxuzL2L27Eb3uqFjmReHtDkk9EXm1OQRcZ88zbZ0bsq/oo6YB+3wYWArBl8zC/2V22TsfTiUh1ELQcxpzS+n1aeZS29YsigyJUEKJIGZRC9cL7gM8/K3J8PLasSyNpgDPl0RrGYMa3auRYNYJzcslMEKjlc26lEYd33yaDVwyNYKBgQqivN4PEC4OsMEBFDAQ1RcaxQ26goa0XSZt+4M9xIrABcPrLIXy9s4TikMOtOy0sLD4WmRvYrdspHjxswSnftukSds2PIInzJAbX7QHlUeDXnyqYnS7DAvDOpgRDQwXcu5/h/oMMjQawcSyBl6hbNpew55cqxieILDO4JKalKWxh8aldu7EuMQMmJ4vYvWsTzpxuY2m5iQ/eL2JiYgP0DXDnbtsWFlft0SNvxaJEJEHnyOs3PZcPpZTY5r3hvXGHvXurOLhUw6efFKD/gSQhjh1PefFSnzCq6RmlkTqtWk2s1Y7s8NHn3PffUzt/oQnAwUUO12+08O++Vfv/6HM8adBqtUQxTvpSz0hAXRtJr9XZ8z27dLnPI8fWcWB5FYcOP8PSwTVcuep54mRm3a7QAKgaoOYoHSWF6JAzoDQSo1pJrNePceZcDydOZVhvxRhThaVSDF0XSq+ulXOZnjH500WFJikqRwvB2JcGTp5KOUalEiOKgPws9wmm2wOR25CCyV+vAQAA//9SSKMUAAAABklEQVQDAI3GjXN7Uin6AAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Runway Gen-2",
+        "url": "https://app.runwayml.com/",
+        "description": "AI 视频生成",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABkUlEQVR4AYSSTShEURTH332oYWHDzsdClsrCwlYpHymlWFjbTL1oZoGFBkmJ1Ky8jSI2SikpNWIjFEqRnYUFW8nHYmjw/P6TV6+n6U7n1znn3nP/c+49z3X4BUHQDedQAJvlKTiCNo46LkEPwS60QznYLEFBJ+Q426QOZki0eIHvhUUI/hjFd8QYIH+AWkhKoNgKyawxJofPwD0YeGPtOIa63WRP1iqBCkWQB4fiAr4Y4/9dibYrWQ//9FkC5CVtjgO3Uai8A131B79tE6ijqCVGPfknLMCeTWCdohFQ8RdepgfUxDJc99smcErRGqemIA0SacQr1+Qcm0Az90fDaKwrHAxFhog32EvYBMYp9CiMiqRYUycS8WwCGmOWA+mIiE++CrI+CXwoghpwKNScqxXDI0hkCZ9iL+zklVxmJHCmCLIUzON3oAE0qn78PpSBRHxq9KmPkcsOJTBJ9ATh6+oj0aMts3YDwyBRiSSJJ6AKrsF36emKQHPVgQPiLRiEafYCeCeWiIc/gUtQF13svfwCAAD//8f2q2oAAAAGSURBVAMABVK18b2M+fUAAAAASUVORK5CYII="
+      },
+      {
+        "name": "LALAL.AI",
+        "url": "https://www.lalal.ai/zh-hans/",
+        "description": "AI 人声/伴奏分离",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACKUlEQVR4AYxSPWgUYRB9893e/52SC8HKVIKVcqkUywiJlpYWgsZSQVCw00I7QUHQ0ihYWFqaCKYUbUTPSrCKlYRc0Lvb27vb2/HNt9kzpwSy8PYNM+/NzH7fuqi1oBn6X5pqiFpNDRl3PjXVEH5uUtPcrS1MOKLX4Z9HRJAkinwOqM0Iag1BuWS5VKiacvaeaqCsenNB8P1HjHuPurjzoIONDwPkS2DjzPaXnZkyiNgkRZAXbP4c4/HLHh4+7+Hj1xGCAhtwgIgi0xs7EYGIsKX4Qi4niMIEZ04W8O3NHDY35nDtYgVRBwhYUxWvF0l5agMrKr8xSQSBExyqCQ7XHIrcKEkA9eAGxhT6DcicDpQrQIWGclU8lxgXeHh5olhJc2XmPKreAvO6IFB0uPKF6zs4e3kb51baWFrZxjJ5+WobGZaYs5ppTGse87q015637IkPELo4FtQrDq+fzODdi1msPWvg7eos1lcbWGecwXJrzJnGtOYxr+Nh+jn9EAi7in5PPUeMh5FiRAzCNNdnzqPnLbwNgA2EQQZlDDiniPk3/qbhVzfBYKTMAcIPFicpC5mYXCMviWbBeKwo8ZPet4Y4fn4L84tbePoqRKkOxKzt+yOJCK/FJgliTpw/ksONS1XculLFqRN5xEPYutSIHySSMpfC5BEROK44GiqOHQ1w92YN92/XsXi6yLMAa/jvmWpgVf93WZMx0N1RdNuKPg/S7So5w2QT/AEAAP//Do2AwQAAAAZJREFUAwCJADulvD0qgAAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "秘塔写作猫",
+        "url": "https://xiezuocat.com/",
+        "description": "AI 写作助手",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcElEQVR4AaSRTUhUURTHz7n3vnnTjGIfgwsxqMYPCqlW+QFGiqVSWrNIoY2raBUk7QoZEyFa1DKECNpEIY0GhqkUFpUltWmhIxahWBaYIqMzvnkz797OnQ8wGiHw8O7Xuef87v+cx2CbthUAc3Bz+SAHQOlAlQOQy5cLgMp/arSwpPmLmYXsOzHuLmsZ92XPm9dNCrpT+9Jz746aBb4p7lkaBNC+fu7e4xoWZt6MvgPQCvVIY1JJ6a2eFXIBtwGkTyneXNRQ1QHQ5lBOAaV4ILERAUAq5QZCxjIA/VK3PBiYaEc06p1kTK5FlhUXrKe4cWS3TMQbnaRVbeTtOukPfKwgZTKTn+1BUJW3vs2nVwiNYNn2z1hsLWKY+cXuHd7rs0N1vxGwWrgL+wyWfFjU8skDJEtDSIGigQoN1smEp0zJRJS73PVcmL3SkcABL/lbx0sUqPf2+sI64+bhAhG/DKlSFNPJsvT0mwMIcAWAZoC73wZrZ1eY3aeUNYXC6xXCuDM7WPuZbu8BiVYMr/rPvt5L8ZIAANxkXRS4UyWj85HV2C2qkcGrtnVSGXQci4KM5vLARNOGE++RydgiF16fS7iuARnbH5g8AoAdiAyprt4fLxuWAYKgIfPD9SGUiTH6j4Ix0TX3tG4VEXuBcVQgL5ac/3CIcSu+yJCPUemPwgMvHgBQKwGpy0FFFLCl6FTSmlQKnulzOLxwX9rRfkQxYkXkL/b1+fGl6VBlUzhUdYFeTQIQHLSl17mhmpmpxxU1MwPHbmovTLfZ4VBle/hJ5ZnvozUrqR6kLractCIgRUAl/hv0H4C0EkpNlUTrX98fAAAA///K2X9KAAAABklEQVQDAL3x5SGCHPM5AAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "GPT_API_free",
+        "url": "https://github.com/chatanywhere/GPT_API_free",
+        "description": "免费 API 转发",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVR4AWSSPUiVURiAz3e9/VgRQdDQ5lKJQzRZULQ4NLRFS0OD0RBFUIODswiiTv6h6OAkOii4uIii4qCgOAk6+AcK4ib+e72fz3P8rghezvO9/+e895w3F/ilaZog4kJ/B32wBkdwDOq9yOqYdOMTN0iShFh6h08rsQmohQq4D/dA/QdykpwmiHXYIacBJg3j+A8WIeKyM4kGn3KogyFqPDCX4/Qijib4DOPwDabgEDZhA9RnkMbGkF+gwVo7eIvxCy5gFecAsgZewiuohBdQk8VW0M39Qxdv/C8/cdyFMijgVF6QvA0nGTvEzrNYAd2cB8haN/iAksIxdFDg7t7q9X+nMOpZrJO8A7DmvRs8xzBhD7kOgcQimKCpnd6wt3DaESJUuIHFJj/EU146Df3WymK+0mOC1pW5gTeNHZ7yqU6uZiKfJeMKQR3yxnB46c+QHrrpBj4PdvCpnLZKEgtggv7SX/CCq3C0gcsOpt2gG0ujD7kAy5w2Aq/R40Kvgn6MOfBZnZ0z9B4HaRGlC/5CI7TAI9iH0jpB+Q7ek6+VR2+nyyUHyS7+4XD6BpHzUE8wvgi6a5vPLrgc51GUerq6GmWST3F8glkYgnmCT5Cl5aB5cQ6Rc/DVGih6erxlDKfONj9S1Qy2jYjLA/Q5zr/JPeMA7y1cAgAA//9ruAYMAAAABklEQVQDAO6a4qoqDbvbAAAAAElFTkSuQmCC"
+      }
+    ]
+  },
+  "efficiency_tools": {
+    "label": "效率工具",
     "icon": "i-heroicons-wrench",
     "items": [
-      { "name": "iLovePDF", "url": "https://www.ilovepdf.com/", "description": "在线 PDF 工具", "logo": "i-heroicons-document-duplicate" },
-      { "name": "Remove.bg", "url": "https://www.remove.bg/", "description": "在线抠图去背景", "logo": "i-heroicons-scissors" },
-      { "name": "Aconvert", "url": "https://www.aconvert.com/cn/", "description": "全能格式转换", "logo": "i-heroicons-arrow-path" },
-      { "name": "Fast.com", "url": "https://fast.com/", "description": "在线网速测试", "logo": "i-heroicons-signal" },
-      { "name": "VirusTotal", "url": "https://www.virustotal.com/", "description": "病毒扫描", "logo": "i-heroicons-shield-exclamation" },
-      { "name": "Have I Been Pwned", "url": "https://haveibeenpwned.com/", "description": "密码泄露检测", "logo": "i-heroicons-key" },
-      { "name": "GitMind", "url": "https://gitmind.cn/", "description": "思维导图", "logo": "i-heroicons-share" },
-      { "name": "ProcessOn", "url": "https://www.processon.com/", "description": "在线流程图", "logo": "i-heroicons-rectangle-group" },
-      { "name": "Wormhole", "url": "https://wormhole.app/", "description": "私密文件分享", "logo": "i-heroicons-paper-airplane" },
-      { "name": "LALAL.AI", "url": "https://www.lalal.ai/", "description": "人声伴奏提取", "logo": "i-heroicons-musical-note" },
-      { "name": "WiFi Card", "url": "https://wificard.io/", "description": "生成 WiFi 卡片", "logo": "i-heroicons-wifi" },
-      { "name": "短网址生成", "url": "https://sina.lt/", "description": "新浪短链接", "logo": "i-heroicons-link" },
-      { "name": "ePub转换", "url": "https://v.magiconch.com/epub-transform", "description": "繁简在线转换", "logo": "i-heroicons-book-open" }
+      {
+        "name": "Aconvert",
+        "url": "https://www.aconvert.com/cn/",
+        "description": "在线全能格式转换",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC5ElEQVR4AWySWUhUURjHz72zOc6Y2vigZIRERYYTtgg9VEZkuaGSIy1CPag5RpQpZRZhEC5IC76ElJkKbVOSvkSUOilGjZqm5ItKZS5pjjo2c5dzztzTPTca3A73/3G+77v/Hxf+lwWrnLaSWPWbwjjDKqsVoxWAryUWbZQxIMcU4Je+4u1VBksAvyrjDOFGd5EfgZWhLJcxfWPPeef1XfkzxdHnxgujUhx5kaHLGT7AWOlBkx6QcrUXXmUR7x8MPAkGAu/qJHjbj/BVASz/PEIHmwasWxNlCCNLeXwAiNWREkJHGcRrCeIBgNw/IQ4QJAIJebUs8cYEqdC99uzofYpbLj7A5YE1Hybc0gVBFH5QsyCKHo+InW5IZLEu6GUJxCxgJLA+kBHP5lssetkPWFqobDabd1vpe9uYm2S5BTQ4wmnr3rrWHm5zmY508WtT5pGmRcAqQEW8YOcmzWQY9fkAtAGAIeY7ve+Gec3pKaRrPPngU8/xh47u5HWJHaPIv2BINOYOIUPuN+hfMq/WuYB8FMBUedL22cr4yrnyQ7dmbsaWscYwd3J1V4u8B/Sf+LnwzBqiF1RxtZ+r42WlNXQ3FNe3OOleASAvDtFKKE9HxIt+RCyK0M6XTl4yp08VbE7dsjCeYgAwM5QVH/VYzXupabEUwLSb6YciP0AgDxg5AaPEpRoZ/omewTZ/gp8CicSwhJhNgK/9mBWVYrFYVP8hCmBH2evfsxyqQIIwTeT4CBLk2LAaY6JGXkYNMcMqCRCwUQuka/s1zvAlANpcGdnQPOoBOXMi6eAQM89hVvRglSIRsxIFzCDt8CAMrHgxIY1TD5XyBfRCYzRXDTS1OoPTev4EJ/XxwRl9fOCxL1zQCRfSOKaxrt8BTWcy6ztf2u12TD1UPgBtqE7VO5wJNd2d8fe7m5Nrel6t+W5onoS6ul4hKNva0N4K5KjBorMCsGinXA/Y7bhRv7vG+rijSxksK38BAAD//9A9fcAAAAAGSURBVAMAaglqaDFTLcEAAAAASUVORK5CYII="
+      },
+      {
+        "name": "iLovePDF",
+        "url": "https://www.ilovepdf.com/",
+        "description": "PDF 综合处理工具",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACxklEQVR4AWySTUhUURTHz7n3vSd+jmRWOo0foKZmzqyDvhBatYkgghKJIigyF1ESZZGSi5a1aZEVtIsWgYJphW6CgkDGdNCYvnQkByeCGp15M3Pv6dyxEQ3vvDP33nPO/3fPue8J4EEACJsM4zeWC61f53xZAKvpe2tzWyTQ/DQSaBlb8O9++C3QuNf4jc03NHg/A9SbNUOymg2A+UDT1XwpXxdJ61S+wINFljxTKKyxiL+pfaGy0meVlYyXdpwcCztOC0P0eoiI+Hcdkij7FWmKK5VKEKk/PHOWQ0Le12Ulo5bWdVu6r3nL7/QNzQC0IhDlIFyOddpBlAqAH7C5NMnmpDiHgx5bykY3k1Fp28mUXL5SvePWjcFZQIYAnwFCoIAaBmrkAQDEawJE4i0yg9Jaa95Lcl3JSeS53lO1vffm4BSA37QjNOlJTuCZWM8rZLcpcHUHgPxjLNg2nwWobAc8Pbd9O/t7X3zxVewTgnDA5fZtRFO6AiNGRJ5ZRggoELSC3/19FOs8D78unNM/uy6mCubmavLKtx4R3mBoAkhfEoiK78LiOgyEABGBWxLA7TA0+f4dJEaGlfvmFTijw86PkZfP7aTqEwSADHmcyKSPsvJToRAWAmogMr2zGpBzAAoKdL6nVMriErVcVHxXH6hr3xYKxQXyKZyA1ZMzg7H0yv4VpQdsAZL9mIUQcR+gCgFkRqmPSTd1uOJDsLv2yXgSAFAAD1yFiD1TX6Pe4PRZN6O7LIHKBBmeyeeqEkoPxSHZVjs1M84+E2IlUG4BDDHvFU3QNxm65yrdKRCBW7KTWg/HFmMn6ifCS88gW502amNrALNBroRNm6SqYOhBmugRv6Eoxt0OfzS6bODHAcwHZ9KztgGQ9fAfJ2WryUtRTyqdPlYRDi+xmOuBtZM5LftsCuCIuTjiW16snp59+0/ME0f+e/4CAAD//0Qcac4AAAAGSURBVAMAoZREMAtjv48AAAAASUVORK5CYII="
+      },
+      {
+        "name": "remove.bg",
+        "url": "https://www.remove.bg/zh",
+        "description": "在线抠图",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABf0lEQVR4AbSQsUtCURSHr/dZzm2u0dDWnISlDtVQk0opRUpQ9EIio6GxxmgKHIMgGpoCoaC/JGipMVpcguC9eKfzvccT1Iwgkne4557f9x0uWvPH3/8tKNfcdLm224zKTQ976MALyiqW6o1tsc6DJBKnYWnPjKx/UXdBtbozBmQS9tYYaRmRKYWdsMJeZ5rBwOo8/CyXYr1R8VPOPaIYM60Joh49nxNl0oLFwbVeyl4aCS6i0Hwn9mzRS7RIHVzr+8GZSHAtIh0Nf/XBijq4ds+t2631lefJifFjfcWN/LCIDAYWB9d+et6BTSZPCrOZw8210huh/hdthT/i50S9tMlgYHFC13NkQ4V6YOQl6STdwlymUVstPSl8ZMTcUfTMyGBgcXDtUjbbmc9lrzwrywyDQN5HUyP7wLVK8ZGiZ0YGA4uDa+NncmE4Iv6imEQTGImiZ0YGAxt73QXxIJ/Pvy7kZs6BkSh6ZmQxF58DC+IAGImij+f959AF/eCw+xcAAAD//3p/wJIAAAAGSURBVAMA5GTeIfNzJjIAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Pic Smaller",
+        "url": "https://picsmaller.com/",
+        "description": "图片智能压缩",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACV0lEQVR4AXRRPWsUURQ9583sfO5ssvky+5HoupvvEEQQ8gMUCztBEAsxqCBWFjY2VpYWVjZiQIyVP8BWQbEzlZ0oNgoSkKTY6O7MPO97u6tEdu9y2ct9556551xVe3FTj8rqzg37Vtm5ruPtKzp4elnPPN/SdZmp9t8U+qG17lfAoCaJTOcIXR+3Vs7j3qmLmIun8DtPQRJafpbADJD8S2AKQ2f6WZ7j0eYWHm5exf3Tl/Dy7F1M+QnSPAMFpAyI7A1nWYZcBkjKo0ZXQJWojHP1DalT/Eo7aCQzODPdwmHWgaKSFLAhMcOz9SrCKETa7a3oCOCg28aPw30UlIvA9SBb43v7J1w6UmpYCWma4lh1Fq2lBSyuLSMsRjC9guPgoNPG7bdP8ObbR+zufcGd99v4sPdZfPGQi2+q2+1iYnoSjYUmTB1GEVY31hAVY3TkLXA87O5/xbV3j3Hh1QM8+/TabqLl+yShxsbH0VpehImBFD8IsLKxjmIpgRLQ6nwTrdo8giBEpESGAZs0GyysLqFQKNjTkWKepPHD8z0sra+g2TgJR3quyGnW5xCG4pFIFqTsACgvEC0D5wVI0t7YkngeytVp0HORZTkc5eBEpY4kjpFmPaOVzrUdMOsPkiSUUjAn1QD8yQROKB+SM5tNGtU6SnERxmiRSIHAkpC0/4YIEiStNIDwJxK4kY9cNlGOg+OVGsZKJSgMCbI3SB4l9MoJ3FhI0gyOkTNbG05gOMlRJEUhCa08kqMJIEH+RyI9Y71X/kcyVILBDZI8SmL7cn9vLEIhCfEHAAD//81w9GQAAAAGSURBVAMAnw4C1OpXw9kAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Photopea",
+        "url": "https://www.photopea.com/",
+        "description": "网页版 PS",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADgElEQVR4AUxRX2xTZRQ/5/vuvV3XrbTCYExd1pkR0IQxGTrBES52/mnZUkANS8QHX1B58sWYGH1QX4yJPBHWGSEBMxz+GQytdbPDEFGjTeoMxpklsqDDQteudGsvt73fd/zueICb/HLP953z+53fOR8D9c3OzjbZlvUOla0JWlqeugsXVOzizt1yeULUam9OptOrFBXY39evr3sgFEoYdXVvpYrZvnPFrHn+5g3zK4VEKbfrG4XEUm7lfG4xayYL2b6apr0X3rLlfObKlQBb6/O9jpx37x7/pBoeP+XEkmfEQHLU6U+Oiuj4SScydlxEx06I/sRpJzbxuXgmMeJs/eyjqs1574PNzS8zH9e2/baYkxeyVxkEglxr8DMwDK5rOg/f38Ff7dzBn+vo5Ku8Pq7umRa8h/+R/49NXpuThhC9DIik5TiIGkd3IY5VgR2Nq+H36As0GR3Eo4/1wZnwPsjsOQid9X5wbBtQ16EqBYKAFQ4iERIgyaqNPYEmmooMogDAga9PU+PJI/D4Fx+rLOCYGaMGt1DVoyAEAKmaogQpVQzIJVG8J4xzpSI98uVx+D53DQdDG2GmsgTPT52lkD/IwmvvI6hVFZtcDikBFZCCU4PuwBrcvLoZX/s5hXW6AZnIQRjujcBTLW0wXSqgVMR1dV4EkgqKA9IVAAmkDsrFhoYgUa1Gl/JZ2Nu2Adob/fDQ6DEY+TMNh9s2AQOGmUIOgOsgVb3LZKRsg1QC7haAEFVCYwz+WS65c8OL7Zvg2PYIfLj9STgxk6Ffbi4AaDo40t0SCqZWR0RSzXM7coSAgOGhiRv/wvvTP8Hhjk4YuLcd3k1fpEPTPwB6PKqbsuw2JQHMPSkT7izKgzuMShKhenN64680rU+cotC3I/T2zK9YM/SVOgbKKBEBMsnsag09qCYRggQRCiEQmdJFQO7x4jIHrOocua9RqSoi4ySFQ4biuAyWLRV+7G5pZTubWqlcLisNErZtO2BZjrDKDtxy41uOqJQdsiqClkrOo8H19HRrO5svFi+xubmrRxYWcqlk9ID+QY+pUZ1H+3RnVJ/cvV9Lmfu01K692srfjOnfmTHt4hP79anIAd1aLJ1NXr48zEzTLB4dGtqzkM+/4rdlfH5+Pr4Rjfg2oyHexb3DXZp3eKteH+/ivvjDWn18s8c3lC8UXlrT0vzsof7+yv8AAAD//zIKxxcAAAAGSURBVAMAeS/mjQhpLlIAAAAASUVORK5CYII="
+      },
+      {
+        "name": "YouTube Downloader",
+        "url": "https://youtube4kdownloader.com/",
+        "description": "4K 视频下载器",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADgElEQVR4AUxRX2xTZRQ/5/vuvV3XrbTCYExd1pkR0IQxGTrBES52/mnZUkANS8QHX1B58sWYGH1QX4yJPBHWGSEBMxz+GQytdbPDEFGjTeoMxpklsqDDQteudGsvt73fd/zueICb/HLP953z+53fOR8D9c3OzjbZlvUOla0JWlqeugsXVOzizt1yeULUam9OptOrFBXY39evr3sgFEoYdXVvpYrZvnPFrHn+5g3zK4VEKbfrG4XEUm7lfG4xayYL2b6apr0X3rLlfObKlQBb6/O9jpx37x7/pBoeP+XEkmfEQHLU6U+Oiuj4SScydlxEx06I/sRpJzbxuXgmMeJs/eyjqs1574PNzS8zH9e2/baYkxeyVxkEglxr8DMwDK5rOg/f38Ff7dzBn+vo5Ku8Pq7umRa8h/+R/49NXpuThhC9DIik5TiIGkd3IY5VgR2Nq+H36As0GR3Eo4/1wZnwPsjsOQid9X5wbBtQ16EqBYKAFQ4iERIgyaqNPYEmmooMogDAga9PU+PJI/D4Fx+rLOCYGaMGt1DVoyAEAKmaogQpVQzIJVG8J4xzpSI98uVx+D53DQdDG2GmsgTPT52lkD/IwmvvI6hVFZtcDikBFZCCU4PuwBrcvLoZX/s5hXW6AZnIQRjujcBTLW0wXSqgVMR1dV4EkgqKA9IVAAmkDsrFhoYgUa1Gl/JZ2Nu2Adob/fDQ6DEY+TMNh9s2AQOGmUIOgOsgVb3LZKRsg1QC7haAEFVCYwz+WS65c8OL7Zvg2PYIfLj9STgxk6Ffbi4AaDo40t0SCqZWR0RSzXM7coSAgOGhiRv/wvvTP8Hhjk4YuLcd3k1fpEPTPwB6PKqbsuw2JQHMPSkT7izKgzuMShKhenN64680rU+cotC3I/T2zK9YM/SVOgbKKBEBMsnsag09qCYRggQRCiEQmdJFQO7x4jIHrOocua9RqSoi4ySFQ4biuAyWLRV+7G5pZTubWqlcLisNErZtO2BZjrDKDtxy41uOqJQdsiqClkrOo8H19HRrO5svFi+xubmrRxYWcqlk9ID+QY+pUZ1H+3RnVJ/cvV9Lmfu01K692srfjOnfmTHt4hP79anIAd1aLJ1NXr48zEzTLB4dGtqzkM+/4rdlfH5+Pr4Rjfg2oyHexb3DXZp3eKteH+/ivvjDWn18s8c3lC8UXlrT0vzsof7+yv8AAAD//zIKxxcAAAAGSURBVAMAeS/mjQhpLlIAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Wormhole",
+        "url": "https://wormhole.app/",
+        "description": "私密文件传输",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACaklEQVR4AVyTTYhNYRjHf+/rIvkIqRmGUmQxUkLKQkSTRJSaLIRSGCJkIZlmzp1mpSZElLIwZW1MUajJxMpXyopSLIbyMSQfzXSd4/eeO2PhdP73+Tz/93me97mR/56CIiRXQdYsHoruul3dXtC1rq5ncTzvn1LQ3WRyFar9ymsQpwSytX7Qqn0Bpt+DvFu9UX9uXjCGFVRLBSZ/03EFYgbFG8hvm3xD3xqxE340K19Dsa8oq6zM1SYmNhMbTTim4zLkZyBUgA3is9AfDuo/rP4EwipPb4DaAXxsoezrFoRFwB3RB+ETsB44AeERTHgKvBM14Rub/FkmiFDMhKnptB4dqdyF+m5amdVQCXTe97REeMl4el/Cn00qXwXRBE//eVrjuRiEigNk2LaMZaNJ6q9JOAxhIsR+5V5lr7ey0hayDqBVzPPk+ZAvNnlUu3zV8wSJJnmYQ873GLClaY/NPR81WmDGcuVFCA2BjsF6cuZVUT7aURKrKef1RedR+P5COSBBPO4NrNZwutGysrZ6clqWLOovX0kmeeIrjbfivegzr1PmjmcGLKu4rtxioGbybKuabEKubullNfo4ZDxt4wrjWUG1ZfyEWTDhrsHUiv0XbfBrtkNKyRJW04dbjbtgOGhO2sIDCKPjBF5NPkT9sdSQFmWjFaXrPQdF+miB4TTsBHeisiPNa4ygctXgR5EG4y7EXvWzwqkzRzkgyQjlmrMfpvYE2ocKsjhGUPuQ+qW+A0sgtyKcCenk3RCdTViqP5PsCIy4fGp0FjEJVBJbkBVCl9gs4Skg/ZkkyX9r74LObcr2UOZBIBR/AQAA///t5OdQAAAABklEQVQDAAEj3xwmdHEtAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Canva 可画",
+        "url": "https://www.canva.cn/",
+        "description": "在线平面设计",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADgklEQVR4ATSTW2hVRxSG15o9M2fvffY5OTvGXE5NFNMQSyEU+tQIlqIgWPJUFPpSLQYfAvpSKFYo5KEtPpQ+KERJLxH7UIwUkUCpNGItmIBt0qARbGJsvKC5eHKu+35ZjorD/DMDs/5vLWYxDF4NfLWp9frsLjY9N8amby9o12Z9qaRfv7OQnZwfsy7f2qUiXs+XntcAgvFxA/6+cwp0PklCHGKU9KQslWESyyDwe4DxQ1LwybZL/52C76YMRSElYDA8zGBiwsSO3gnUjaMYhhrz3Dj2/PQtrsFQiw2fFKw05zhx3PA1IbJHt9qFieLwP+YL7wtAKnJbT3IrvxvXSyFPAfWEtDPdXfjXOztwn53Hw1s24587e7UeKTFaWw9Nae9utvMnFSBlxpXb/TzBIdwoxwI0zkKi8d7teLDYCvtnl2j/3APae2MJ2nWBg2+2UtVFLlRsJmBD7w3f62fKfEQjqYkIIPIS/Ky9Bfe1b4LBmft4bdVDK5a4HXVskho9KgWYCxG5T6CHUtN97QiTEe/X3Ji0gLFCzGloWzsu1zz4Y9mBYqSDV0bokyaMzW3gz/9WsSORpLmMiVpMpsNVBY24K+MmmDqAfWDgG5YOt5564G9okKlxaPEl3LgXwokr62D7gjIuouEw1BsJ6pWoi0mXge5yyJQ5dMQZUL2hp2X1kmUBRpWDrtTU4NCl7rDEwKhrSgzMOoOsOjPTsx6adYMyG5KiCicEQCvhYFYkZGviJSCnEvjPGLxdyKCqiqwGp1w9Q3nHeMiMZ3zKqFjYUtfTpUVET3Xh3a4s8TUJssShyRWwchfh/W0WfdSXp/gxYL7G00LNRLMKUwqgjZprLGlu6FC/z+mHyx7t6BQ4/KFN3oqgaFXQgQ/yNLg3h5fOe7QlkpQtCVUhJcKlUTY90jZlbMgRs7qZd4cy/vWnEC9c8OnwARN/+9HG89/aeHCnBWe/cCh9gNhcYXFrrY0Ll418Pd82pf4CsfJC/bhYDa4WHFs2B4LOfBMlnw446dkTEX3/eUBfftyg4H9IOjxBzY126QeVqys17zgAMQXAdGam6MrJ9QFWTU5n60bSnc3xYFmy+d8BVm4y6MzorC0ucBEYSUTe6UWnMTD6pOgCYKoAoAbhRej0frnJj2lOukcrpec2RWKxmOGhzTHkPl+M0+hcRMmer+6axy4+7vRUdlRGeA4AAP//RzLiLgAAAAZJREFUAwA+W6DzTMw64gAAAABJRU5ErkJggg=="
+      }
     ]
   },
-  "education_and_exams": {
-    "label": "教育与考研",
-    "icon": "i-heroicons-academic-cap",
-    "items": [
-      { "name": "中国大学MOOC", "url": "https://www.icourse163.org/", "description": "在线学习平台", "logo": "i-heroicons-academic-cap" },
-      { "name": "Noob-Dream", "url": "https://github.com/Noob-Dream/cskaoyan", "description": "计算机考研指南", "logo": "i-simple-icons-github" },
-      { "name": "王道复试线", "url": "https://docs.qq.com/sheet/DVHhiZnhHUmFOVEJj", "description": "24考研线汇总", "logo": "i-heroicons-list-bullet" },
-      { "name": "408-夸克网盘", "url": "https://pan.quark.cn/s/4a243dbeae17", "description": "408考研资源", "logo": "i-heroicons-archive-box" },
-      { "name": "英语真题在线", "url": "https://zhenti.burningvocabulary.com/", "description": "考研英语真题", "logo": "i-heroicons-language" },
-      { "name": "WRITE-BUG", "url": "https://www.writebug.com/", "description": "学生编程学习平台", "logo": "i-heroicons-code-bracket" }
-    ]
-  },
-  "social_media_community": {
-    "label": "媒体与社区",
+  "network_proxy": {
+    "label": "网络与服务",
     "icon": "i-heroicons-globe-alt",
     "items": [
-      { "name": "YouTube", "url": "https://www.youtube.com/", "description": "全球视频平台", "logo": "i-logos-youtube-icon" },
-      { "name": "Bilibili", "url": "https://www.bilibili.com/", "description": "哔哩哔哩弹幕网", "logo": "i-simple-icons-bilibili" },
-      { "name": "SoundCloud", "url": "https://soundcloud.com/", "description": "音频分享平台", "logo": "i-simple-icons-soundcloud" },
-      { "name": "Telegram Web", "url": "https://web.telegram.org/", "description": "电报网页版", "logo": "i-logos-telegram" },
-      { "name": "Notion", "url": "https://www.notion.so/", "description": "个人知识库", "logo": "i-simple-icons-notion" },
-      { "name": "GitHub", "url": "https://github.com/", "description": "代码托管平台", "logo": "i-simple-icons-github" }
+      {
+        "name": "极速云",
+        "url": "https://xn--9kqu12djx2a.net/#/dashboard",
+        "description": "加速服务节点",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACYElEQVR4AaRSTWsTURR97yWdmUyaSluxTUEENy66rhsX+isCiRJL04gtGo0RbQtt1UJLxTQaMRXTaISSxiwEd67EbnWt4MKFqIkRk1LSfMxkMs93BhISdecwh3fvueeed7kzjPzn85fBQizmXovG38Y3U9XHT7dNADE41P68r8dgZW0jPKYOfhkePnxakmVFb2jFer3+TXE4HOBQg6bbpGOAwuiYO2qz21mlsr801C9JodmAu3+g3y8aqACRZKkPGmiRA5YBRhscGrprGIapadp45PLMisfjaSXT2Xvc5BkI2+CcU6FdRw84y8Bl2naEu71WO7h9dTbwCYVn29kJTswI4cSNvBtC24cecJaB6nCeNMVzdGR4FSTATaaK8yMg5m+Is+d1qs4JEJaBrFgL+4mxQQJTfs/uhUnfOEAofQWuDXGXLsmyA7llgEBRHaNP0hkOJJ/vGMl05rM4l3O5nI308SuM0nVKaIox5hFfp4wewDLQGlrPiGJRNk7IcXHe2q+ZZ4M+X3H6vHcuOOmdHlDYS0mRj+iaVu8Y1OrVd0j+DX6qm/9aLC2IKVi1Vn0P3pqgwlpeXdMNEG1QSrYoo5cI4y/a3P1E6oSqupaFtoke8JbBajhc2CuXb1BKxeSgCWHM9jro9z4K+n1vsIfow81FWZY/2O02JrQ30QOlZYBgcf5arFDIX4c7cvFDZR8ktr7HE6lC+UDXXa5Dd1qGYf7IFyLQQgN0DJAszUU28rW9Y6XSr12j2dRlRXGLhY2IhTXAodbdjJ4eAxAYbT4SOhOaCTgvTp1jAGJwqEHTjd8AAAD//6B4xYcAAAAGSURBVAMAXWsWMPHGHasAAAAASUVORK5CYII="
+      },
+      {
+        "name": "甜奶网络",
+        "url": "https://1milk.top/",
+        "description": "专线代理服务",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACYElEQVR4AaRSTWsTURR97yWdmUyaSluxTUEENy66rhsX+isCiRJL04gtGo0RbQtt1UJLxTQaMRXTaISSxiwEd67EbnWt4MKFqIkRk1LSfMxkMs93BhISdecwh3fvueeed7kzjPzn85fBQizmXovG38Y3U9XHT7dNADE41P68r8dgZW0jPKYOfhkePnxakmVFb2jFer3+TXE4HOBQg6bbpGOAwuiYO2qz21mlsr801C9JodmAu3+g3y8aqACRZKkPGmiRA5YBRhscGrprGIapadp45PLMisfjaSXT2Xvc5BkI2+CcU6FdRw84y8Bl2naEu71WO7h9dTbwCYVn29kJTswI4cSNvBtC24cecJaB6nCeNMVzdGR4FSTATaaK8yMg5m+Is+d1qs4JEJaBrFgL+4mxQQJTfs/uhUnfOEAofQWuDXGXLsmyA7llgEBRHaNP0hkOJJ/vGMl05rM4l3O5nI308SuM0nVKaIox5hFfp4wewDLQGlrPiGJRNk7IcXHe2q+ZZ4M+X3H6vHcuOOmdHlDYS0mRj+iaVu8Y1OrVd0j+DX6qm/9aLC2IKVi1Vn0P3pqgwlpeXdMNEG1QSrYoo5cI4y/a3P1E6oSqupaFtoke8JbBajhc2CuXb1BKxeSgCWHM9jro9z4K+n1vsIfow81FWZY/2O02JrQ30QOlZYBgcf5arFDIX4c7cvFDZR8ktr7HE6lC+UDXXa5Dd1qGYf7IFyLQQgN0DJAszUU28rW9Y6XSr12j2dRlRXGLhY2IhTXAodbdjJ4eAxAYbT4SOhOaCTgvTp1jAGJwqEHTjd8AAAD//6B4xYcAAAAGSURBVAMAXWsWMPHGHasAAAAASUVORK5CYII="
+      },
+      {
+        "name": "FASTLINK",
+        "url": "https://flaff20230823.fastlink-aff02.com/",
+        "description": "稳定高速机场",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADp0lEQVR4AYSSfUwTdxjHf7+7QgdUM0IFZ+aUdC/BbSKjMhINBqaRvZhFFxsSQ2KMJiZmoKzbGButbtGxybBYqoONLVuWRVs1ikJ5UaqliEUUiVJbDlvpCy3XF1rA9mqv/fm7BuOfXu6T3z1Pvs/3nufuIcDihRDiLT6+9MBa8rkoaVBT832xTN5gkH57+GL1odrT5Vu27a6qqpXL6o+ek8kaLhys+eHYgQPfVJ76/Z+TCuWf55tPtg/i/KecSdKgu7t7OufVFfl7K/Z9Ph+M7E95JfVvoVB4GEDiCwTQ9iUZ6d89jTH/0h7/l5+Vbd/xevaqD3W6XnfSALdDmEx37JB5cnn0lj4xYOiNLFuWzVKUOTYxYWYnLA/ZScoSC4fDbJf2PHOjpyMe8dH6gYH+u1wtIZFIIOd0sK666eujdczqXBHf43YTPp+XDIVmeaFQiBcMBUmf10NmZmalHFP9jPZK9zRyNRBCQGg0mjgAO8kYiI3k5Lw2OxecJTweF3A4HdBhdyC7fQq5XE7o9dIo4KPJrKzsyMqV74wOD9PLAQAJYmzMXLaw8N/wzZv3WmdmpqOQJFHaEiEo3bQRKZqPw6YTv8D8/HdRWroA8tMEyD3tZFUq1R95eUstFOWoJfBoWzMyUj/Ab9oTexrNdc340dr1ZVDR3Agz+avQG8I8dEqlgCtWrwGewDxiY9FMs3m8XCDgL00kErnE4KDtuNH4SNrW1joYmA3EHdZxaDfpkI1ywbmIB3iDDuCYooHNbAST40bo9fu8Gs2Zc1brzK6WlktVhFS6zVdc/OZv/f1dGxGKl0NIRDu1XeDIT3IE8U9O4ZFIdkQORkZus6mpfLh588cnDIbrO0Wi5f8rlVVRLAFArVYnN4tl2WsIJfSVlfuI6kNfxQuKxGhtYQGoq6sHFRW7wfvv5aOSko/W4Y8HdTpdcnOTBhKJCeEkuHfn8Q6DYfStgoL17COrE/R0X0VXrvSg+/ctCZHobbZQXASHhvRhrEWlpaUJfIKkAUByziB92m37dcOGdbkCQQrvr/bTvPb2NlLZ0kQqFA1kR4c6ra+vh+3r6xzChVzHXM2iAYQ5OClWqhrP9mqvGt1Op2X07ojtwYOxKctDk8VqndRT1ESrzUbtYhhmEmvXYF6MgAOuLbNW2ynf+smWEvmP9UW01yN2ueyFPj8txhu5iWHC+7FOjRnAUBgWs9gBAHM4oBFCcQyLmcdxAOPHLGC4mxuXI4YDBpMc4RkAAAD//wYSbXQAAAAGSURBVAMAXfPSLyBY61wAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Flyint 飞数",
+        "url": "https://www.feishu111.com/",
+        "description": "加速服务提供商",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC8ElEQVR4AZRTW0iUQRQ+M7P/WlZa0o0i6q1eDIroHiEElvRQgUE3IjIpEoXqRYL6o3sKgmUUYQ/Rk4sS2PXBNDPzfs+876+Zrrvrru66++/u/89MM6s+WEF0OGfOOf853zfzD2cw/IekpnKiqnwOZk7ydy6OJFDWbDZEVRUxAI5kLu0fBLIRcQkUIPJANQ9mXzRTABCHGfmDQBVHnN0RRKPIl+bcCGcX5LJ6qxWVUoPYTqXwbRAVjuYQiGYsjyh3LCoqIreuBtfEWWju/HnWO6bJNxlm2DAiEDtvgZEPUG6RHL8RIPYwz9h17xp93NN4pNLrjGl3OKZOIyViTHrADE5Zkd8PTBvtIABJJgCavVH5rwBP8kJXdB8uE3YhGCA7fV4cP9BlsuHhMWLSKdLd6cYuJ2CP19ORuOFV4vbEigPiBBKMeEEuvz/pickB4rVgxYgMaTp1juks4J+PGisXQE1jPVQ2v3SHzHFYGLtqiNGJky5fe1gQIF5S4lhumpBu1xyUUeBid2XSF4RgZJwFjVHYsttK163ezCf8A49ChuuFaUbORZi+on+w8pMgAPC5Vhz61sriNbvOmus9ZOwn4gmLE4iiWC2bty7i8XFWPKhN4IQla064A9/fhQ3vsd7+j+kANoqLOJDOFnr4hz2EdN1QmjorjKqOZ7R7sKFuxFv3xgxb6JfqPtQ9VNbJGKz3B3ozGjqSKgQ4AkJwa5axY1Qj+wEMr26MpHFukkDYqdT0ZGauXZJ8s6nFrTR1F2vaROleSoOfCSYbV67MXyawUcVd7SgupEMho+h4XVtSIXB2OwbHPgUdtTn8tYrTX/08FNGzwF/qJjgxGRDeR6lHj6LFgovLLW9tFSjtQ338ezGuqE/LuK4NXT4P8FWvbd1T1dt35qx77O5r0YuGh4/qdvulOpdLnRJ5VKOXqIKcB1XEiANInyoGJVoXi6wBkoEwobIu3IwKkICAfGEqm/4mvY1Ox3KVNRDEMpYm69JP2y8AAAD//0U86OAAAAAGSURBVAMA7HOHMC5nfccAAAAASUVORK5CYII="
+      }
+    ]
+  },
+  "resource_search": {
+    "label": "资源搜索",
+    "icon": "i-heroicons-magnifying-glass",
+    "items": [
+      {
+        "name": "奈斯搜索",
+        "url": "https://www.niceso.fun/",
+        "description": "阿里云盘搜索",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADNElEQVR4AVRTXWgUVxQ+59y5u5Nds61EkpgGS21LrdBSbESoaymJ7ZM0pUVJMA/FttiCL4WCbYN2+kOpUCgtfah5yEtLwUWMK1HwN4H4b+K/6ING/CebVbNRY2bm3ns8E6LoufNx537n3HPmfvcMwVPGDCggLoDiAJ7xPQ5jABIoASbckyCWDYjAAocrwGIALglg4ZP5MRDACaxAagE+SYABON4BjbzHe9/sUh/yPlh8cyNkpngAhGm7Nr9xUXnJW61X8gvnCslTCXgj6HgPrXO+GmTiXcqDomU1UP8aDZidalkSyABUan77t+o33jzozchurda8f7RlwTJi+cR4Lv3j5egnKVJnLTjjgEGAhAvQx6I5Ch9fTc2Zl6qtXftc1/8Ei/JGhQ9nA+q/Kc7T5zpNq+JxNrLZigjIop9DwihEg4zkJun3bJv/Xnz7Hlf+/NWa82dpUqctA79ImvkrcA40ONTEpFHeMQZNCYxCE1tN7qWZSy/Pw8qDi+mdRYU3r/LMFCltwl4quar55dhnmalkfCxZH0ejWVgOZ0M5qk/A920936h7oWYwt/i7Us2rl8eqG/CSrt1XaFzxA3WMNafa7zRjx90W7qi08MpK3n52qWty9akTsPrsAcFh+vToIVhzYv8nPy79a8Oqhf/lvm7q5i/yPa/8+/o3BSqxz6POhxGXhpKtwhHrxSOu6lg5rMNy2MCjUT2WwgaomFnpGRC/7JRfM+bXQJWn56Q5DGnq7CJCKjk7WOeT1io3sEm0GE6nSPyRaBCBwpitjR04YzxnmEU3i+oPkna6gilFLB0GJAPTavz5Qp+NaG1ymaQzHnDS4Si3DNJ6yvOyWc9GE939nZluEt8adnyLPPIA0UmBDedOdlzo/wU3myhsdWyPAypxKZRZGo9H4omJ9ePXq7+UdI6Ot/X0htHDPBv7UWTjd4bat3wLQeBAyvavy/VWhs8sYcPvMrhW6YkPXARNfZ3Zn4e6MAYxAgY8s3L78GBbT/F0e/GIcNMPMgRMQ11NE33rMwf6vs9u29vp7+4PMtcTfjooOTOwDITCcgWBrOEpC0TZZCmJYDmLP/l3GCGY5gHgEQAAAP//3NjdXgAAAAZJREFUAwA9XooNbdxE1AAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "小纸条资源",
+        "url": "https://ali.gitcafe.ink/",
+        "description": "云盘资源搜索站",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABRElEQVR4AZSQMU7DQBBFxzahSYViF27ccASQTAlUSCDRQAtBgoKWKpwA0SBxAw4BEodIxRHSRuIAgGX2bTyr2QQSJcrXzPz/53t3U+l+H9d127Uri/WGgMnkWxAcxv8lOK0FeNUTAiA6YQcTs4VynSdIUQCsGliYPhy3CqvRK0JAvz9rq6onG71Myu1cPb4y1wel79XLMNty3WCQfbHsWimqLcqfIMR5gxYCHLPpsPBluHlwGuVsgHJrVR/Ag+nW8D2TfPSqY6hwd+MizDwugw+gAXq0i7Mrxggn+6fS/DQRx5Dar0O8HDXytDuljQD/vPcZcZwiLW9uRSGH5+IR2cyguqlpUQ+TRJKRsYWW97D3DoJr2GHXv0FeXz4yAKct/eMB7GD0ATQKxOL+LWHm3voecGjwFgsBKrLg38Pd1/cqzNVfAAAA///qNjARAAAABklEQVQDADRpascUPyAJAAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "RuTracker",
+        "url": "https://rutracker.org/",
+        "description": "俄区顶级 BT 站",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC4ElEQVR4AYxSW0hUYRCe+ffmbd1Na9PWtdQlRQuvEJLIEmaUUfhgJXQxlOhqRFHUS1cNIh96SFPEIo2KDMnwIULbwgvY5UGpMFHXtHbFTFfNbXfdM82upNSLHr7vn/n/mfnOzDm/gCU8A2tMfl+NW3b2RWdp/k9fkoCQq3YgSLeUMhG3qACZTHKKzFlGxq3Bg2yHYjbnItB1AlxNRBsXFRiyKnTDClftEHhaQOluIcT7XBTNZOBBizErmZ15zI/gP3wiAkaPxBp6Xlo1v/A1ZyQiQBIABDHtQTDdzzZegKjn71FmicnexF2q5gU8tpl0xaDrGX4rKrhSpKlXz0AHFwC3D2OqkIaiyPK7GrR38hl3Q8VCwH7LrMN/QQCFwxtUWOnOzaOasjGNsCABBNPUj9rQ3Il36sRDlbrCVj3ZurU4ccFA/cVRFvOE4CIfZBKp2ZExlWCX1Nop0vEIoJ6UOszB2QY9jRgehO7edtZwtfxAZGkNpvd64vMoaE6gvTBEErSHi4WEQBmdro+hw0RuhezRrnNxjQqP/wo+hkCYiW9TbyixBSS8SLfbmrVOa5VQvi1cJ1dSJbebwwIgCLDLqExd+SrcFtWkX1uf5zz2W9ffjYROXxwpBBFSuTsjs4nz6TA7mRxkwyvDocKMn8HyAsU4pShGA5O6zlzTz0qiiUPE9IGdmraU8IfCrV5+HlGYAPA4APQxfUDOYGccAh09pLWv+p5f+wGd/mN85oVLIJjhEkoC4m5MuVKrP7vTqiuQ8DQATDOB22mSq5zbky+W1qSdut2nf7wvi1QOrTfGlJNEoWxBeJe/dAUomwHxPe8/IchOOtbXtctHwmKVTr98gZ4MALAxrUyBiFl5eST7RwASyvnt0j1EuuxMq5obR8u/GmmYi4rlhJlC5jERYCEB9Y7C6MJF4gQf3JORda6+qae+DS9IYCaCve2N4RVvnocNtDZEfOloDKvhfYn5iW76DwAAAP//BZ7DewAAAAZJREFUAwCpbhPwGBpoRQAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "The Pirate Bay",
+        "url": "https://thepiratebay.org/",
+        "description": "海盗湾磁力搜",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACd0lEQVR4AXxSS0hyURD+uj0giiiiokUELQqCiBYRRQ/oBbWICGpRRBBELWpRRO9oVUEtWudCN4qKirgQF76WoiK4UFBQREEEFcGFID5u/z9TSlh0YGbuzJnzzbnf+YSPmiWK4oco/m3fjwj4WoFAAKurq1hYWMDS0tKvtri4CDK1Wv11CqgC+Hw+mEwm2O12WK3WX81ms4FMq9X+BGhoaKgWGxsbIQgCOjs70d7ejvr6era6ujruaWpq4khOIPfdRkZG4PF4sLu7C5lMBqfTif39fej1ejw/P3Prfw44kqsCVIrNzc08uVAo4OTkBGtra3zt/v5+iKIIWpVI31WATCZDOVwuF4aHh6FUKhGNRhEMBhEOhzE9PY37+3vuiUQiKBaL/C2wr3HZbBY0saWlhXcGBweRz+dRLpc5z+VyHMkJfr8fZ2dnKJVKTBQVJyYmMD4+zgRSPjk5Cap1dHRQiu7ubhDpBCikUim8vb0hmUzi9fUVCoUCDw8P2Nraquaki9PTU0ilUhgMBsjlcry/v2Nvbw+C2WxmVHp/2qScRDU0NITNzU1sb29jZ2cH8/PzPDmdTjPQ3d0d4vE4hLm5ORwfH4Ne4ejoCD09PXh6esLo6Ch6e3sxNTWFgYEBJvbq6goWiwU0jPoSiQSE5eVl3N7ewuv14vr6Gm63m+V8cHCAy8tLrK+vY2xsDJX/7+rqQigUYk4kEsmnlFtbW1l5GxsbLBiVSgXaPD8/x8XFBXQ6HRwOBx4fH5mrWCyGw8NDzM7OfgKQeDQaDW5ubtDW1sac1Dqqz8zM4OXlBSsrK6CbUA/rgLROJJH2qfiX9fX1wWg0Mi/U9w8AAP///C0w/AAAAAZJREFUAwBS1DXtIWxt2AAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "FOSSHUB",
+        "url": "https://www.fosshub.com/",
+        "description": "福斯舒布（书库）",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVR4AYRTu24TQRQ9dzZGchvW2A4SxTpEIhUo5BOgMOYDAFFRpgDaUNgpiJBAghThDwgfYJMCOkoSIiqQAt4K/GAXRIdE2L2c2YeJA6uM7pm5c8+Zs3dWuwZHhnvaW3Br8x2i69YagxTzzFkjd0SOwwbi1r07iOQdoG1AWxTXU9icNXKJBhBkIzcQPqkHlcesl4miKFtNokVqkhjQ9TaAJpFHwA46Ar0C1asqWAfkO/6OZnYGxt6ZrhSkrKi+PGGcxXDkrwUjfzsc+71vw/49R/WciLxKVZxV1u1Zg8hc5zZvOyg5MzcGg/2QtakYj/tfS5Jo2V1ClRHhmr3CUrJNJt383+GE4pRyusk0C3ORBjox4KvdyZjCZVqjSzQo1B5PKMo0kLe5UoHlPC9apzQCnwaYGACyMje34KJgpJysTGiV1wZOvMXCT8JG5UDjrWq1ccpuDsMePoh+P2OtQthQieOnJvzi70N01VYsVPVSJPLhZL1x3616rUrNa7o1r/0rjt6ryGVqPvNbuVV6gOUg8D/aKyAc+hsktoksdFYUqxDpKuQFIB0AyZN5uF3umoelReyeedPYSQxIajjqt9jJXeb5dZj+E/HMI2N/ttmMuWCyxC7KTp7A0fOArBE9AEMofgDYU8GGo+bs8OanPe53iYj/y/M/AAAA//8CnTS1AAAABklEQVQDAI8sstf8S/nKAAAAAElFTkSuQmCC"
+      }
+    ]
+  },
+  "modules": {
+    "label": "插件模组",
+    "icon": "i-heroicons-puzzle-piece",
+    "items": [
+      {
+        "name": "Crx搜搜",
+        "url": "https://www.crxsoso.com/",
+        "description": "浏览器扩展插件下载",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAD0UlEQVR4AVyRfUxVZRzHf89znnsP95zDhXvhEoTm3QWSF1HSWlNkAlOvAtYmiGKlWY7QrD80a1cN39ItrVZbAjJr4sTIXC+QGTUHTdha2EYR8lIG5p0B7nKFc7gv55znPB2qP5zf7bfnu2e/57vn9/tgeECLSlOLdq7JuPC2N+tOozdHb/Bm0xNrsvw1azOac9fNWXFfO5r1swH/GlgL9hdK0ur3a8721424qu26mLJBs+GNmoC2aWLqXmrf7FPjv9taml4HT0Gs+ZiZBbMBDKrB8irKuPQGc9SU6TFcLAUdGNIRwgZCiPGmf5hidZMqcgdp/A6fNv8SFIIEpvCGbLAu+dMhYEByLEUQAkY5hjjNgshfVoO7aTXwsJWS3wi19vAqFzYoFPPC6krRU19YCASHPZ6VcwVnU50e2N/GhYJxmON+IFF0Ek83HaOjz76l3Sw/wilVx8m9Fw8zeeO2kFz5blCuvHuP+6KzEyg2EqVNoQL30/kWKfsXGjl+Xgjj00Te0q4MvqfEL81TE5Yvw8Hhnv6xSGtSnLqyZKFS/Hi2smJ5XshbtX7ebqzZrUXBR10Gl+465h8PXD0H4dqYqH/QnX20iy4++xp97OwefeHhXgdMZibFQbqvXK45WBF8+VBFoHrxvKgPU5slRWeGEV2QnGl4HqrqaP39qJq46hXNvTM2wpyRCCREqXuXlJi2qmz0jvzxxBTWCdIAgwbJTs2OzUUCUg0ccgpGKMu143k3uBlHFID/6ML/QoyZvZjTKXAAyERoFkMY47A+hoEhRqkRWeCSJpblHBH6Wuu5W3VyDJqM4VmA50ZPTfv72y+kzRFKUhwqMrN1MBWQ8Rjm7yodlrCJ3LyI8oTO5CU/p7tS8/lrBwrIz1tPWnq3fCDdqi1E4tyEohy5gicaMAYoOEPQH+PWDsyPBBqsI5MqsxKEoxQUj4MFvPPrI08s2osiP/UJSteVliuH+tY/GX6nOHcGaxrWkYWRrkGb2nFDbMCf/zjRLQ1MnBGDYU63EQpRyhRPghEozXhGL8g9F1ETc8pKml6qWDqTx4GhW4hB/p60wVfXpcb+60Pd5mIAxX865JM6R65KUxGrIRAEwDSEEWX+4LXW7/Uv1y2ZOZD5iALAMTI+bYP32xztH7UI+8yp0WwAawaYlpr6yu3fDJ+2/zqmWXSDFwcmmP7t7X17thu7N+fLyVMKgcs99mjtReepE2fsFQBDshkwi8Y8ANBnAFOXLw7WJH09sNrVNtQm9o59GIwVNWag6k+6Rf+bLUnNvvOJ3sbm27sAbpjfMVkAwD8AAAD//9WHDyIAAAAGSURBVAMA3JCo7OiRTQ0AAAAASUVORK5CYII="
+      },
+      {
+        "name": "LSPosed 模块仓库",
+        "url": "https://modules.lsposed.org/",
+        "description": "官方框架模块仓库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACxUlEQVR4AVySyW4UVxSGv1sj3V09BGjjqQc7ShRFSXCUXZZZ5BWQsskmizwAEkJCFmLFO7BBLFiwhC0LXgABQkC52za0bUB22+6Bxl1dI+eWGARH9av+OnXPf/57zzWybyJN08+ZKIqyaRBkgcZslgUawnVuFoaZDi2AkK+AxHg8ptvp8GZ3h70dQa/H651ezt/u7rK9ucn+/j6GrP38aKFPH8fHA9xqDW+pibe4nKO00KAkvCDw5ucZDAZfC4BChxbyXJv7ByMuPnzF+pMeVx6/kvdLrj3d4fKjHrd7hxQc+4uAUro40/UopUiSSHiC65g4lolrGcTKYBqnhGkikLVZhuH7HV74Pl3Zk7+xQUf2PZvNMN0Sa8T874X8W4r4z4v5pyIFlsVJCiYS0shQwixJlssehmFQLBbZ29vDPeXyfWOZerHAQsVjrlKhYcHfpYzfPZtEm9cOXNuhWChw1D+k7Hl4gslkwsHBASOZxCxOGL2b4NVqpNLxz7LJhXLKDwWTQJwYSZKwtLTEokC/9QE6jpO7sW2bZqNBs9mkUi6TpZmch4stQo6SajJyASRq0kEXyyXJi7UTLajFNE/imEQO7+Fwwr334AcZrqEw3gcnbHS7+J0unc0tjo6H0rGF7Tg8ff4Mf6vD847P5laXIXB3avFgFIubNJ+Wcf6X31hptVhtt2k3G/z8048UCqeYjoc8kkneGBrcGipujk3uTCzCMMYzFVKNdmyYponrugJH4KInon+4MplJotiehPSCiO2TkP40IskSAjm3JP3oQC/+hFSSmiPxLoz4a77G9T9WWT/f5uraCutrbS792sr5hdYcQRRjKCV2pEApJa6+wPMqWDK+yqBPZXgo6FMdHgkOOT06wjzuUyrJ3dEdlVL5fkQnf3TuzJnTNFdXqJ49S61+ju/mzlGtz+W8Wq+zIONdXl7kAwAAAP//ADeFaAAAAAZJREFUAwBZNHf9gHcHmgAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Magisk 模块仓库",
+        "url": "https://magisk.me/modules/",
+        "description": "Magisk 常用模组",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADdElEQVR4AUySbWxTZRTH/89zX/p2aWvZ0nbWbBidCkqCosLYFhmJaDRpDMQYMZgQXaSoCWF+MGgCiSY4ZCgzJjitYbgPbogTJMayD3MbEOcwzIi8bI6xCZujc9Ku5fa29x6e27HASU5y7nP//995zrmXYz6I2Hz59M+tHhxrq5WOtmyUOls22nXxbF5wh/Y2gDHC/noFR+INiazez0wjYTL3AVNyH2CWkbDP0BlvKGps7S2YDZjrfOzrEMJVXfB6d0cjDy/eJp9TX891m/VGt7nNGFSjkSWL4ffuRmhlFw7uD9/yMxsAtDe5YKFdUaXaF0Yv5b5ZtpJ8/iralD/FX9VPcL9/FbUtqzKjQxdzilOthSa3o2mrCwTYAILDF4PLXaOlM7ntA4eV7493wO2pYEldQTLvhCv4IDuc+Ja/N9CpuMcnc/AtqMbdD2wBA3G0NngEqR561rquO+Rmvpqler/DpeQ/GJMrmJ0j/44i1XMIzewplp7IypicsqCq9YjFNA6tcjkDXwTdQI1X5udvLMWuk2uROHiZdWdLqUfk8dYxtuvks7hIj6I6KDxXr4EZRgVqHlouRpDKIUsyQJYiK/TJ2gVU97gKd5mbuvW7mJ2eMg/VPenE3md8JEuqGFmxYFoyTFYuABbELsQ4HL/MJFESCuKl58KY1PvgSPwBNXEGE0YfXn6+DCWaD73/TYE5nSCHCjs48sY4CnmTJInTzAxb1/sje+PLr8D7Bln+vnJi999Lsqhfa/kC67oOMcpmGFxOLi5cQDo9znH69IC4zmVIEsx7yqy/pQIiPg1b9jRSOKOzkJ5n7+zbS5ULAxiWTKGJWOR0QHjG0NczwNEYTyObiRepllXIVFagbuubiFWvZukrVykzMUGbnljFHtnwIrKLIoAiOmgujlQqjrafUlwsgOHIiX24luwnTXOwvJn/4Lce67ORPykQWEj+YJB2Dp6iT3/ttZhDzVOJ34Gp6X4c/aHZ9nKxPaCjYxZn/1pfhPi9Klwu6f3zv9OVcMAaCmjWxxcGCaFSiUpLVEzP9OPMhfWiadr2crHJuY/w4efj2PDWGgyP7oRujKBgWpOPLZGnl1bKTFUt8TyCUfHulbfXoEloYdvtPxHFmIMAs9j87g58tGcFzg5FreupGP2fjtG54Sgam1Zg8/YdQj0rkom0PbgJAAD//038GMUAAAAGSURBVAMAnDKAqmub1jEAAAAASUVORK5CYII="
+      }
+    ]
+  },
+  "system_security": {
+    "label": "系统与安全",
+    "icon": "i-heroicons-shield-check",
+    "items": [
+      {
+        "name": "Sysinternals",
+        "url": "https://learn.microsoft.com/zh-cn/sysinternals/",
+        "description": "微软官方高级系统工具",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaElEQVR4AezSsQ2AMAwEwLc7ShZgHOiYgF0QuzABHYzDApSUznuAr5IykS7NR5Zi2/91CgU8+4NQGMPzqtELoEETh+s1JadzzDAlc8f5hcQXcSMUxg2+kFVq9EXKRdpGg8Lu2gJTGKMAAAD//zpKw4EAAAAGSURBVAMAkBhbIQwx7MMAAAAASUVORK5CYII="
+      },
+      {
+        "name": "VirusTotal",
+        "url": "https://www.virustotal.com/gui/home/upload",
+        "description": "多引擎病毒扫描",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACa0lEQVR4AXySW0tUURTH19r7nOMcRzGCIHvqIbyMI4WW3V7sITRHizCFEgrKDHrps/TQQ2YE0gVmEgSvQZAv3VOiNG8RERSBEkmOZ5iz916tM446qONm/1n7rMtvX9YRdvO3g07sR9RpmKpymqarnTPzESc2V7mjgpyW+Son9jUqpFE1llBvLMd9KwW+siycsqX8YguRV0GOReajJfQ7kRoue2CUfxNkKIzC/mv8dCcZ1UVG3yDSXVvEfmNUJxG+RlnkCgASqZHyXkovdYBw96LjVq8Mlt9bGSrvzthgnSv2p4Yq7gPBBAmbGIAGIC694crHlPpzWdglt9yW73GIxB2of2FB7Qcb2kiuq5Yy34jgIhlkAPBo13wS6Y1Gn/jLvy4Iu7DNPVD3EMYWCMYP+5DgTRKo2WoYh1XLBcCULIAZwAlAMv0s2ud7i+eFFW5zzx7pg3qyOEqsbWcOIIhnISORfp1cOM2P2hwKz43CyZlijiJry9wE2Igr4xNQ3o3XEzcB+LH4Kk7Dp3MFxaXPyajBVLKsEV5W/OOKbWk5gLXiyVY7XNpv1ErCG3jfCmOoAGDb4wOPLCAugXd2Gycv2kX7nho/mfB+LnZA/R7MtlFstBFWW8oFwRUZEPwL7dptmr6Eod29xl+67Q3sb8+0b+yUyti1FgZ2HIO2an4ej1AExWhCjdNX0Cl5BMb7TWnvc2Hz7PXC2GxXxgbrXLE/FJu5xpeqQeOjCMXmrwq74A7oVJKMv0vYTg8KqxuFvIsou7eI/UJYPYh0nPSyJ/gsE8pYx1TaO6oNnVCKqnytI74xeRXkKBSHlJF1/wEAAP//wKSlZgAAAAZJREFUAwCxH2WDaO3rpAAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Password Pwned",
+        "url": "https://haveibeenpwned.com/",
+        "description": "检测密码是否泄露",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACa0lEQVR4AXySW0tUURTH19r7nOMcRzGCIHvqIbyMI4WW3V7sITRHizCFEgrKDHrps/TQQ2YE0gVmEgSvQZAv3VOiNG8RERSBEkmOZ5iz916tM446qONm/1n7rMtvX9YRdvO3g07sR9RpmKpymqarnTPzESc2V7mjgpyW+Son9jUqpFE1llBvLMd9KwW+siycsqX8YguRV0GOReajJfQ7kRoue2CUfxNkKIzC/mv8dCcZ1UVG3yDSXVvEfmNUJxG+RlnkCgASqZHyXkovdYBw96LjVq8Mlt9bGSrvzthgnSv2p4Yq7gPBBAmbGIAGIC694crHlPpzWdglt9yW73GIxB2of2FB7Qcb2kiuq5Yy34jgIhlkAPBo13wS6Y1Gn/jLvy4Iu7DNPVD3EMYWCMYP+5DgTRKo2WoYh1XLBcCULIAZwAlAMv0s2ud7i+eFFW5zzx7pg3qyOEqsbWcOIIhnISORfp1cOM2P2hwKz43CyZlijiJry9wE2Igr4xNQ3o3XEzcB+LH4Kk7Dp3MFxaXPyajBVLKsEV5W/OOKbWk5gLXiyVY7XNpv1ErCG3jfCmOoAGDb4wOPLCAugXd2Gycv2kX7nho/mfB+LnZA/R7MtlFstBFWW8oFwRUZEPwL7dptmr6Eod29xl+67Q3sb8+0b+yUyti1FgZ2HIO2an4ej1AExWhCjdNX0Cl5BMb7TWnvc2Hz7PXC2GxXxgbrXLE/FJu5xpeqQeOjCMXmrwq74A7oVJKMv0vYTg8KqxuFvIsou7eI/UJYPYh0nPSyJ/gsE8pYx1TaO6oNnVCKqnytI74xeRXkKBSHlJF1/wEAAP//wKSlZgAAAAZJREFUAwCxH2WDaO3rpAAAAABJRU5ErkJggg=="
+      },
+      {
+        "name": "Microsoft-Activation-Scripts",
+        "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+        "description": "Win系统激活 Microsoft全家桶激活",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVR4AWSSPUiVURiAz3e9/VgRQdDQ5lKJQzRZULQ4NLRFS0OD0RBFUIODswiiTv6h6OAkOii4uIii4qCgOAk6+AcK4ib+e72fz3P8rghezvO9/+e895w3F/ilaZog4kJ/B32wBkdwDOq9yOqYdOMTN0iShFh6h08rsQmohQq4D/dA/QdykpwmiHXYIacBJg3j+A8WIeKyM4kGn3KogyFqPDCX4/Qijib4DOPwDabgEDZhA9RnkMbGkF+gwVo7eIvxCy5gFecAsgZewiuohBdQk8VW0M39Qxdv/C8/cdyFMijgVF6QvA0nGTvEzrNYAd2cB8haN/iAksIxdFDg7t7q9X+nMOpZrJO8A7DmvRs8xzBhD7kOgcQimKCpnd6wt3DaESJUuIHFJj/EU146Df3WymK+0mOC1pW5gTeNHZ7yqU6uZiKfJeMKQR3yxnB46c+QHrrpBj4PdvCpnLZKEgtggv7SX/CCq3C0gcsOpt2gG0ujD7kAy5w2Aq/R40Kvgn6MOfBZnZ0z9B4HaRGlC/5CI7TAI9iH0jpB+Q7ek6+VR2+nyyUHyS7+4XD6BpHzUE8wvgi6a5vPLrgc51GUerq6GmWST3F8glkYgnmCT5Cl5aB5cQ6Rc/DVGih6erxlDKfONj9S1Qy2jYjLA/Q5zr/JPeMA7y1cAgAA//9ruAYMAAAABklEQVQDAO6a4qoqDbvbAAAAAElFTkSuQmCC"
+      }
     ]
   }
 }

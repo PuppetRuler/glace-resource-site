@@ -3,23 +3,94 @@
     <!-- 遮罩层 -->
     <div class="fixed inset-0 vignette-overlay backdrop-saturate-150 z-0" />
     <AppBackground />
-    <AppHeader />
-    <div class="flex h-[calc(100vh-4rem)] overflow-hidden">
-      <!-- Navigation Menu -->
-      <div class="w-fit shrink-0">
-        <NavigationMenu
-          :active-section="activeSection"
-          @navigate="handleNavigate"
+    
+    <!-- 骨架屏状态 -->
+    <template v-if="loading">
+      <div class="h-full w-full flex flex-col">
+        <!-- Header 骨架屏 -->
+        <div class="h-16 border-b dark:border-gray-800 border-gray-300 backdrop-blur-xl">
+          <div class="h-full px-6 flex items-center justify-between">
+            <!-- Logo 骨架 -->
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-gray-300/50 dark:bg-gray-700/50 animate-pulse" />
+              <div class="w-32 h-6 rounded bg-gray-300/50 dark:bg-gray-700/50 animate-pulse" />
+            </div>
+            
+            <!-- 右侧按钮骨架 -->
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-gray-300/50 dark:bg-gray-700/50 animate-pulse" />
+              <div class="w-10 h-10 rounded-lg bg-gray-300/50 dark:bg-gray-700/50 animate-pulse" />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex h-[calc(100vh-4rem)] overflow-hidden">
+          <!-- 侧边栏骨架屏 -->
+          <div class="w-20 md:w-44 shrink-0 border-r dark:border-gray-800 border-gray-300 backdrop-blur-xl rounded-r-xl">
+            <div class="pt-4 px-3 space-y-2">
+              <div 
+                v-for="i in 8" 
+                :key="i"
+                class="h-12 rounded-lg bg-gray-300/30 dark:bg-gray-700/30 animate-pulse"
+                :style="{ animationDelay: `${i * 0.05}s` }"
+              />
+            </div>
+          </div>
+
+          <!-- 主内容骨架屏 -->
+          <div class="flex-1 overflow-hidden p-4 md:p-8">
+            <div class="max-w-7xl mx-auto space-y-8 md:space-y-12">
+              <!-- 重复多个分组骨架 -->
+              <div 
+                v-for="section in 3" 
+                :key="section"
+                class="space-y-4"
+              >
+                <!-- 分组标题骨架 -->
+                <div class="flex items-center gap-3 mb-6 p-4 w-fit rounded-xl">
+                  <div class="w-8 h-8 rounded-lg bg-gray-300/50 dark:bg-gray-700/50 animate-pulse" />
+                  <div class="w-32 h-7 rounded bg-gray-300/50 dark:bg-gray-700/50 animate-pulse" />
+                </div>
+
+                <!-- 卡片网格骨架 -->
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+                  <div 
+                    v-for="card in 8" 
+                    :key="card"
+                    class="h-16 md:h-20 rounded-full bg-gray-300/30 dark:bg-gray-700/30 backdrop-blur-sm animate-pulse"
+                    :style="{ animationDelay: `${card * 0.05}s` }"
+                  />
+                </div>
+
+                <!-- 分隔线骨架 -->
+                <div class="mt-6 md:mt-10 h-px bg-gray-300/50 dark:bg-gray-700/50" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- 实际内容 -->
+    <template v-else>
+      <AppHeader />
+      <div class="flex h-[calc(100vh-4rem)] overflow-hidden">
+        <!-- Navigation Menu -->
+        <div class="w-fit shrink-0">
+          <NavigationMenu
+            :active-section="activeSection"
+            @navigate="handleNavigate"
+          />
+        </div>
+
+        <!-- Main Content -->
+        <MainContent
+          ref="mainContentRef"
+          @section-change="handleSectionChange"
+          class="flex-1"
         />
       </div>
-
-      <!-- Main Content -->
-      <MainContent
-        ref="mainContentRef"
-        @section-change="handleSectionChange"
-        class="flex-1"
-      />
-    </div>
+    </template>
   </div>
 </template>
 
@@ -27,8 +98,8 @@
 import { ref, onMounted } from "vue";
 import rawNavData from "~/assets/data/nav.json";
 import * as ThumbHash from "~/assets/js/thumbhash";
-// --- 1. 定义类型接口 ---
 
+// --- 1. 定义类型接口 ---
 interface NavItem {
   name: string;
   url: string;
@@ -42,62 +113,44 @@ interface NavCategory {
   items: NavItem[];
 }
 
-// 对应 JSON 的 Record 结构，键名如 "light_novel_acg"
 type NavData = Record<string, NavCategory>;
 
 // --- 2. 状态声明 ---
-
-// 显式断言导入的 JSON 符合 NavData 接口
 const navData = rawNavData as NavData;
-
-// 当前活动的 Section 键名
 const activeSection = ref<string | undefined>(undefined);
 
-// 定义 MainContent 组件的暴露接口类型
-// 假设该组件通过 defineExpose 暴露了 scrollToSection 方法
 interface MainContentExpose {
   scrollToSection: (key: string) => void;
 }
 
 const mainContentRef = ref<MainContentExpose | null>(null);
+const loading = ref(true);
 
 // --- 3. 逻辑处理 ---
-
-// 初始化时设置第一个 section 为活动状态
 onMounted(() => {
   const keys = Object.keys(navData);
   if (keys.length > 0) {
     activeSection.value = keys[0];
   }
+
+  // 骨架屏最小显示时间
+  const minSkeletonMs = 800;
+  setTimeout(() => {
+    loading.value = false;
+  }, minSkeletonMs);
 });
 
-/**
- * 处理从菜单点击的导航
- * @param sectionKey - 对应 navData 中的分类键名
- */
 const handleNavigate = (sectionKey: string): void => {
   if (mainContentRef.value) {
     mainContentRef.value.scrollToSection(sectionKey);
   }
 };
 
-/**
- * 处理由于页面滚动触发的活动 Section 变更
- * @param sectionKey - 滚动检测到的当前分类键名
- */
 const handleSectionChange = (sectionKey: string): void => {
   activeSection.value = sectionKey;
 };
 
-// 简单加载状态：可以在未来替换为真实的数据加载逻辑或由子组件触发
-const loading = ref(true);
-
-onMounted(() => {
-  // 给出一个最小的骨架显示时间以避免闪烁
-  const minSkeletonMs = 350;
-  setTimeout(() => (loading.value = false), minSkeletonMs);
-});
-
+// 背景图片加载逻辑
 onMounted(async () => {
   const el = document.querySelector(".bg-img") as HTMLElement;
   if (!el) return;
@@ -108,7 +161,6 @@ onMounted(async () => {
     : "https://fastly.jsdelivr.net/gh/PuppetRuler/drawing-board@main/images/1726620907142bg.jpg";
 
   /* ========== 1. 生成 ThumbHash 占位图 ========== */
-
   const image = new Image();
   image.crossOrigin = "Anonymous";
   image.src = ORIGINAL_URL;
@@ -116,7 +168,7 @@ onMounted(async () => {
   try {
     await new Promise((resolve, reject) => {
       image.onload = resolve;
-      image.onerror = reject; // 捕获加载失败
+      image.onerror = reject;
     });
 
     const canvas = document.createElement("canvas");
@@ -140,8 +192,7 @@ onMounted(async () => {
     console.error("ThumbHash 生成失败:", e);
   }
 
-  /* ========== 2. 写入占位背景（模糊层） ========== */
-
+  /* ========== 2. 加载原图 ========== */
   const img = new Image();
   img.src = ORIGINAL_URL;
 
@@ -154,21 +205,20 @@ onMounted(async () => {
     finishLoading();
   } else {
     img.onload = finishLoading;
-    img.onerror = finishLoading; // 避免卡死在模糊状态
+    img.onerror = finishLoading;
   }
 });
 </script>
 
 <style lang="scss">
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 // 背景图片容器逻辑
@@ -178,7 +228,7 @@ onMounted(async () => {
   --bg-blur-opacity: 1;
   --bg-clear-opacity: 0;
 
-  // 模糊层 (Before)
+  // 模糊层
   &::before {
     content: "";
     position: absolute;
@@ -192,7 +242,8 @@ onMounted(async () => {
     transition: opacity 0.5s ease;
     z-index: -2;
   }
-  // 清晰层 (After)
+  
+  // 清晰层
   &::after {
     content: "";
     position: absolute;
@@ -204,13 +255,15 @@ onMounted(async () => {
     transition: opacity 0.5s ease;
     z-index: -1;
   }
-  // 加载完成后的状态切换
+  
+  // 加载完成
   &.loaded {
     --bg-blur-opacity: 0;
     --bg-clear-opacity: 1;
   }
 }
-// 遮罩层：径向渐变
+
+// 遮罩层
 .vignette-overlay {
   pointer-events: none;
   position: fixed;
@@ -227,13 +280,14 @@ onMounted(async () => {
     transition: none;
   }
 }
-// 深色模式适配
+
 .dark {
   .vignette-overlay {
     --bg-gradient-home: 20, 20, 20;
   }
 }
-// 统一内容切换动画 (Nuxt Transition)
+
+// 淡入淡出动画
 .fade-slide {
   &-enter-active,
   &-leave-active {
@@ -247,5 +301,19 @@ onMounted(async () => {
     opacity: 0;
     transform: translateY(-10px);
   }
+}
+
+// 骨架屏动画优化
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 </style>
