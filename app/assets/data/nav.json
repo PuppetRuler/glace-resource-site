@@ -1,0 +1,158 @@
+{
+  "light_novel_acg": {
+    "label": "轻小说与 ACG",
+    "icon": "i-heroicons-book-open",
+    "items": [
+      { "name": "カクヨム", "url": "https://kakuyomu.jp/", "description": "日本轻小说创作/阅读", "logo": "i-simple-icons-docsdotrs" },
+      { "name": "轻小说百科", "url": "https://lnovel.org/", "description": "轻小说资源百科", "logo": "i-heroicons-academic-cap" },
+      { "name": "ACG盒子", "url": "https://www.acgbox.link/#term-155", "description": "专注ACG的导航盒子", "logo": "i-heroicons-square-3-stack-3d" },
+      { "name": "量子ACG", "url": "https://lzacg.one/", "description": "ACG资源站", "logo": "i-heroicons-sparkles" },
+      { "name": "GAL图书馆", "url": "https://gallibrary.pw/index.html", "description": "Galgame资源库", "logo": "i-heroicons-library" },
+      { "name": "魔笔小说", "url": "https://mobinovels.com/", "description": "轻小说资源收集", "logo": "i-heroicons-bookmark" },
+      { "name": "哔哩轻小说", "url": "https://w.linovelib.com/", "description": "在线轻小说阅读", "logo": "i-heroicons-book-open" },
+      { "name": "去看吧动漫", "url": "https://www.qkan8.com/", "description": "免费动漫在线看", "logo": "i-heroicons-play" },
+      { "name": "AnimeTrace", "url": "https://ai.animedb.cn/", "description": "以图识番引擎", "logo": "i-heroicons-cpu-chip" },
+      { "name": "在线玩Gal", "url": "https://ipfs.io//ipfs/bafykbzacebduiodym2eruireydhkqlnufs5jyyzt3urmgbsl4zw2rcrcoaycu/", "description": "基于IPFS的在线Gal", "logo": "i-heroicons-play-circle" },
+      { "name": "Kimochi Gaming", "url": "https://kimochi.info/", "description": "Eroge 资源站", "logo": "i-heroicons-heart" },
+      { "name": "Hikarinagi", "url": "https://www.hikarinagi.org/", "description": "ACGN文化社区", "logo": "i-heroicons-user-group" },
+      { "name": "Galgame档案", "url": "https://www.hikarinagi.org/galgame", "description": "Gal记录", "logo": "i-heroicons-archive-box" }
+    ]
+  },
+  "proxy_services": {
+    "label": "网络加速与代理",
+    "icon": "i-heroicons-shield-check",
+    "items": [
+      { "name": "极速云", "url": "https://xn--9kqu12djx2a.net/", "description": "网络加速面板", "logo": "i-heroicons-cloud" },
+      { "name": "甜奶网络", "url": "https://1milk.top/", "description": "真专线加速", "logo": "i-heroicons-bolt" },
+      { "name": "老马识途WXF", "url": "https://freenode.top/", "description": "科学上网分享", "logo": "i-heroicons-share" },
+      { "name": "FastFly", "url": "https://fastestcloud.xyz/", "description": "加速仪表盘", "logo": "i-heroicons-paper-airplane" },
+      { "name": "FASTLINK", "url": "https://flaff20230823.fastlink-aff02.com/", "description": "FASTLINK首页", "logo": "i-heroicons-link" },
+      { "name": "Flyint飞数", "url": "https://www.feishu111.com/", "description": "飞数加速服务", "logo": "i-heroicons-rocket-launch" },
+      { "name": "廉价机场", "url": "https://lianjiasub.work/", "description": "廉价加速服务", "logo": "i-heroicons-currency-dollar" },
+      { "name": "万达云", "url": "https://app.iocone.com/", "description": "全球加密隧道", "logo": "i-heroicons-globe-alt" },
+      { "name": "维云云", "url": "https://vyy.idsduf.com/", "description": "维云云仪表盘", "logo": "i-heroicons-server-stack" },
+      { "name": "BridgeDB", "url": "https://bridges.torproject.org/", "description": "Tor桥接获取", "logo": "i-simple-icons-torproject" },
+      { "name": "订阅中心", "url": "https://cf.puppetblog.top/...", "description": "订阅地址管理", "logo": "i-heroicons-rss" }
+    ]
+  },
+  "frontend_and_frameworks": {
+    "label": "前端开发与 UI",
+    "icon": "i-heroicons-code-bracket",
+    "items": [
+      { "name": "Vue.js", "url": "https://cn.vuejs.org/", "description": "渐进式 JS 框架", "logo": "i-logos-vue" },
+      { "name": "Awesome Vue", "url": "https://awesomejs.dev/for/vue/", "description": "Vue 资源库", "logo": "i-logos-vue" },
+      { "name": "Element Plus", "url": "https://element-plus.org/", "description": "Vue3 UI 框架", "logo": "i-logos-element" },
+      { "name": "Element UI", "url": "https://element.eleme.cn/", "description": "Vue2 UI 框架", "logo": "i-logos-element" },
+      { "name": "Ant Design", "url": "https://ant-design.antgroup.com/", "description": "React 组件库", "logo": "i-logos-ant-design" },
+      { "name": "Naive UI", "url": "https://www.naiveui.com/", "description": "Vue3 组件库", "logo": "i-logos-naiveui" },
+      { "name": "Vuetify", "url": "https://vuetifyjs.com/", "description": "Material UI 框架", "logo": "i-logos-vuetifyjs" },
+      { "name": "Vant 4", "url": "https://vant-ui.github.io/vant/", "description": "移动端 UI 库", "logo": "i-logos-vue" },
+      { "name": "Varlet", "url": "https://varlet.gitee.io/varlet-ui/", "description": "Material 移动端库", "logo": "i-heroicons-device-phone-mobile" },
+      { "name": "Quasar", "url": "https://quasar.dev/", "description": "全平台 Vue 框架", "logo": "i-simple-icons-quasar" },
+      { "name": "Vuestic UI", "url": "https://ui.vuestic.dev/", "description": "Vue3 UI 框架", "logo": "i-heroicons-cube" },
+      { "name": "OpenTiny", "url": "https://opentiny.design/", "description": "华为企业级 UI", "logo": "i-heroicons-briefcase" },
+      { "name": "Apache ECharts", "url": "https://echarts.apache.org/", "description": "可视化图表库", "logo": "i-simple-icons-apacheecharts" },
+      { "name": "Animate.css", "url": "https://animate.style/", "description": "CSS 动画库", "logo": "i-heroicons-sparkles" },
+      { "name": "BootCDN", "url": "https://www.bootcdn.cn/", "description": "开源 CDN 加速", "logo": "i-heroicons-bolt-slash" },
+      { "name": "iconfont", "url": "https://www.iconfont.cn/", "description": "阿里图标库", "logo": "i-simple-icons-antdesign" }
+    ]
+  },
+  "dev_tools_docs": {
+    "label": "开发工具与文档",
+    "icon": "i-heroicons-command-line",
+    "items": [
+      { "name": "MDN Web Docs", "url": "https://developer.mozilla.org/zh-CN/", "description": "Web 技术文档", "logo": "i-logos-mdn" },
+      { "name": "npm", "url": "https://www.npmjs.com/", "description": "包管理器", "logo": "i-logos-npm-icon" },
+      { "name": "ESLint", "url": "https://eslint.org/", "description": "代码检测", "logo": "i-logos-eslint" },
+      { "name": "jQuery API", "url": "https://api.jquery.com/", "description": "jQuery 文档", "logo": "i-simple-icons-jquery" },
+      { "name": "Java 8 API", "url": "https://www.matools.com/api/java8", "description": "Java 中文 API", "logo": "i-logos-java" },
+      { "name": "Carbon", "url": "https://carbon.now.sh/", "description": "代码转图片", "logo": "i-heroicons-camera" },
+      { "name": "Chocolatey", "url": "https://community.chocolatey.org/", "description": "Windows 包管理", "logo": "i-simple-icons-chocolatey" },
+      { "name": "Sysinternals", "url": "https://learn.microsoft.com/zh-cn/sysinternals/", "description": "微软实用工具", "logo": "i-logos-microsoft" },
+      { "name": "PlantUML", "url": "https://www.plantuml.com/", "description": "UML 在线绘图", "logo": "i-heroicons-pencil-square" },
+      { "name": "Data Structure Visualization", "url": "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html", "description": "算法可视化", "logo": "i-heroicons-eye" },
+      { "name": "LINUX DO", "url": "https://linux.do/", "description": "理想型社区", "logo": "i-heroicons-chat-bubble-left-right" },
+      { "name": "JetBrains 激活", "url": "https://jetbrains.asiones.com/", "description": "IDE 授权服务器", "logo": "i-simple-icons-jetbrains" },
+      { "name": "Github Trends", "url": "https://refft.com/trending-2025-10-07-daily.html", "description": "GitHub 趋势", "logo": "i-simple-icons-github" },
+      { "name": "Colab", "url": "https://colab.research.google.com/", "description": "Google 代码实验室", "logo": "i-logos-google-colab" },
+      { "name": "daily.dev", "url": "https://app.daily.dev/", "description": "开发者头条", "logo": "i-heroicons-newspaper" }
+    ]
+  },
+  "ai_tools": {
+    "label": "AI 助手与接口",
+    "icon": "i-heroicons-sparkles",
+    "items": [
+      { "name": "Google Gemini", "url": "https://gemini.google.com/", "description": "Google AI 助手", "logo": "i-logos-google-gemini" },
+      { "name": "Perplexity AI", "url": "https://www.perplexity.ai/", "description": "AI 搜索引擎", "logo": "i-simple-icons-perplexity" },
+      { "name": "Dify", "url": "https://cloud.dify.ai/", "description": "AI 应用开发平台", "logo": "i-heroicons-cpu-chip" },
+      { "name": "Coze GPT-4", "url": "https://www.coze.com/space/7358413674744807431/bot/7358414508676792327", "description": "字节 AI 机器人", "logo": "i-heroicons-bolt" },
+      { "name": "GPT_API_free", "url": "https://github.com/chatanywhere/GPT_API_free", "description": "免费 ChatGPT API", "logo": "i-logos-openai" },
+      { "name": "ChatPDF", "url": "https://askdocs.azurewebsites.net/", "description": "PDF 文档对话", "logo": "i-heroicons-document-magnifying-glass" },
+      { "name": "秘塔写作猫", "url": "https://xiezuocat.com/", "description": "AI 辅助写作", "logo": "i-heroicons-pencil" },
+      { "name": "Gen-2 AI视频", "url": "https://app.runwayml.com/", "description": "Runway 视频生成", "logo": "i-heroicons-video-camera" },
+      { "name": "AI 语音", "url": "https://www.kamiya.dev/", "description": "AI 语音转换", "logo": "i-heroicons-microphone" },
+      { "name": "ChatGPT Prompts", "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh", "description": "调教指南", "logo": "i-heroicons-book-open" }
+    ]
+  },
+  "resources_and_search": {
+    "label": "资源导航与搜索",
+    "icon": "i-heroicons-magnifying-glass",
+    "items": [
+      { "name": "小纸条资源", "url": "https://ali.gitcafe.ink/", "description": "开放资源网站", "logo": "i-heroicons-paper-clip" },
+      { "name": "RuTracker", "url": "https://rutracker.org/", "description": "俄国顶级资源网", "logo": "i-heroicons-globe-europe-africa" },
+      { "name": "Pirate Bay", "url": "https://thepiratebay.org/", "description": "海盗湾种子", "logo": "i-heroicons-flag" },
+      { "name": "奈斯搜索", "url": "https://www.niceso.fun/", "description": "阿里网盘搜索", "logo": "i-heroicons-magnifying-glass" },
+      { "name": "我的小站", "url": "https://pan666.cn/", "description": "云盘资源共享", "logo": "i-heroicons-folder" },
+      { "name": "云盘资源网", "url": "https://www.yunpanziyuan.com/", "description": "百度网盘分享", "logo": "i-heroicons-circle-stack" },
+      { "name": "flysheep避难所", "url": "http://sj.ysepan.com/flysheep#/", "description": "资源避难所", "logo": "i-heroicons-lifebuoy" },
+      { "name": "量子ACG", "url": "https://lzacg.one/", "description": "ACG资源搜索", "logo": "i-heroicons-magnifying-glass-circle" },
+      { "name": "以图搜番 Yandex", "url": "https://yandex.com/images/search", "description": "Yandex搜番", "logo": "i-simple-icons-yandex" },
+      { "name": "以图搜番 SauceNAO", "url": "https://saucenao.com/", "description": "SauceNAO搜索", "logo": "i-heroicons-photo" },
+      { "name": "以图搜番 Trace", "url": "https://trace.moe/", "description": "Trace.moe 搜番", "logo": "i-heroicons-film" },
+      { "name": "搜图Bot酱", "url": "https://soutubot.moe/", "description": "综合搜索机器人", "logo": "i-heroicons-beaker" }
+    ]
+  },
+  "utility_tools": {
+    "label": "常用实用工具",
+    "icon": "i-heroicons-wrench",
+    "items": [
+      { "name": "iLovePDF", "url": "https://www.ilovepdf.com/", "description": "在线 PDF 工具", "logo": "i-heroicons-document-duplicate" },
+      { "name": "Remove.bg", "url": "https://www.remove.bg/", "description": "在线抠图去背景", "logo": "i-heroicons-scissors" },
+      { "name": "Aconvert", "url": "https://www.aconvert.com/cn/", "description": "全能格式转换", "logo": "i-heroicons-arrow-path" },
+      { "name": "Fast.com", "url": "https://fast.com/", "description": "在线网速测试", "logo": "i-heroicons-signal" },
+      { "name": "VirusTotal", "url": "https://www.virustotal.com/", "description": "病毒扫描", "logo": "i-heroicons-shield-exclamation" },
+      { "name": "Have I Been Pwned", "url": "https://haveibeenpwned.com/", "description": "密码泄露检测", "logo": "i-heroicons-key" },
+      { "name": "GitMind", "url": "https://gitmind.cn/", "description": "思维导图", "logo": "i-heroicons-share" },
+      { "name": "ProcessOn", "url": "https://www.processon.com/", "description": "在线流程图", "logo": "i-heroicons-rectangle-group" },
+      { "name": "Wormhole", "url": "https://wormhole.app/", "description": "私密文件分享", "logo": "i-heroicons-paper-airplane" },
+      { "name": "LALAL.AI", "url": "https://www.lalal.ai/", "description": "人声伴奏提取", "logo": "i-heroicons-musical-note" },
+      { "name": "WiFi Card", "url": "https://wificard.io/", "description": "生成 WiFi 卡片", "logo": "i-heroicons-wifi" },
+      { "name": "短网址生成", "url": "https://sina.lt/", "description": "新浪短链接", "logo": "i-heroicons-link" },
+      { "name": "ePub转换", "url": "https://v.magiconch.com/epub-transform", "description": "繁简在线转换", "logo": "i-heroicons-book-open" }
+    ]
+  },
+  "education_and_exams": {
+    "label": "教育与考研",
+    "icon": "i-heroicons-academic-cap",
+    "items": [
+      { "name": "中国大学MOOC", "url": "https://www.icourse163.org/", "description": "在线学习平台", "logo": "i-heroicons-academic-cap" },
+      { "name": "Noob-Dream", "url": "https://github.com/Noob-Dream/cskaoyan", "description": "计算机考研指南", "logo": "i-simple-icons-github" },
+      { "name": "王道复试线", "url": "https://docs.qq.com/sheet/DVHhiZnhHUmFOVEJj", "description": "24考研线汇总", "logo": "i-heroicons-list-bullet" },
+      { "name": "408-夸克网盘", "url": "https://pan.quark.cn/s/4a243dbeae17", "description": "408考研资源", "logo": "i-heroicons-archive-box" },
+      { "name": "英语真题在线", "url": "https://zhenti.burningvocabulary.com/", "description": "考研英语真题", "logo": "i-heroicons-language" },
+      { "name": "WRITE-BUG", "url": "https://www.writebug.com/", "description": "学生编程学习平台", "logo": "i-heroicons-code-bracket" }
+    ]
+  },
+  "social_media_community": {
+    "label": "媒体与社区",
+    "icon": "i-heroicons-globe-alt",
+    "items": [
+      { "name": "YouTube", "url": "https://www.youtube.com/", "description": "全球视频平台", "logo": "i-logos-youtube-icon" },
+      { "name": "Bilibili", "url": "https://www.bilibili.com/", "description": "哔哩哔哩弹幕网", "logo": "i-simple-icons-bilibili" },
+      { "name": "SoundCloud", "url": "https://soundcloud.com/", "description": "音频分享平台", "logo": "i-simple-icons-soundcloud" },
+      { "name": "Telegram Web", "url": "https://web.telegram.org/", "description": "电报网页版", "logo": "i-logos-telegram" },
+      { "name": "Notion", "url": "https://www.notion.so/", "description": "个人知识库", "logo": "i-simple-icons-notion" },
+      { "name": "GitHub", "url": "https://github.com/", "description": "代码托管平台", "logo": "i-simple-icons-github" }
+    ]
+  }
+}
