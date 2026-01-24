@@ -357,6 +357,12 @@
           "url": "https://github.com/stevenjoezhang/live2d-widget",
           "description": "网页看板娘插件",
           "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVR4AWSSPUiVURiAz3e9/VgRQdDQ5lKJQzRZULQ4NLRFS0OD0RBFUIODswiiTv6h6OAkOii4uIii4qCgOAk6+AcK4ib+e72fz3P8rghezvO9/+e895w3F/ilaZog4kJ/B32wBkdwDOq9yOqYdOMTN0iShFh6h08rsQmohQq4D/dA/QdykpwmiHXYIacBJg3j+A8WIeKyM4kGn3KogyFqPDCX4/Qijib4DOPwDabgEDZhA9RnkMbGkF+gwVo7eIvxCy5gFecAsgZewiuohBdQk8VW0M39Qxdv/C8/cdyFMijgVF6QvA0nGTvEzrNYAd2cB8haN/iAksIxdFDg7t7q9X+nMOpZrJO8A7DmvRs8xzBhD7kOgcQimKCpnd6wt3DaESJUuIHFJj/EU146Df3WymK+0mOC1pW5gTeNHZ7yqU6uZiKfJeMKQR3yxnB46c+QHrrpBj4PdvCpnLZKEgtggv7SX/CCq3C0gcsOpt2gG0ujD7kAy5w2Aq/R40Kvgn6MOfBZnZ0z9B4HaRGlC/5CI7TAI9iH0jpB+Q7ek6+VR2+nyyUHyS7+4XD6BpHzUE8wvgi6a5vPLrgc51GUerq6GmWST3F8glkYgnmCT5Cl5aB5cQ6Rc/DVGih6erxlDKfONj9S1Qy2jYjLA/Q5zr/JPeMA7y1cAgAA//9ruAYMAAAABklEQVQDAO6a4qoqDbvbAAAAAElFTkSuQmCC"
+        },
+        {
+          "name": "Coolors",
+          "url": "https://coolors.co/?home",
+          "description": "超快的调色板生成器",
+          "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC/0lEQVR4AVRTTWxVRRT+zpm5fe+VvojyiIEIUk0jmFQTgkYB0zZoNCaChrUak8ZCxCUboyuNC12KgUZ0UddErdGFjdIoVA2JGElA02BBQolpGySvP++9OzOfZwoLuJlz586Z833nnG/mKuwhKTatjpWSA53IMcYwSwYyZYtXs68kB1aD7EXexKwSiIit2RMCj1ZdOVkoXl6B2zDTVF5eVpaiG7PPhzAZIo/OkfWMMR6oIQ09V4/EuHM4cKXp06FxhofHYtr2RcJD30Y8MhXTO9Mx/KcuOcWBdcBXhusxE81MMTU+cIKhn6bRfuII5ePTdJeakDaBtlX65xLlvRm6XZcipku2rd+hCHyYsWo97zbW4ZkFhP0foZhtAsVdQkRDZnQ2q7VaAc63kuy/GosbiUGBYdNkt1rmEdv3748Tc/OQrh5BuUzZs0n52ZBydKfy0W5IqwN4Lzhne7+uEFaFrTCihZTPLHXAr89BpZvoLBLPbaV89yLktT6R1x+E/PC445N3U4KR9NcE26uilpQOGFSo3vvPPDC/CKET8wtGHhOKA1rBCKPgnoIysd3z5wc8ftzs0FAT3yJtbMhMNt85TByAd/pyYGH8anb7jiKlfzc3gEYPKDGjiE/OJIF9Vq3LLkdcL4VP/xZkx8WAgSsRCwnpFsk1LVlMrOmCvNCPxGVBFvGbC8JnvwTHLpKf/g3uORNl6rrQdwG/LxFnW7QMEDvKSbWko8YW3torWN8As4hFt3LicpJXv08yfDrJ2SWwamC7qeivATtqqwWaQhjVWiGnYsLx3nXwJ95EubEOlDcsgReicsssQ6sNbKsqT9znO2tVvPVwvBA5pbSfwi7SYavk5FN9qPxySPjGLolb6mDFBMscW9cI3+6VOLXFoa+Qislz0gGHM1ZNcZot2gnuixHHNtWDHtkr/vwrTi+8pPjreYc/djp9t8/5tSmqVXtsAdiXMWZUqw6ZyRZN7+VgKxaDZcLnNcRrvfUk93cnKZhmsy94P+idHFwv0syYjP0fAAD//0WgegMAAAAGSURBVAMAN72BcoqLfy8AAAAASUVORK5CYII="
         }
       ]
     },
