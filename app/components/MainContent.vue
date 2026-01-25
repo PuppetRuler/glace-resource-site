@@ -53,7 +53,7 @@
             <div class="flex items-center gap-2 md:gap-2.5">
               <!-- 图标容器 - 响应式大小 -->
               <UAvatar
-                :src="getIcon(item.logo)"
+                :src='item.logo'
                 referrerpolicy="no-referrer"
                 :alt="item.name"
                 loading="lazy"
@@ -63,7 +63,6 @@
                     ? 'w-7 h-7 md:w-9 md:h-9'
                     : 'w-8 h-8 md:w-9 md:h-9'
                 ]"
-                @error="handleIconError(item.logo)"
               />
 
               <!-- 文字内容 - 响应式字体 -->
@@ -246,46 +245,6 @@ function changeNavMode(mode: string) {
     navMode.value = navMode.value === 'security' ? 'insecurity' : 'security'
   }
   open.value = false
-}
-
-// 1. 记录每个 URL 的失败次数 (0: 原图, 1: 第三方API, 2: 最终兜底)
-const logoRetryLevel = reactive(new Map<string, number>())
-
-/**
- * 获取图标逻辑
- */
-function getIcon(url: string) {
-  const level = logoRetryLevel.get(url) || 0
-
-  // 阶段 0：尝试原始 URL
-  if (level === 0) return url
-
-  // 阶段 1：尝试第三方 Favicon API (Google 方案)
-  if (level === 1) {
-    try {
-      const domain = new URL(url).hostname
-      // Google 的 Favicon 服务非常稳定，能自动处理大部分跨域和抓取问题
-      return `https://www.google.com/s2/favicons?sz=128&domain=${domain}`
-    } catch {
-      // 如果 URL 解析失败，直接进入下一阶段
-      return '/img/global.png'
-    }
-  }
-
-  // 阶段 2 及以上：使用本地图片兜底
-  return '/img/global.png'
-}
-
-/**
- * 错误处理逻辑
- */
-function handleIconError(url: string) {
-  const currentLevel = logoRetryLevel.get(url) || 0
-
-  // 只有当还没到达最终兜底阶段时，才增加重试层级
-  if (currentLevel < 2) {
-    logoRetryLevel.set(url, currentLevel + 1)
-  }
 }
 </script>
 

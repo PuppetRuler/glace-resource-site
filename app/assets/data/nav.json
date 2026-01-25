@@ -8,31 +8,31 @@
           "name": "カクヨム (Kakuyomu)",
           "url": "https://kakuyomu.jp/",
           "description": "日本轻小说创作/阅读",
-          "logo": "https://kakuyomu.jp/images/brand/favicons/app-256.png"
+          "logo": "/img/icons/kakuyomu.webp"
         },
         {
           "name": "轻小说百科",
           "url": "https://lnovel.org/",
           "description": "轻小说资源百科",
-          "logo": "https://lnovel.org/uploads/auth/app/icon/000/000/005/t144_0ba10cca.png"
+          "logo": "/img/icons/lnovel.webp"
         },
         {
           "name": "魔笔小说",
           "url": "https://mobinovels.com/",
           "description": "轻小说资源收集",
-          "logo": "https://mobinovels.com/wp-content/uploads/2022/11/cropped-1667644392-logo-32x32.png"
+          "logo": "/img/icons/mobinovels.webp"
         },
         {
           "name": "哔哩轻小说",
           "url": "https://w.linovelib.com/",
           "description": "在线轻小说阅读",
-          "logo": "https://www.linovelib.com/favicon.ico"
+          "logo": "/img/icons/linovelib.webp"
         },
         {
           "name": "ePub 繁简转换",
           "url": "https://v.magiconch.com/epub-transform",
           "description": "电子书繁简在线转换",
-          "logo": "https://v.magiconch.com/favicon.ico"
+          "logo": "/img/icons/epub-transform.webp"
         }
       ]
     },
@@ -44,61 +44,61 @@
           "name": "girigirilove·爱站",
           "url": "https://anime.girigirilove.top/",
           "description": "girigirilove·爱站 - 海量高画质番剧，尽在girigirilove！",
-          "logo": "https://anime.girigirilove.top/upload/anime.girigirilove.com_.png"
+          "logo": "/img/icons/girigirilove.webp"
         },
         {
           "name": "去看吧",
           "url": "https://www.qkan8.com/",
           "description": "在线高清动漫",
-          "logo": "https://k8dm.com/template/vfed/asset/img/favicon.png"
+          "logo": "/img/icons/qkan8.webp"
         },
         {
           "name": "次元城动画",
           "url": "https://www.cycani.org/",
           "description": "次元城动画 - 海量蓝光番剧免费看！",
-          "logo": "https://www.cycani.org/upload/site/20240319-1/25e700991446a527804c82a744731b60.png"
+          "logo": "/img/icons/yuan.webp"
         },
         {
           "name": "柒番",
           "url": "https://www.qifun.cc/",
           "description": "柒番-(づ ●─● )づ ~-Qifun",
-          "logo": "https://www.qifun.cc/favicon.ico"
+          "logo": "/img/icons/qifun.webp"
         },
         {
           "name": "Animoe动漫",
           "url": "https://animoe.org/",
           "description": "Animoe动漫",
-          "logo": "https://github.elemecdn.com/mstatic616/images/logo/favicon.png"
+          "logo": "/img/icons/animoe.webp"
         },
         {
           "name": "Neko",
           "url": "https://nekoyo.co",
           "description": "Neko动漫",
-          "logo": "https://nekoyo.co/favicon.png"
+          "logo": "/img/icons/neko.webp"
         },
         {
           "name": "AnimeTrace",
           "url": "https://ai.animedb.cn/",
           "description": "以图识番引擎",
-          "logo": "https://www.animetrace.com/icon.png"
+          "logo": "/img/icons/animetrace.webp"
         },
         {
           "name": "trace.moe",
           "url": "https://trace.moe/",
           "description": "动画场景搜索",
-          "logo": "https://trace.moe/favicon.png"
+          "logo": "/img//icons/trace.webp"
         },
         {
           "name": "SauceNAO",
           "url": "https://saucenao.com/",
           "description": "二次元图片反查",
-          "logo": "https://saucenao.com/favicon.ico"
+          "logo": "/img/icons/saucenao.webp"
         },
         {
           "name": "搜图Bot酱",
           "url": "https://soutubot.moe/",
           "description": "聚合搜图工具",
-          "logo": "https://soutubot.moe/favicon.ico"
+          "logo": "/img/icons/soutubot.webp"
         }
       ]
     },
@@ -110,73 +110,73 @@
           "name": "Kimochi Gaming",
           "url": "https://kimochi.info/",
           "description": "Eroge 资源站",
-          "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACMklEQVR4AXySsWsTYRjGv7trGmprRU0oQpeC0M2lg2AXt5bQWu0SulQH6+Aq+Ac4F5xCQEwcRLF1CCiEQOhgBoODmBRCBnGQQEFiUwwxwaRfzt9zNIVTNLy/77n3ve993u8u55q/fw4l4aGKayyXQaG69JQ/Dc5yxz/Bopcg7zjOE3QM/mtwkQ2f4BVo4gKagnO+719HF2EIoaFKRq4xbs4xLYl+RN+jt2AwMzODmIcsZ8CHUY+RgQrUzCHLIdN09Gk0Qm43NzfHSqWSTafTCc/zXlBT86gnMKAWxI/x8fGj7e1tL5t9ZmdnZ/1oNOqiZn193VtaWjpeXl6+yc5kLBbTu5nmOjBwmKaTLKyurs6BXywWnUQiYXgM0+v1TKvVMp1Ox6dRp1s0ExM6hQgM1CyzeWttZHJyyu7u7gTNkUjEFAoFk0ql/Fqt5uVyOf21le+NxgQNHQgMhkzyXNe9kM/nzf5+1ZbLZQ7lm263a+r1ukkmk8ONjQ233W6/pOkpqFl/a2CgFzI1HA73+v1+Y2VlJXpva8vLZDKutRZvxw4GA23eo/EuKL6x/ILAQHrE8gUeYPSmUq0e0PyVvMdR9IjHXF+BG6DQo0hPDZSo+JqLtXg8Po/eBjXrhHphcfI1UOiDkoYM2lS00W02m3rGA3KdSsY/ud6BDChkKg0ZqKAbctfkzxTuQwU0+S36AUKhjaHCSSITTX5H/hyy8AjOQyj+ZaBN+mh0/zHJHbgKDQjFbwAAAP//7czpSgAAAAZJREFUAwBKSbd2L2KJDgAAAABJRU5ErkJggg=="
+          "logo": "/img/icons/kimochi-gaming.webp"
         },
         {
           "name": "Hikarinagi 社区",
           "url": "https://www.hikarinagi.org/",
           "description": "ACGN 文化交流",
-          "logo": "https://www.hikarinagi.org/favicon.ico"
+          "logo": "/img/icons/hikarinagi.webp"
         },
         {
           "name": "GAL图书馆",
           "url": "https://gallibrary.pw/index.html",
           "description": "Galgame 资料",
-          "logo": "https://gallibrary.pw/favicon.ico"
+          "logo": "/img/icons/gal.webp"
         },
         {
           "name": "量子ACG",
           "url": "https://lzacg.one/",
           "description": "ACG资源导航",
-          "logo": "https://lzacg.cc/wp-content/uploads/2022/01/1642732211-7CD75A1C-E498-44FB-8E90-468502B354ED.jpeg"
+          "logo": "/img/icons/lzacg.webp"
         },
         {
           "name": "ACG盒子",
           "url": "https://www.acgbox.link/",
           "description": "ACG导航站",
-          "logo": "https://www.acgbox.link/wp-content/uploads/logo/86742914_p0.png"
+          "logo": "/img/icons/acg.webp"
         },
         {
           "name": "NekoGAL",
           "url": "https://www.nekogal.com/",
           "description": "NekoGAL- Galgame传递者",
-          "logo": "https://www.nekogal.com/wp-content/uploads/2023/11/favneko.png"
+          "logo": "/img/icons/nekogal.webp"
         },
         {
           "name": "KisuGal",
           "url": "https://kisugal.icu/",
           "description": "KisuGal - 免费galgame资源下载站 | ACG游戏资源分享平台",
-          "logo": "https://kisugal.icu/wp-content/uploads/2025/11/logo.jpg"
+          "logo": "/img/icons/kisugal.webp"
         },
         {
           "name": "鲲 Galgame",
           "url": "https://www.moyu.moe/",
           "description": "鲲 Galgame 补丁 - 开源 Galgame 补丁资源下载站",
-          "logo": "https://www.moyu.moe/favicon.ico"
+          "logo": "/img/icons/moyu.webp"
         },
         {
           "name": "月谣",
           "url": "https://www.sayafx.vip/",
           "description": "月谣 - 免费GalGame资源站",
-          "logo": "https://www.sayafx.vip/favicon.ico"
+          "logo": "/img/icons/sayafx.webp"
         },
         {
           "name": "05的资源小站",
           "url": "https://05fx.022016.xyz/",
           "description": "主页 | 05的资源小站",
-          "logo": "https://s1.ax1x.com/2023/04/07/ppTiFpQ.png"
+          "logo": "/img/icons/05.webp"
         },
         {
           "name": "梓澪の妙妙屋",
           "url": "https://zi6.cc/",
           "description": "主页 | 梓澪の妙妙屋",
-          "logo": "https://i.iij.li/i/2024/02/65da00d5bf894.webp"
+          "logo": "/img/icons/zi6.webp"
         },
         {
           "name": "ACG Database",
           "url": "https://acgdb.de/",
           "description": "主页 | ACG Database",
-          "logo": "https://pic.rmb.bdstatic.com/bjh/3ed189b421bd/250224/820d1376fb262eae97b42a06e19c03d9.png"
+          "logo": "/img/icons/acg-database.webp"
         },
         {
           "name": "在线玩Gal",
@@ -194,31 +194,31 @@
           "name": "Bilibili",
           "url": "https://www.bilibili.com/",
           "description": "哔哩哔哩弹幕网",
-          "logo": "https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico"
+          "logo": "/img/icons/bilibili.webp"
         },
         {
           "name": "AcFun",
           "url": "https://www.acfun.cn",
           "description": "AcFun弹幕视频网 - 认真你就输啦 (?ω?)ノ- ( ゜- ゜)つロ",
-          "logo": "https://cdn.aixifan.com/ico/favicon.ico"
+          "logo": "/img/icons/acfun.webp"
         },
         {
           "name": "YouTube",
           "url": "https://www.youtube.com/",
           "description": "全球视频平台",
-          "logo": "https://www.youtube.com/s/desktop/2f190eaf/img/favicon.ico"
+          "logo": "/img/icons/youtube.webp"
         },
         {
           "name": "Hyperbeam",
           "url": "https://hyperbeam.com/",
           "description": "在线异地同步看片",
-          "logo": "https://hyperbeam.com/images/favicon.png"
+          "logo": "/img/icons/hyperbeam.webp"
         },
         {
           "name": "SoundCloud",
           "url": "https://soundcloud.com/",
           "description": "在线音频分享平台",
-          "logo": "https://a-v2.sndcdn.com/assets/images/sc-icons/favicon-2cadd14bdb.ico"
+          "logo": "/img/icons/soundcloud.webp"
         }
       ]
     },
@@ -230,127 +230,127 @@
           "name": "Vue.js",
           "url": "https://cn.vuejs.org/",
           "description": "渐进式 JS 框架",
-          "logo": "https://cn.vuejs.org/logo.svg"
+          "logo": "/img/icons/vuejs.webp"
         },
         {
           "name": "Element Plus",
           "url": "https://element-plus.org/zh-CN/",
           "description": "Vue 3 UI 组件库",
-          "logo": "https://element-plus.org/images/element-plus-logo-small.svg"
+          "logo": "/img/icons/element-plus.webp"
         },
         {
           "name": "Ant Design",
           "url": "https://ant-design.antgroup.com/",
           "description": "React 企业级 UI 库",
-          "logo": "https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png"
+          "logo": "/img/icons/ant-design.webp"
         },
         {
           "name": "Naive UI",
           "url": "https://www.naiveui.com/zh-CN/dark",
           "description": "Vue 3 风格组件库",
-          "logo": "https://www.naiveui.com/assets/naivelogo-BdDVTUmz.svg"
+          "logo": "/img/icons/naive.webp"
         },
         {
           "name": "Vuetify",
           "url": "https://vuetifyjs.com/zh-Hans/",
           "description": "Material 风格 Vue 框架",
-          "logo": "https://vuetifyjs.com/favicon.ico"
+          "logo": "/img/icons/vuetifyjs.webp"
         },
         {
           "name": "Vant",
           "url": "https://vant-ui.github.io/vant/",
           "description": "移动端 Vue 组件库",
-          "logo": "https://fastly.jsdelivr.net/npm/@vant/assets/logo.png"
+          "logo": "/img/icons/vant.webp"
         },
         {
           "name": "Varlet",
           "url": "https://varletjs.org/",
           "description": "Varlet UI - Vue3 Material Design 组件库",
-          "logo": "https://varletjs.org/varlet_icon.png"
+          "logo": "/img/icons/varlet.webp"
         },
         {
           "name": "Quasar",
           "url": "https://quasar.dev/",
           "description": "跨平台 Vue 框架",
-          "logo": "https://cdn.quasar.dev/logo-v2/favicon/favicon-128x128.png"
+          "logo": "/img/icons/quasar.webp"
         },
         {
           "name": "Vuestic UI",
           "url": "https://ui.vuestic.dev/",
           "description": "Vue 3 管理界面框架",
-          "logo": "https://ui.vuestic.dev/favicon.ico"
+          "logo": "/img/icons/vuestic.webp"
         },
         {
           "name": "OpenTiny",
           "url": "https://opentiny.design/",
           "description": "华为企业级 UI",
-          "logo": "https://res-static.opentiny.design/tinyui-design/0.1.3/home/favicon.ico"
+          "logo": "/img/icons/opentiny.ico"
         },
         {
           "name": "Carbon",
           "url": "https://carbon.now.sh/",
           "description": "代码精美截图",
-          "logo": "https://carbon.now.sh/favicon.ico"
+          "logo": "/img/icons/05.webp"
         },
         {
           "name": "PlantUML",
           "url": "https://www.plantuml.com/plantuml",
           "description": "在线 UML 绘图",
-          "logo": "https://plantuml.com/favicon.ico"
+          "logo": "/img/icons/plantuml.webp"
         },
         {
           "name": "ProcessOn",
           "url": "https://www.processon.com/",
           "description": "在线流程图绘制",
-          "logo": "https://www.processon.com/public_login/favicon.983368c6.ico"
+          "logo": "/img/icons/processon.webp"
         },
         {
           "name": "GitMind",
           "url": "https://gitmind.cn/app/template",
           "description": "思维导图工具",
-          "logo": "https://qncdn.aoscdn.com/local/gitmind.com/app/gitmindcn/static/gitmind/favicon.png"
+          "logo": "/img/icons/gitmind.webp"
         },
         {
           "name": "MDN Web Docs",
           "url": "https://developer.mozilla.org/zh-CN/",
           "description": "Web 开发权威文档",
-          "logo": "https://developer.mozilla.org/favicon.ico"
+          "logo": "/img/icons/mdn-web-docs.webp"
         },
         {
           "name": "npm",
           "url": "https://www.npmjs.com/",
           "description": "JS 包管理器",
-          "logo": "https://static-production.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png"
+          "logo": "/img/icons/npm.webp"
         },
         {
           "name": "Iconfont",
           "url": "https://www.iconfont.cn/",
           "description": "阿里巴巴图标库",
-          "logo": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg"
+          "logo": "/img/icons/iconfont.webp"
         },
         {
           "name": "ECharts",
           "url": "https://echarts.apache.org/zh/index.html",
           "description": "可视化图表库",
-          "logo": "https://echarts.apache.org/zh/images/favicon.png?_v_=20240226"
+          "logo": "/img/icons/echarts.webp"
         },
         {
           "name": "JetBrains 激活",
           "url": "https://jetbrains.asiones.com/",
           "description": "IDE 激活服务",
-          "logo": "https://jetbrains.asiones.com/favicon.ico"
+          "logo": "/img/icons/jetbrains.webp"
         },
         {
           "name": "Live2D Widget",
           "url": "https://github.com/stevenjoezhang/live2d-widget",
           "description": "网页看板娘插件",
-          "logo": "https://github.githubassets.com/favicons/favicon-dark.png"
+          "logo": "/img/icons/live2d-widget.webp"
         },
         {
           "name": "Coolors",
           "url": "https://coolors.co/?home",
           "description": "超快的调色板生成器",
-          "logo": "https://coolors.co/assets/img/favicon.png"
+          "logo": "/img/icons/coolors.webp"
         }
       ]
     },
@@ -362,37 +362,37 @@
           "name": "GitHub",
           "url": "https://github.com/",
           "description": "代码托管与社交平台",
-          "logo": "https://github.githubassets.com/favicons/favicon-dark.png"
+          "logo": "/img/icons/github.webp"
         },
         {
           "name": "GitHub Trends",
           "url": "https://refft.com",
           "description": "每日热门项目",
-          "logo": "https://refft.com/favicon.svg"
+          "logo": "/img/icons/github-trends.webp"
         },
         {
           "name": "LINUX DO",
           "url": "https://linux.do/",
           "description": "极客技术社区",
-          "logo": "https://linux.do/uploads/default/optimized/4X/c/c/d/ccd8c210609d498cbeb3d5201d4c259348447562_2_32x32.png"
+          "logo": "/img/icons/linuxdo.webp"
         },
         {
           "name": "VCB-Studio",
           "url": "https://vcb-s.com",
           "description": "VCB-Studio论坛",
-          "logo": "https://vcb-s.com/wp-content/customRes/favicon@48.png"
+          "logo": "/img/icons/vcb-s.ico"
         },
         {
           "name": "無名小栈",
           "url": "https://blog.imsyy.top/",
           "description": "iMSYY 的博客",
-          "logo": "https://blog.imsyy.top/favicon.ico"
+          "logo": "/img/icons/imsyy.webp"
         },
         {
           "name": "宅宅的妙妙屋",
           "url": "https://www.justnainai.com/",
           "description": "宅宅的妙妙屋 - ACG 游戏社区",
-          "logo": "https://www.justnainai.com/uploads/default/optimized/2X/8/858ed330f63ad13ae1ee3b04dfd3e4559b0151e7_2_32x32.png"
+          "logo": "/img/icons/justnainai.webp"
         }
       ]
     },
@@ -404,55 +404,55 @@
           "name": "Perplexity AI",
           "url": "https://www.perplexity.ai/",
           "description": "AI 搜索引擎",
-          "logo": "https://www.perplexity.ai/favicon.ico"
+          "logo": "/img/icons/perplexity.webp"
         },
         {
           "name": "Google Gemini",
           "url": "https://gemini.google.com/app",
           "description": "Google 聊天 AI",
-          "logo": "https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg"
+          "logo": "/img/icons/google-gemini.webp"
         },
         {
           "name": "Dify",
           "url": "https://cloud.dify.ai/",
           "description": "AI 应用开发平台",
-          "logo": "https://cloud.dify.ai/icon-192x192.png"
+          "logo": "/img/icons/dify.webp"
         },
         {
           "name": "Coze",
           "url": "https://www.coze.com/",
           "description": "字节跳动 AI Bot 平台",
-          "logo": "https://sf-coze-web-cdn.coze.com/obj/coze-web-sg/obric/coze/favicon.1970.png"
+          "logo": "/img/icons/coze.webp"
         },
         {
           "name": "Runway Gen-2",
           "url": "https://app.runwayml.com/",
           "description": "AI 视频生成",
-          "logo": "https://app.runwayml.com/favicon.ico"
+          "logo": "/img/icons/runwayml.webp"
         },
         {
           "name": "LALAL.AI",
           "url": "https://www.lalal.ai/zh-hans/",
           "description": "AI 人声/伴奏分离",
-          "logo": "https://s.lalal.ai/icons/favicon.ico"
+          "logo": "/img/icons/lalalai.webp"
         },
         {
           "name": "秘塔写作猫",
           "url": "https://xiezuocat.com/",
           "description": "AI 写作助手",
-          "logo": "https://uranus-static.oss-accelerate.aliyuncs.com/xiezuocat/favicon.ico"
+          "logo": "/img/icons/xiezuocat.webp"
         },
         {
           "name": "GPT_API_free",
           "url": "https://github.com/chatanywhere/GPT_API_free",
           "description": "免费 API 转发",
-          "logo": "https://github.githubassets.com/favicons/favicon-dark.png"
+          "logo": "/img/icons/gptapifree.webp"
         },
         {
           "name": "OpenAI API",
           "url": "https://platform.openai.com/docs/api-reference",
           "description": "API 文档",
-          "logo": "https://platform.openai.com/favicon.ico"
+          "logo": "/img/icons/platform.openai.webp"
         }
       ]
     },
@@ -464,67 +464,67 @@
           "name": "Aconvert",
           "url": "https://www.aconvert.com/cn/",
           "description": "在线全能格式转换",
-          "logo": "https://www.aconvert.com/favicon.ico"
+          "logo": "/img/icons/aconvert.webp"
         },
         {
           "name": "iLovePDF",
           "url": "https://www.ilovepdf.com/",
           "description": "PDF 综合处理工具",
-          "logo": "https://www.ilovepdf.com/img/favicons-pdf/favicon-32x32.png"
+          "logo": "/img/icons/ilovepdf.webp"
         },
         {
           "name": "remove.bg",
           "url": "https://www.remove.bg/zh",
           "description": "在线抠图",
-          "logo": "https://www.remove.bg/favicon-32x32.png?v=fc0bfce6e1310f1539afec9729716721"
+          "logo": "/img/icons/removebg.webp"
         },
         {
           "name": "Pic Smaller",
           "url": "https://picsmaller.com/",
           "description": "图片智能压缩",
-          "logo": "https://picsmaller.com/logo.svg"
+          "logo": "/img/icons/pic-smaller.webp"
         },
         {
           "name": "Photopea",
           "url": "https://www.photopea.com/",
           "description": "网页版 PS",
-          "logo": "https://www.photopea.com/promo/icon512.png"
+          "logo": "/img/icons/photopea.webp"
         },
         {
           "name": "YouTube Downloader",
           "url": "https://youtube4kdownloader.com/",
           "description": "4K 视频下载器",
-          "logo": "https://youtube4kdownloader.com/img/favico/android-icon-192x192.png"
+          "logo": "/img/icons/youtube-downloader.webp"
         },
         {
           "name": "Wormhole",
           "url": "https://wormhole.app/",
           "description": "远程私密文件传输",
-          "logo": "https://wormhole.app/favicon-32x32.png"
+          "logo": "/img/icons/wormhole.webp"
         },
         {
           "name": "Canva 可画",
           "url": "https://www.canva.cn/",
           "description": "在线平面设计",
-          "logo": "https://static.canva.cn/domain-assets/canva/static/images/favicon-1.ico"
+          "logo": "/img/icons/canva.webp"
         },
         {
           "name": "Notion",
           "url": "https://www.notion.so/",
           "description": "笔记与协作社区",
-          "logo": "https://www.notion.so/favicon.ico"
+          "logo": "/img/icons/notion.webp"
         },
         {
           "name": "Video.ai",
           "url": "https://www.vidio.ai/zh-CN/dashboard/all",
           "description": "AI视频补帧(会有水印)",
-          "logo": "https://www.vidio.ai/favicon.ico"
+          "logo": "/img/icons/video.ico"
         },
         {
           "name": "EZRemove.ai",
           "url": "https://ezremove.ai/zh/video-watermark-remover/",
           "description": "免费在线视频去水印（无需登录，无需注册）",
-          "logo": "https://ezremove.ai/favicon.ico"
+          "logo": "/img/icons/ezremove.webp"
         }
       ]
     },
@@ -536,37 +536,37 @@
           "name": "FASTLINK",
           "url": "https://flaff20230823.fastlink-aff02.com/",
           "description": "稳定高速机场",
-          "logo": "https://flaff20230823.fastlink-aff02.com/favicon.ico"
+          "logo": "/img/icons/fastlink.webp"
         },
         {
           "name": "维云云",
           "url": "https://wyy.14kbuy.com",
           "description": "稳定中转机场",
-          "logo": "https://wyy.14kbuy.com/favicon.ico"
+          "logo": ""
         },
         {
           "name": "万达云",
           "url": "https://wandayun.com/",
           "description": "全中转低延迟机场，管理员随时在线",
-          "logo": "https://wandayun.com/favicon.ico"
+          "logo": "/img/icons/wandayun.webp"
         },
         {
           "name": "Metcha机场",
           "url": "https://ww1.638242.xyz/",
           "description": "低延迟专线机场，送ebay服账号",
-          "logo": "https://ww1.638242.xyz/favicon.ico"
+          "logo": "/img/icons/metcha.webp"
         },
         {
           "name": "夜煞云",
           "url": "https://portal.loveyesha.com/",
           "description": "速度快，解锁全，性价比高的稳定流媒体机场",
-          "logo": "https://portal.loveyesha.com/favicon.ico"
+          "logo": "/img/icons/loveyesha.ico"
         },
         {
           "name": "Ash|微斯人，吾谁与归",
           "url": "https://www.ash6.com/",
           "description": "稳定低延迟高端老机场，送ebay服账号",
-          "logo": "https://www.ash6.com/ico.png"
+          "logo": "/img/icons/ashor.webp"
         }
       ]
     },
@@ -578,31 +578,31 @@
           "name": "奈斯搜索",
           "url": "https://www.niceso.fun/",
           "description": "阿里云盘搜索",
-          "logo": "https://www.niceso.net/favicon.ico"
+          "logo": "/img/icons/niceso.webp"
         },
         {
           "name": "RuTracker",
           "url": "https://rutracker.org/",
           "description": "俄区顶级 BT 站",
-          "logo": "https://rutracker.org/favicon.ico"
+          "logo": "/img/icons/rutracker.webp"
         },
         {
           "name": "The Pirate Bay",
           "url": "https://thepiratebay.org/",
           "description": "海盗湾磁力搜",
-          "logo": "https://thepiratebay.org/favicon.ico"
+          "logo": "/img/icons/rutracker.webp"
         },
         {
           "name": "FOSSHUB",
           "url": "https://www.fosshub.com/",
           "description": "福斯舒布（书库）",
-          "logo": "https://www.fosshub.com/media/favicon/android-chrome-512x512.png"
+          "logo": "/img/icons/fosshub.webp"
         },
         {
           "name": "金榜题名",
           "url": "http://qzbltushu.ysepan.com/",
           "description": "小中高中大学应考资源",
-          "logo": "http://qzbltushu.ysepan.com/favicon.ico"
+          "logo": "/img/icons/qzbltushu.webp"
         }
       ]
     },
@@ -614,31 +614,31 @@
           "name": "Crx搜搜",
           "url": "https://www.crxsoso.com/",
           "description": "浏览器扩展插件下载",
-          "logo": "https://www.crxsoso.com/favicon-32x32.png"
+          "logo": "/img/icons/crxsoso.ico"
         },
         {
           "name": "Greasy Fork",
           "url": "https://greasyfork.org/zh-CN/scripts",
           "description": "用户脚本分享",
-          "logo": "https://greasyfork.org/vite/assets/blacklogo16-DftkYuVe.png"
+          "logo": "/img/icons/greasyfork.webp"
         },
         {
           "name": "Sleazy Fork",
           "url": "https://sleazyfork.org/zh-CN",
           "description": "成人向脚本库",
-          "logo": "https://sleazyfork.org/vite/assets/blacklogo16-DftkYuVe.png"
+          "logo": "/img/icons/sleazy-fork.webp"
         },
         {
           "name": "LSPosed 模块仓库",
           "url": "https://modules.lsposed.org/",
           "description": "官方框架模块仓库",
-          "logo": "https://modules.lsposed.org/favicon-32x32.png?v=8f181d72700004d72d773e146a4a1e04"
+          "logo": "/img/icons/lsposed.webp"
         },
         {
           "name": "Magisk 模块仓库",
           "url": "https://magisk.me/modules/",
           "description": "Magisk 常用模组",
-          "logo": "https://magisk.me/wp-content/uploads/2018/09/magisk-logo-150x150.png"
+          "logo": "/img/icons/magisk.webp"
         }
       ]
     },
@@ -650,25 +650,25 @@
           "name": "Sysinternals",
           "url": "https://learn.microsoft.com/zh-cn/sysinternals/",
           "description": "微软官方高级系统工具",
-          "logo": "https://learn.microsoft.com/favicon.ico"
+          "logo": "/img/icons/microsoft.webp"
         },
         {
           "name": "VirusTotal",
           "url": "https://www.virustotal.com/gui/home/upload",
           "description": "多引擎病毒扫描",
-          "logo": "https://www.virustotal.com/gui/images/favicon.svg"
+          "logo": "/img/icons/virustotal.webp"
         },
         {
           "name": "Password Pwned",
           "url": "https://haveibeenpwned.com/",
           "description": "检测密码是否泄露",
-          "logo": "https://haveibeenpwned.com/Images/Icons/favicon-96x96.png?v=apCm6ljnsII-SykSCOQfdWddorqioqqM1yZUTxmEvt0"
+          "logo": "/img/icons/password-pwned.webp"
         },
         {
           "name": "Microsoft-Activation-Scripts",
           "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
           "description": "Win系统激活 Microsoft全家桶激活",
-          "logo": "https://github.githubassets.com/favicons/favicon-dark.png"
+          "logo": "/img/icons/microsoft-activation-scripts.webp"
         }
       ]
     }
@@ -682,13 +682,13 @@
           "name": "Hanime1.me",
           "url": "https://hanime1.me/",
           "description": "Hanime1.me - H動漫/裏番/線上看",
-          "logo": "https://vdownload.hembed.com/image/icon/tab_logo.png?secure=EJYLwnrDlidVi_wFp3DaGw==,4867726124"
+          "logo": "/img/icons/hanime1.webp"
         },
         {
           "name": "H次元",
           "url": "https://h-ciyuan.com/",
           "description": "H次元|H-ciyuan - 欢迎来到色色新次元！看",
-          "logo": "https://h-ciyuan.com/wp-content/uploads/2023/12/cropped-%E5%9B%BE%E6%A0%87528-32x32.jpg"
+          "logo": "/img/icons/h-ciyuan.webp"
         }
       ]
     },
@@ -700,37 +700,37 @@
           "name": "Hitomi.la",
           "url": "https://hitomi.la/",
           "description": "Hitomi.la",
-          "logo": "https://ltn.gold-usergeneratedcontent.net/favicon-192x192.png"
+          "logo": "/img/icons/hitomila.webp"
         },
         {
           "name": "NHentai",
           "url": "https://nhentai.net/",
           "description": "nhentai: hentai doujinshi and manga",
-          "logo": "https://nhentai.net/static/favicon.ico"
+          "logo": "/img/icons/nhentai.webp"
         },
         {
           "name": "禁漫天堂",
           "url": "https://jmcomicfg.net/",
           "description": "禁漫天堂發布頁-APP下載 回家的路",
-          "logo": "https://jmcomicfg.net/favicon.ico?v=2"
+          "logo": "/img/icons/jmcomicfg.webp"
         },
         {
           "name": "NiceCat",
           "url": "https://web.nicecat.cc/",
           "description": "NiceCat✨ 同人志和漫画",
-          "logo": "https://web.nicecat.cc/favicon.ico"
+          "logo": "/img/icons/nicecat.webp"
         },
         {
           "name": "NoyAcg",
           "url": "https://noy1.top/",
           "description": "NoyAcg!",
-          "logo": "https://noy1.top/favicon.ico"
+          "logo": "/img/icons/noy1.webp"
         },
         {
           "name": "PicaWeb",
           "url": "https://manhuapica.com/pdownload/",
           "description": "PicaWeb - 哔咔漫画网页版",
-          "logo": "https://manhuapica.com/favicon.png"
+          "logo": "/img/icons/picaweb.webp"
         }
       ]
     },
@@ -742,91 +742,91 @@
           "name": "XVIDEOS.COM",
           "url": "https://www.xvideos.com/",
           "description": "免費成人視頻 - XVIDEOS.COM",
-          "logo": "https://static-cdn77.xvideos-cdn.com/v3/img/skins/default/logo/xv.black.svg"
+          "logo": "/img/icons/xvideoscom.webp"
         },
         {
           "name": "Pornhub",
           "url": "https://cn.pornhub.com/",
           "description": "免费色情视频和色情电影 - 色情片、X级视频、色情视频网站 | Pornhub",
-          "logo": "https://static-cdn77.xvideos-cdn.com/v3/img/skins/default/logo/xv.black.svg"
+          "logo": "/img/icons/pornhub.webp"
         },
         {
           "name": "xHamster",
           "url": "https://xhamster.com/?ref=porndude",
           "description": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
-          "logo": "https://static-ah.xhcdn.com/xh-desktop/images/favicon/favicon-256x256.ico?v=1"
+          "logo": "/img/icons/xhamster.ico"
         },
         {
           "name": "SpankBang",
           "url": "https://spankbang.com/",
           "description": "Free Porn Videos & Sex Movies: XXX Videos Tube - SpankBang",
-          "logo": "https://spankbang.com/favicon.ico"
+          "logo": "/img/icons/spankbang.webp"
         },
         {
           "name": "EPORNER",
           "url": "https://www.eporner.com/",
           "description": "HD Porn Videos - Full High Definition Movies | EPORNER",
-          "logo": "https://static-ca-cdn.eporner.com/favicon.png"
+          "logo": "/img/icons/eporner.webp"
         },
         {
           "name": "Beeg",
           "url": "https://beeg.com/",
           "description": "Beeg",
-          "logo": "https://beeg.com/assets/favicon.svg"
+          "logo": "/img/icons/beeg.webp"
         },
         {
           "name": "MOTHERLESS.COM",
           "url": "https://motherless.com/",
           "description": "Go Ahead She Isn't Looking! | MOTHERLESS.COM ™",
-          "logo": "https://motherless.com/favicon.ico"
+          "logo": "/img/icons/motherless.webp"
         },
         {
           "name": "PornGO",
           "url": "https://www.porngo.com/",
           "description": "Free HD Porn Videos - PornGO.com",
-          "logo": "https://www.porngo.com/favicon-32x32.png"
+          "logo": "/img/icons/porngo.webp"
         },
         {
           "name": "YouPorn",
           "url": "https://www.youporn.com/",
           "description": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
-          "logo": "https://www.youporn.com/youporn/favicon.ico?v=202509"
+          "logo": "/img/icons/youporn.webp"
         },
         {
           "name": "Redtube",
           "url": "https://www.redtube.com/",
           "description": "Free Porn Sex Videos - Redtube - XXX Movies - Home of Videos Porno",
-          "logo": "https://ei.rdtcdn.com/www-static/cdn_files/redtube/icons/favicon.ico?v=ee6f255e284a78129ee106ecb8606397bd1bb48d"
+          "logo": "/img/icons/redtube.webp"
         },
         {
           "name": "Stripchat",
           "url": "https://zh.stripchat.com/",
           "description": "免费直播性爱视频，和裸女成人聊天 | Stripchat",
-          "logo": "https://assets.striiiipst.com/assets/icons/favicon-16x16.png?v=9670c787"
+          "logo": "/img/icons/stripchat.webp"
         },
         {
           "name": "MissAV",
           "url": "https://missav.live/dm223/en",
           "description": "MissAV | Watch HD JAV Online | Free &amp; High Quality AV",
-          "logo": "https://missav.live/favicon.ico"
+          "logo": "/img/icons/missav.webp"
         },
         {
           "name": "Ukdevilz",
           "url": "https://100c9n4.ukdevilz.com/",
           "description": "All kinds of videos at Ukdevilz.com",
-          "logo": "https://ukdevilz.com/static/extend/dark/favicon.ico"
+          "logo": "/img/icons/100c9n4.webp"
         },
         {
           "name": "PornTrex",
           "url": "https://www.porntrex.com/",
           "description": "Best Free HD Porn Videos - Best 4k Porn Site - PornTrex",
-          "logo": "https://ptx.cdntrex.com/favicon.ico"
+          "logo": "/img/icons/porntrex.webp"
         },
         {
           "name": "iPornTV",
           "url": "https://iporntv.net/",
           "description": "Free Porn Videos &amp; Mobile Sex Movies - iPornTV",
-          "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACSklEQVR4AXyTTUhUURiGn3NmxlCjNGpfoZKLaKEGJagzuoigVWWtKiIsWrRr0SIqQrBlkC2kUCL6ETKphZXmKBURlLtahBET9GNFTaVNM87c03umaVqkc+c+9/2+e77vPWfOnLGO61HH4CnpcXHSca2OwvWUhsgkLbXjRNvvE4vFaasR4cJwXqyeZWBeQWhEOgPhCLrUWD/L0nMB9p7B3bQEw9K74qzGalWSvy0kx8H+ANcO5qVhx3PN2KDGqw7TBawGKjzK14rDAfaKTNbrHdZwcP4RFyqeMbjtAX3ZUTqWa5YeDW4QKTHgMJ1il+LLIi0aA2y3vk6VVgBZfsa+87E5ILMxRK7V4FpU5O/eFOWHYsSHxI0lpLscps8PiJjoyBsowOgT+AVBo8NoX/ggHdjKiJ/Rl7CZxylN0K/ks6gUzUUDJbJwPq/ysfgWYH2hwn93lvAXZXPC1y/zDT4uouWbQrJCs60pxEXR+DolKwUO8+Y/Az9QYJX09BjtxXOhna+XwTG998ufkcFYKQPV0REme3uC1otx2voD7C299JscSPtl9qSUQU4FGYepE/vVsE/UiJTy89IzUSayixoYXEKFRwzmkiU8VUbldBnlw45gN3BUzUkp1j8WQs2ZFLmhVg70bmLviyY67zSxpztKz2gbJ7J/exY18AX6FQxUv45QnohQMRUhpGP9did8ilC4ShpkSGuz5vTHCabBVatnC9hJQ6c/4kqV+aeW+1U6L5KK30t/aQ/eBcz6UxhS/lAGCWmfYbtXhX/u3wAAAP//Sgnx5QAAAAZJREFUAwClksGq1qJCPgAAAABJRU5ErkJggg=="
+          "logo": "/img/icons/iporntv.webp"
         }
       ]
     },
@@ -838,7 +838,7 @@
           "name": "ThePornlinks",
           "url": "https://zh-cn.thepornlinks.com/",
           "description": "2026免费及付费网站列表 | ThePornlinks",
-          "logo": "https://zh-cn.thepornlinks.com/favicon.ico"
+          "logo": "/img/icons/ThePornlinks.webp"
         }
       ]
     }
