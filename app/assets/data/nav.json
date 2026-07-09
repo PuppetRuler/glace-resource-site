@@ -119,6 +119,12 @@
           "logo": "/img/icons/hikarinagi.webp"
         },
         {
+          "name": "shionlib",
+          "url": "https://shionlib.com/zh",
+          "description": "shionlib - Galgame 资源下载站",
+          "logo": "/img/icons/shionlib.ico"
+        }
+        {
           "name": "GAL图书馆",
           "url": "https://gallibrary.pw/index.html",
           "description": "Galgame 资料",
